@@ -122,6 +122,10 @@ nav.main-nav ul li a, nav.main-nav ul li button {
   text-align: left;
 }
 
+nav.main-nav ul li a.test {
+  font-size: 1.5rem;
+}
+
 nav.main-nav ul li a:last-child {
   border: none;
 }

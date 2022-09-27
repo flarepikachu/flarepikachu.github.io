@@ -1,6 +1,9 @@
+/* Setting the global font size to base 10*/
 html {
   font-size: 62.5%;
 }
+
+/* Setting configurations for all elements in the body (basically everything)*/
 
 body {
     font-size: 2rem;
@@ -11,17 +14,7 @@ body {
     background-color: #f1f1f1;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 2% 25% 50% 10% 10%;
-  border: 2px solid black;
-}
-
-.app-content ul a {
-  margin: 0 1.5rem;
-  text-decoration: none;
-  color: inherit
-}
+/* Header divider to display website name */
 
 .headerdiv {
   display: flex;
@@ -46,8 +39,18 @@ body {
 
 .div1 {
   background-color: rgb(204, 203, 203);
-  height: 2.5rem;
+  height: 3rem;
 }
+
+/* Actual page is displayed in containers*/
+
+.container {
+  display: grid;
+  grid-template-columns: 2% 20% 50% 10% 10%;
+  border: 2px solid black;
+}
+
+/* Documentation topic chooser */
 
 .div-toggle {
   height: 5rem;
@@ -64,6 +67,8 @@ body {
   padding: 3.5rem 0;
 }
 
+/* Fine-tuning hidden selection containers (Hide and seek!!*/
+
 .pve {
   height: 70vh;
   overflow-y: scroll;
@@ -73,90 +78,93 @@ body {
   display: none;
 }
 
-
-/* MENU */
-
-nav.main-nav {
-    height: 90vh;
-    width: 100%;
-    padding: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    box-sizing: border-box;
-  }
-  
-  nav.main-nav ul {
-    padding: 0rem 2rem;
-  }
-
- 
-  
-  nav.main-nav ul li, .test {
-    border-bottom: 1px solid rgba(238, 9, 9, 0.918);
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav.main-nav ul li a, nav.main-nav ul li button {
-    font-size: 2rem;
-    color: #111;
-    padding: 0.75rem 0;
-    font-weight: 300;
-    display: block;
-    transition: all 0.5s ease;
-    text-decoration: none;
-    width: 100%;
-    text-align: left;
-  }
-  
-  nav.main-nav ul li a:last-child {
-    border: none;
-  }
-  
-  nav.main-nav ul li a:hover {
-    opacity: 0.45;
-    padding: 1rem 1rem;
-    background-color: rgb(207, 205, 203);
-  }
-
-  nav.main-nav ul li button:hover {
-    opacity: 0.45;
-    padding: 1rem 2rem;
-    background-color: rgb(207, 205, 203);
-  }
-
-  nav.main-nav ul li i {
-    padding: 1rem;
-    
-  }
-
-  button:focus {
-    background-color: rgb(231, 231, 230);
-  }
-
-
-/* CONTENT */
-
-.app-content {
-    width: 100%;
-    background-color: #f1f1f1;
-    background-size: cover;
-    align-content: center;
-    font-size: 2rem;
-    padding: 0 4rem;
-    color: black;
+.dropdown-container {
+  display: none;
+  padding: 0 2rem;
 }
 
-.app-content p, li {
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+}
+
+/* MENU 
+Side navigation box, occupying the second box in the grid.*/
+
+nav.main-nav {
+  height: 90vh;
+  width: 100%;
+  padding: 0;
+  opacity: 1;
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+}
+
+nav.main-nav ul {
+  padding: 0rem 2rem;
+}
+
+nav.main-nav ul li, .test {
+  border-bottom: 1px solid rgba(238, 9, 9, 0.918);
+  list-style: none;
+  padding: 0;
+}
+
+nav.main-nav ul li a, nav.main-nav ul li button {
+  font-size: 2rem;
+  color: #111;
+  padding: 0.75rem 0;
+  font-weight: 300;
+  display: block;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+}
+
+nav.main-nav ul li a:last-child {
+  border: none;
+}
+
+nav.main-nav ul li a:hover {
+  padding: 1rem 1rem;
+  background-color: rgb(207, 205, 203);
+}
+
+nav.main-nav ul li button:hover {
+  padding: 1rem 2rem;
+  background-color: rgb(207, 205, 203);
+}
+
+nav.main-nav ul li i {
+  padding: 1rem;
+  
+}
+
+button:focus {
+  background-color: rgb(231, 231, 230);
+}
+
+/* CONTENT 
+This is where the meat of the documentation is placed. Formatted in headings, paragraphs and bullets.*/
+
+.main-text {
+  width: 100%;
+  background-color: #f1f1f1;
+  background-size: cover;
+  align-content: center;
+  font-size: 2rem;
+  padding: 0 4rem;
+  color: black;
+}
+
+.main-text p, li {
   font-size: 1.75rem;
 }
 
-.dropdown-container {
-    display: none;
-    padding: 0 2rem;
-  }
+.main-text ul a {
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: inherit
+}
 
-.dropdown-btn {
-    background-color: transparent;
-    border: none;
-  }

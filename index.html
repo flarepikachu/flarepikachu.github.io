@@ -10,146 +10,158 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script>
+        $(document).on('change', '.div-toggle', function () {
+            var target = $(this).data('target');
+            var show = $("option:selected", this).data('show');
+            $(target).children().addClass('hide');
+            $(show).removeClass('hide');
+        });
+        $(document).ready(function () {
+            $('.div-toggle').trigger('change');
+        });
+    </script>
 </head>
 
-<body>     
-        <header>
-            <div class="headerdiv">
-                <span>
-                    <a class='site-title' href="#"><span>Flairy Domain</span></a>
-                </span>
+<body>
+    <header>
+        <div class="headerdiv">
+            <span>
+                <a class='site-title' href="#"><span>Flairy Domain</span></a>
+            </span>
+        </div>
+    </header>
+
+    <div class="div1"></div>
+
+    <div class="container">
+        <div></div>
+        <nav class="main-nav" role="navigation">
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">Warlords 2 PvE</option>
+                    <option value="pear" data-show=".pome">Pear</option>
+                </select>
             </div>
-        </header>
 
-        <div class="div1"></div>
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <ul>
+                        <li><a class='test' href="#"><span>Link 1</span></a></li>
+                        <li>
+                            <button class="dropdown-btn"><i class="fa-solid fa-place-of-worship fa-fw"></i>Guilds
 
-        <div class="container">
-            <div></div>
-            <nav class="main-nav" role="navigation">
-                <div class="selecter">
-                    <select class="div-toggle" data-target=".my-info-1">
-                        <option value="orange" data-show=".pve">Warlords 2 PvE</option>
-                        <option value="pear" data-show=".pome">Pear</option>
-                    </select>
-                </div>
-                
-                <div class="my-info-1">
-                    <div class="pve hide">
-                        <ul>
-                            <li><a class='test' href="#"><span>Link 1</span></a></li>
-                            <li>
-                                <button class="dropdown-btn"><i class="fa-solid fa-place-of-worship fa-fw"></i>Guilds
-                                    
-                                </button>
-                                <div class="dropdown-container">
+                            </button>
+                            <div class="dropdown-container">
                                 <a class='test' href="#"><span>Link 1</span></a>
                                 <a class='test' href="#"><span>Link 2</span></a>
                                 <a class='test' href="#"><span>Link 3</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <button class="dropdown-btn"><i class="fa-solid fa-money-bill-wave fa-fw"></i></i>Thing
-                                    
-                                </button>
-                                <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn"><i class="fa-solid fa-money-bill-wave fa-fw"></i></i>Thing
+
+                            </button>
+                            <div class="dropdown-container">
                                 <a class='test' href="#"><span>Link 1</span></a>
                                 <a class='test' href="#"><span>Link 2</span></a>
                                 <a class='test' href="#"><span>Link 3</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <button class="dropdown-btn">Thing
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn">Thing
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
                                 <a class='test' href="#"><span>Link 1</span></a>
                                 <a class='test' href="#"><span>Link 2</span></a>
                                 <a class='test' href="#"><span>Link 3</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <button class="dropdown-btn">Thing
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn">Thing
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
                                 <a class='test' href="#"><span>Link 1</span></a>
                                 <a class='test' href="#"><span>Link 2</span></a>
                                 <a class='test' href="#"><span>Link 3</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <button class="dropdown-btn">Thing
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn">Thing
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
                                 <a class='test' href="#"><span>Link 1</span></a>
                                 <a class='test' href="#"><span>Link 2</span></a>
                                 <a class='test' href="#"><span>Link 3</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <button class="dropdown-btn">Thing
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn">Thing
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
                                 <a class='test' href="#"><span>Link 1</span></a>
                                 <a class='test' href="#"><span>Link 2</span></a>
                                 <a class='test' href="#"><span>Link 3</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <button class="dropdown-btn">Thing
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-container">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-btn">Thing
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
                                 <a class='test' href="#"><span>Link 1</span></a>
                                 <a class='test' href="#"><span>Link 2</span></a>
                                 <a class='test' href="#"><span>Link 3</span></a>
-                                </div>
-                            </li>
-                        </ul>
-                        <script>
-                            var dropdown = document.getElementsByClassName("dropdown-btn");
-                            var i;
-        
-                            for (i = 0; i < dropdown.length; i++) {
-                            dropdown[i].addEventListener("click", function() {
+                            </div>
+                        </li>
+                    </ul>
+                    <script>
+                        var dropdown = document.getElementsByClassName("dropdown-btn");
+                        var i;
+
+                        for (i = 0; i < dropdown.length; i++) {
+                            dropdown[i].addEventListener("click", function () {
                                 this.classList.toggle("active");
                                 var dropdownContent = this.nextElementSibling;
                                 if (dropdownContent.style.display === "block") {
                                     dropdownContent.style.display = "none";
-                            } else {
-                            dropdownContent.style.display = "block";
+                                } else {
+                                    dropdownContent.style.display = "block";
                                 }
                             });
-                            }
-                        </script>
-                    </div>
-                    <div class="pome hide">A pome is...</div>
-                </div>    
-            </nav>
-    
-            <div class="main-text">
-                <h1>Guilds</h1>
-                <p>
-                    Guilds will be available during the initial PvE release. Mirroring it's Hypixel counterpart, Guilds allows aspiring players to form a coalition and work towards strengthening their guild together.
-                </p>
-                <p>
-                    Guild Features that will be available upon the initial PvE release include: 
-                    <ul>
-                        <li><a href="#">Guild Chat</a></li>
-                        <li><a href="#">Guild Levels and EXP</a></li>
-                        <li><a href="#">Guild Bank</a></li>
-                        <li><a href="#">Guild Upgrades</a></li>
-                        <li><a href="#">Guild Settings and Permissions</a></li>
-                    </ul>
-                </p>
+                        }
+                    </script>
+                </div>
+                <div class="pome hide">A pome is...</div>
             </div>
-            
-            <div></div>
+        </nav>
+
+        <div class="main-text">
+            <h1>Guilds</h1>
+            <p>
+                Guilds will be available during the initial PvE release. Mirroring it's Hypixel counterpart, Guilds
+                allows aspiring players to form a coalition and work towards strengthening their guild together.
+            </p>
+            <p>
+                Guild Features that will be available upon the initial PvE release include:
+            <ul>
+                <li><a href="#">Guild Chat</a></li>
+                <li><a href="#">Guild Levels and EXP</a></li>
+                <li><a href="#">Guild Bank</a></li>
+                <li><a href="#">Guild Upgrades</a></li>
+                <li><a href="#">Guild Settings and Permissions</a></li>
+            </ul>
+            </p>
         </div>
-        
-        </div>
+
+        <div></div>
+    </div>
+
+    </div>
 
 </body>
 

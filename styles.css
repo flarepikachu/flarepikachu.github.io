@@ -275,13 +275,3 @@ li {
   list-style: none;
   padding: 0;
 }
-
-#navigationbar-mobile ul li a:hover {
-  padding: 1rem 1rem;
-  background-color: rgb(207, 205, 203);
-}
-
-#navigationbar-mobile ul li button:hover {
-  padding: 1rem 2rem;
-  background-color: rgb(207, 205, 203);
-}

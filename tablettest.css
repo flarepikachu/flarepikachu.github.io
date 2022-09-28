@@ -33,7 +33,8 @@
 }
 
 .mobilemenu ul div ul li a:active, .mobilemenu ul div ul li a:hover, .mobilemenu ul li a:active, .mobilemenu ul li a:hover {
-    background-color: rgb(202, 58, 56);;
+    background-color: rgb(202, 58, 56);
+    padding: 1rem 1rem;
     color: #f1f1f1;
 }
 

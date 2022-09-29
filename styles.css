@@ -36,16 +36,7 @@ body {
   color: #f1f1f1;
 }
 
-.div1 {
-  background-color: rgb(204, 203, 203);
-  height: 5rem;
-  display: none;
-  align-items: center;
-  text-align: left;
-  white-space: nowrap;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+
 
 .div1 .wl2pve {
   padding-left: 2rem;
@@ -53,7 +44,6 @@ body {
 
 .div1 span {
   font-size: 1.5rem;
-  padding: 2rem;
 }
 
 .div1 a i{
@@ -158,8 +148,14 @@ Side navigation box, occupying the second box in the grid.*/
 
 @media screen and (min-width: 768px) {
   .div1 {
-    height: 3rem;
-    display: block;
+    background-color: rgb(204, 203, 203);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 5rem;
+    text-align: left;
+    white-space: nowrap;
   }
 
   .mobilemenu, .mobile-burger {
@@ -252,10 +248,6 @@ Side navigation box, occupying the second box in the grid.*/
     width: 100%;
     display: inline-block;
     white-space: pre-line;
-  }
-
-  .div1-text {
-    display: block;
   }
 
   .div1 {

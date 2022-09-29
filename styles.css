@@ -36,8 +36,8 @@ body {
   color: #f1f1f1;
 }
 
-.burger {
-  position: absolute;
+.div1 a.burger {
+  display: block;
   background: rgb(204, 203, 203);
 }
 
@@ -60,23 +60,13 @@ body {
   padding: 2rem;
 }
 
-.div1 i {
-  font-size: 1.25rem;
-}
-
 .div1 a i{
   font-size: 2rem;
   padding-left: 2rem;
 }
 
-.div1 a {
-  text-decoration: none;
-  color: rgb(34, 33, 33);
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
+.div1 i, .div1 a {
+  display: none;
 }
 
 .div1 button i {
@@ -165,6 +155,20 @@ nav.main-nav {
 Side navigation box, occupying the second box in the grid.*/
 
 @media screen and (min-width: 768px) {
+
+  .div1 i {
+    font-size: 1.25rem;
+  }
+  
+  .div1 a {
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
 
   .mobilemenu {
     display: none;

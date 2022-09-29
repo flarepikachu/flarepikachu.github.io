@@ -86,6 +86,7 @@ a:visited {
 }
 
 .mobile-burger {
+  background-color: rgb(204, 203, 203);
   height: 5rem;
   align-items: center;
   text-align: center;

@@ -39,6 +39,8 @@ body {
 .div1 a.burger i {
   display: block;
   background: rgb(204, 203, 203);
+  color: black;
+  size: 50rem;
 }
 
 .div1 {

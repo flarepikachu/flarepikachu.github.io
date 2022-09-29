@@ -36,7 +36,9 @@ body {
   color: #f1f1f1;
 }
 
-
+.div1 {
+  display: none;
+}
 
 .div1 .wl2pve {
   padding-left: 2rem;
@@ -149,13 +151,14 @@ Side navigation box, occupying the second box in the grid.*/
 @media screen and (min-width: 768px) {
   .div1 {
     background-color: rgb(204, 203, 203);
-    height: 5rem;
+    height: 3rem;
     display: flex;
-    justify-content: center;
-    align-items: left;
+    justify-content: left;
+    align-items: center;
     height: 5rem;
     text-align: left;
     white-space: nowrap;
+    padding: 1rem;
   }
 
   .mobilemenu, .mobile-burger {

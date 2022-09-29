@@ -83,7 +83,7 @@ body {
   padding: 2rem;
 }
 
-.div1text {
+.div1-text {
   display: none;
 }
 
@@ -259,6 +259,10 @@ Side navigation box, occupying the second box in the grid.*/
   }
   .div1 .wl2pve {
     padding-left: 2rem;
+    display: block;
+  }
+
+  .div1-text {
     display: block;
   }
 

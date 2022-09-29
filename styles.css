@@ -41,7 +41,7 @@ body {
   height: 5rem;
   display: none;
   align-items: center;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -87,6 +87,8 @@ a:visited {
 
 .mobile-burger {
   background-color: rgb(204, 203, 203);
+  width: 100%;
+  margin: auto;
   height: 5rem;
   align-items: center;
   text-align: center;
@@ -95,6 +97,10 @@ a:visited {
   overflow-y: hidden;
 }
 
+.mobile-burger a {
+  color: #111;
+}
+ 
 
 
 /* Actual page is displayed in containers*/

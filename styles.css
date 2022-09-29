@@ -40,32 +40,7 @@ body {
   display: none;
 }
 
-.div1 .wl2pve {
-  padding-left: 2rem;
-}
-
-.div1 span {
-  font-size: 1.5rem;
-}
-
-.div1 a i{
-  font-size: 2rem;
-  padding-left: 2rem;
-}
-
-.div1 button i {
-  padding: 2rem;
-}
-
 a:link {
-  text-decoration: none;
-}
-
-.div1 a:hover {
-  text-decoration: underline;
-}
-
-.div1 a:visited {
   text-decoration: none;
 }
 
@@ -117,10 +92,6 @@ a:link {
   overflow-x: hidden;
 }
 
-.hide {
-  display: none;
-}
-
 .dropdown-container {
   display: none;
   padding: 0 2rem;
@@ -131,11 +102,9 @@ a:link {
   border: none;
 }
 
-nav.main-nav {
+nav.main-nav, .hide {
   display: none; 
 }
-
-
 
 /* MENU 
 Side navigation box, occupying the second box in the grid.*/
@@ -154,6 +123,26 @@ Side navigation box, occupying the second box in the grid.*/
   .div1 a, .div1 i {
     padding: 0 1rem;
     color:rgb(34, 33, 33);
+  }
+
+  .div1 i {
+    font-size: 1rem;
+  }
+
+  .div1 .wl2pve {
+    padding-left: 1rem;
+  }
+  
+  .div1 span {
+    font-size: 1.5rem;
+  }
+
+  .div1 a:hover {
+    text-decoration: underline;
+  }
+  
+  .div1 a:visited {
+    text-decoration: none;
   }
 
   .mobilemenu, .mobile-burger {

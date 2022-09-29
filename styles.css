@@ -237,9 +237,8 @@ Side navigation box, occupying the second box in the grid.*/
     white-space: pre-line;
   }
 
-  .div1 {
-    overflow-x: hidden;
-    overflow-y: hidden;
+  #navigationbar-mobile {
+    display: none;
   }
 }
   /* CONTENT 

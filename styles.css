@@ -61,16 +61,8 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
 .div1 a:hover {
   text-decoration: underline;
-}
-
-.div1 a:hover.burger {
-  text-decoration: none;
 }
 
 .div1 a:visited {
@@ -157,7 +149,11 @@ Side navigation box, occupying the second box in the grid.*/
     align-items: center;
     text-align: left;
     white-space: nowrap;
-    padding: 1rem;
+  }
+
+  .div1 a, .div1 i {
+    padding: 0 1rem;
+    color:rgb(34, 33, 33);
   }
 
   .mobilemenu, .mobile-burger {

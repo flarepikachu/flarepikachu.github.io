@@ -41,6 +41,7 @@ body {
   height: 5rem;
   display: flex;
   align-items: center;
+  text-align: center;
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -64,7 +65,7 @@ body {
   padding: 2rem;
 }
 
-.div1-text {
+a.div1-text, i.div1-text {
   display: none;
 }
 

@@ -53,7 +53,6 @@ body {
 
 .div1 .wl2pve {
   padding-left: 2rem;
-  display: none;
 }
 
 .div1 span {
@@ -82,6 +81,10 @@ body {
 
 .div1 button i {
   padding: 2rem;
+}
+
+.div1text {
+  display: none;
 }
 
 a:link {

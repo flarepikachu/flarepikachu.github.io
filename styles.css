@@ -36,13 +36,6 @@ body {
   color: #f1f1f1;
 }
 
-.div1 a.burger i {
-  display: block;
-  background: rgb(204, 203, 203);
-  color: black;
-  size: 50rem;
-}
-
 .div1 {
   background-color: rgb(204, 203, 203);
   height: 3rem;
@@ -67,7 +60,7 @@ body {
   padding-left: 2rem;
 }
 
-.div1 i, .div1 a {
+.div1 a, .div1 i.div1-text {
   display: none;
 }
 

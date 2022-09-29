@@ -16,6 +16,7 @@ class dropdown1 extends HTMLElement {
               </button>
               <div class="dropdown-container">
               <a class='test' href="guilds/guilds.html"><span>Overview</span></a>
+              <a class='test' href="guilds/commands.html"><span>Guild Commands</span></a>
               <a class='test' href="guilds/chat.html"><span>Guild Chat</span></a>
               <a class='test' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>
               <a class='test' href="guilds/bank.html"><span>Guild Bank</span></a>

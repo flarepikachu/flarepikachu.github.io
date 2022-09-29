@@ -126,14 +126,15 @@ a:visited {
 .selecter {
   display: flex;
   align-items: center;
-  padding: 3.5rem 0;
+  padding: 3.5rem 0 2rem;
 }
 
 /* Fine-tuning hidden selection containers (Hide and seek!!*/
 
 .pve {
   height: 70vh;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .hide {
@@ -181,6 +182,12 @@ Side navigation box, occupying the second box in the grid.*/
     align-items: center;
   }
 
+  nav.main-nav ul {
+    padding-left: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
   nav.main-nav ul li,
   .test {
     border-bottom: 1px solid rgba(238, 9, 9, 0.918);
@@ -220,7 +227,7 @@ Side navigation box, occupying the second box in the grid.*/
   }
 
   nav.main-nav ul li i {
-    padding: 1rem;
+    padding: 0.75rem;
 
   }
 
@@ -233,8 +240,21 @@ Side navigation box, occupying the second box in the grid.*/
     align-items: center;
     padding: 3.5rem 0 2rem;
   }
+
+  .selecter-text {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    width: 100%;
+    display: inline-block;
+    white-space: pre-line;
+  }
   .div1 .wl2pve {
     padding-left: 2rem;
+  }
+
+  .div1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
   /* CONTENT 
@@ -254,10 +274,56 @@ li {
   font-size: 1.75rem;
 }
 
-.main-text ul a {
+.main-text ul a, .main-text ul li span {
   margin: 0 1.5rem;
   text-decoration: none;
   color: inherit
+}
+
+.main-text ul li ul {
+  padding-inline-start: 30px;
+}
+
+table {
+  padding-left: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid black;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+tr.table-header {
+  background: rgb(242, 95, 92);
+  color: #f1f1f1;
+}
+tr {
+  border-bottom: 1px solid black;
+}
+
+col:nth-child(2), col:nth-child(4) {
+  border-right: 2px solid black;
+  margin: -2px;
+}
+
+td {
+  text-align: center;
+}
+
+
+.command {
+  font-weight: 600;
+}
+
+.commandmono {
+  font-family: 'Courier New', Courier, monospace;
+  background-color:rgb(207, 205, 203)
+}
+
+.placeholder {
+  background-color:rgb(248, 132, 16)
 }
 
 /* logo, navigation menu styling */
@@ -275,3 +341,4 @@ li {
   list-style: none;
   padding: 0;
 }
+

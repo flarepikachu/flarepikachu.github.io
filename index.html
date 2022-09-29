@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-mobile.css">
+    <link rel="stylesheet" href="styles-mobaaile.css">
     <link rel="stylesheet" href="tablettest.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
@@ -52,24 +52,63 @@
     </div>
 
     <div class="container">
-        <nav class="fuck">
-            <div id="navigationbar-mobile">
-                <div class="mobilemenu">
-                    <ul>
-                        <li><a class='direlink' href="index.html">
-                                <i class="fa-solid fa-magnifying-glass fa-fw"></i>
-                                <span>Overview</span></a></li>
+        <div></div>
+        <div id="navigationbar-mobile">
+            <div class="mobilemenu">
+                <ul>
+                    <li><a class='direlink fullwidth' href="index.html">
+                            <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+                            <span>Overview</span></a></li>
+                    <li>
+                
+                    <li>
+                        <a class="fullwidth" href="javascript:void(0);" onclick="guildsdd()">
+                            <i class="fa-solid fa-place-of-worship fa-fw">
+                            </i>
+                            Guilds
+                        </a>
+                        <script>
+                            function guildsdd() {
+                                var x = document.getElementById("guilds-dropdown");
+                                if (x.style.display === "block") {
+                                    x.style.display = "none";
+                                } else {
+                                    x.style.display = "block";
+                                }
+                            }
+                        </script>
+                    </li>
+                    <div id="guilds-dropdown">
+                        <ul>
+                            <li>
+                                <a class='fullwidtha' href="guilds/guilds.html"><span>Overview</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/chat.html"><span>Guild Chat</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/bank.html"><span>Guild Bank</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/upgrades.html"><span>Guild Upgrades</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/settings.html"><span>Guild Settings and Permissions</span></a>
+                            </li>
+                        </ul>
+                    </div>
                         <li>
-                    
-                        <li>
-                            <a class="fullwidth" href="javascript:void(0);" onclick="guildsdd()">
-                                <i class="fa-solid fa-place-of-worship fa-fw">
+                            <a class="fullwidth" href="javascript:void(0);" onclick="moneydd()">
+                                <i class="fa-solid fa-money-bill-wave fa-fw">
                                 </i>
-                                Guilds
+                                Currency
                             </a>
                             <script>
-                                function guildsdd() {
-                                    var x = document.getElementById("guilds-dropdown");
+                                function moneydd() {
+                                    var x = document.getElementById("money-dropdown");
                                     if (x.style.display === "block") {
                                         x.style.display = "none";
                                     } else {
@@ -78,123 +117,85 @@
                                 }
                             </script>
                         </li>
-                        <div id="guilds-dropdown">
-                            <ul>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/guilds.html"><span>Overview</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/chat.html"><span>Guild Chat</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/bank.html"><span>Guild Bank</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/upgrades.html"><span>Guild Upgrades</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/settings.html"><span>Guild Settings and Permissions</span></a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div id="money-dropdown">
+                        <ul>
                             <li>
-                                <a class="fullwidth" href="javascript:void(0);" onclick="moneydd()">
-                                    <i class="fa-solid fa-money-bill-wave fa-fw">
-                                    </i>
-                                    Currency
-                                </a>
-                                <script>
-                                    function moneydd() {
-                                        var x = document.getElementById("money-dropdown");
-                                        if (x.style.display === "block") {
-                                            x.style.display = "none";
-                                        } else {
-                                            x.style.display = "block";
-                                        }
-                                    }
-                                </script>
+                                <a class='fullwidtha' href="guilds/guilds.html"><span>Overview</span></a>
                             </li>
-                        <div id="money-dropdown">
-                            <ul>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/guilds.html"><span>Overview</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/chat.html"><span>Guild Chat</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/bank.html"><span>Guild Bank</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/upgrades.html"><span>Guild Upgrades</span></a>
-                                </li>
-                                <li>
-                                    <a class='fullwidtha' href="guilds/settings.html"><span>Guild Settings and Permissions</span></a>
-                                </li>
-                            </ul>
+                            <li>
+                                <a class='fullwidtha' href="guilds/chat.html"><span>Guild Chat</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/bank.html"><span>Guild Bank</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/upgrades.html"><span>Guild Upgrades</span></a>
+                            </li>
+                            <li>
+                                <a class='fullwidtha' href="guilds/settings.html"><span>Guild Settings and Permissions</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-btn"><i class="fa-solid fa-broom fa-fw"></i></i>Weapons
+                        </button>
+                        <div class="dropdown-container">
+                            <a class='test' href="#"><span>Link 1</span></a>
+                            <a class='test' href="#"><span>Link 2</span></a>
+                            <a class='test' href="#"><span>Link 3</span></a>
                         </div>
-                        </li>
-                        <li>
-                            <button class="dropdown-btn"><i class="fa-solid fa-broom fa-fw"></i></i>Weapons
-                            </button>
-                            <div class="dropdown-container">
-                                <a class='test' href="#"><span>Link 1</span></a>
-                                <a class='test' href="#"><span>Link 2</span></a>
-                                <a class='test' href="#"><span>Link 3</span></a>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="dropdown-btn"><i class="fa-solid fa-fire-burner fa-fw"></i>Masterworks Fair
-                            </button>
-                            <div class="dropdown-container">
-                                <a class='test' href="#"><span>Link 1</span></a>
-                                <a class='test' href="#"><span>Link 2</span></a>
-                                <a class='test' href="#"><span>Link 3</span></a>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="dropdown-btn"><i class="fa-solid fa-parachute-box fa-fw"></i>Supply Drop Susan
-                            </button>
-                            <div class="dropdown-container">
-                                <a class='test' href="#"><span>Link 1</span></a>
-                                <a class='test' href="#"><span>Link 2</span></a>
-                                <a class='test' href="#"><span>Link 3</span></a>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="dropdown-btn"><i class="fa-solid fa-piggy-bank fa-fw"></i>Level Rewards
-                            </button>
-                            <div class="dropdown-container">
-                                <a class='test' href="#"><span>Link 1</span></a>
-                                <a class='test' href="#"><span>Link 2</span></a>
-                                <a class='test' href="#"><span>Link 3</span></a>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="dropdown-btn"><i class="fa-solid fa-gem fa-fw"></i>Achievements
-                            </button>
-                            <div class="dropdown-container">
-                                <a class='test' href="#"><span>Link 1</span></a>
-                                <a class='test' href="#"><span>Link 2</span></a>
-                                <a class='test' href="#"><span>Link 3</span></a>
-                            </div>
-                        </li>
-                    
-                    </ul>
-                </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-btn"><i class="fa-solid fa-fire-burner fa-fw"></i>Masterworks Fair
+                        </button>
+                        <div class="dropdown-container">
+                            <a class='test' href="#"><span>Link 1</span></a>
+                            <a class='test' href="#"><span>Link 2</span></a>
+                            <a class='test' href="#"><span>Link 3</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-btn"><i class="fa-solid fa-parachute-box fa-fw"></i>Supply Drop Susan
+                        </button>
+                        <div class="dropdown-container">
+                            <a class='test' href="#"><span>Link 1</span></a>
+                            <a class='test' href="#"><span>Link 2</span></a>
+                            <a class='test' href="#"><span>Link 3</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-btn"><i class="fa-solid fa-piggy-bank fa-fw"></i>Level Rewards
+                        </button>
+                        <div class="dropdown-container">
+                            <a class='test' href="#"><span>Link 1</span></a>
+                            <a class='test' href="#"><span>Link 2</span></a>
+                            <a class='test' href="#"><span>Link 3</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-btn"><i class="fa-solid fa-gem fa-fw"></i>Achievements
+                        </button>
+                        <div class="dropdown-container">
+                            <a class='test' href="#"><span>Link 1</span></a>
+                            <a class='test' href="#"><span>Link 2</span></a>
+                            <a class='test' href="#"><span>Link 3</span></a>
+                        </div>
+                    </li>
+                
+                </ul>
             </div>
-        </nav>
+        </div>
         <nav class="main-nav" role="navigation">
             <div class="selecter">
                 <select class="div-toggle" data-target=".my-info-1">
-                    <option value="orange" data-show=".pve">Warlords 2 PvE</option>
-                    <option value="pear" data-show=".pome">Pear</option>
+                    <option value="orange" data-show=".pve">
+                        <div class="selecter-text">Warlords 2 PvE</div>
+                    </option>
+                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
                 </select>
             </div>
 
@@ -225,21 +226,13 @@
         <div id="dingleberry" class="main-text">
             <h1>Warlords 2 PvE</h1>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam minima quam nulla aliquam rem architecto
-                sequi beatae maxime aperiam dicta inventore, harum blanditiis nam, facilis totam officiis excepturi
-                laborum hic qui, at assumenda esse. Obcaecati, quas necessitatibus saepe, unde earum quidem alias
-                voluptatum impedit repellendus omnis, reiciendis dolorum quis eos!
+                Welcome to the documentation page for Warlords 2 PvE! This is work in progress and there are no promises that this will get updated regularly. I hope this documentation gives you better insight towards the development of Warlords 2 PvE and the new features added.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt expedita alias provident officiis
-                aliquid illum dolorem assumenda rem est voluptatum, quisquam nobis ab quibusdam eligendi velit obcaecati
-                inventore, quidem corrupti vel. Perspiciatis porro eum adipisci. Excepturi consequatur saepe voluptates.
-                Reprehenderit, qui ipsum pariatur vero iure tempora, nihil cum corrupti, explicabo doloribus alias ad
-                enim repellendus obcaecati dolorum blanditiis magnam. Modi porro atque commodi at officia, culpa nobis
-                facere expedita nesciunt hic molestiae in tenetur illum. Aut neque eveniet eaque quod iusto quam
-                sapiente non illum totam, cupiditate consequatur expedita. Eum quisquam hic molestias illum non rem?
-                Deleniti vero, perspiciatis nesciunt dignissimos rem consequuntur assumenda aspernatur quibusdam, sunt
-                facere dolore doloribus accusantium iure nisi perferendis voluptates, quo amet non animi repudiandae?
+                Development for Warlords 2 PvE started around May 2022. The initial idea was to opt for wave defense, where players would be working together to defend a central target from enemy attacks. Instead, we have opted for a simpler wave survival gamemode akin to Hypixel Zombies, albeit with both in-game and out-of-game upgrades and many more features to hopefully keep the game interesting. 
+            </p>
+            <p>
+                You can navigate this documentation by using the sidebar to navigate to various topics on desktop, or use the hamburger on the top left to navigate on mobile devices.
             </p>
         </div>
 

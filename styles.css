@@ -60,10 +60,6 @@ body {
   padding-left: 2rem;
 }
 
-.div1 a, .div1 i.div1-text {
-  display: none;
-}
-
 .div1 button i {
   padding: 2rem;
 }

@@ -161,6 +161,10 @@ nav.main-nav {
 Side navigation box, occupying the second box in the grid.*/
 
 @media screen and (min-width: 768px) {
+
+  .mobilemenu {
+    display: none;
+  }
   .container {
     display: grid;
     grid-template-columns: 2% 20% 50% 10% 10%;

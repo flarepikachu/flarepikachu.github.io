@@ -15,7 +15,7 @@ class dropdown1 extends HTMLElement {
               Guilds
               </button>
               <div class="dropdown-container">
-              <a class='test' href="/guilds.guilds.html"><span>Overview</span></a>
+              <a class='test' href="/guilds/guilds.html"><span>Overview</span></a>
               <a class='test' href="/guilds/commands.html"><span>Guild Commands</span></a>
               <a class='test' href="/guilds/chat.html"><span>Guild Chat</span></a>
               <a class='test' href="/guilds/levels.html"><span>Guild Levels and EXP</span></a>
@@ -25,13 +25,14 @@ class dropdown1 extends HTMLElement {
               </div>
           </li>
           <li>
-              <button class="dropdown-btn"><i class="fa-solid fa-money-bill-wave fa-fw"></i></i>Currency
-                  
+              <button class="dropdown-btn"><i class="fa-solid fa-money-bill-wave fa-fw"></i></i>
+              Currency
               </button>
               <div class="dropdown-container">
-              <a class='test' href="#"><span>Link 1</span></a>
-              <a class='test' href="#"><span>Link 2</span></a>
-              <a class='test' href="#"><span>Link 3</span></a>
+              <a class='test' href="/currency/currency.html"><span>Overview</span></a>
+              <a class='test' href="/currency/coins.html"><span>Coins</span></a>
+              <a class='test' href="/currency/guild-coins.html"><span>Guild Coins</span></a>
+              <a class='test' href="/currency/fairy-essence.html"><span>Fairy Essence</span></a>
               </div>
           </li>
           <li>

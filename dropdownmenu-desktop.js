@@ -6,7 +6,7 @@ class dropdown1 extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <ul>
-          <li><a class='direlink' href="index.html">
+          <li><a class='direlink' href="https://flarepikachu.github.io/index.html">
           <i class="fa-solid fa-magnifying-glass fa-fw"></i>
           <span>Overview</span></a></li>
           <li>
@@ -15,7 +15,7 @@ class dropdown1 extends HTMLElement {
               Guilds
               </button>
               <div class="dropdown-container">
-              <a class='test' href="guilds/guilds.html"><span>Overview</span></a>
+              <a class='test' href="https://flarepikachu.github.io/guilds/guilds.html"><span>Overview</span></a>
               <a class='test' href="guilds/commands.html"><span>Guild Commands</span></a>
               <a class='test' href="guilds/chat.html"><span>Guild Chat</span></a>
               <a class='test' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>

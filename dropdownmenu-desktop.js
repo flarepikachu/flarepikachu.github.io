@@ -14,7 +14,7 @@ class dropdown1 extends HTMLElement {
               <i class="fa-solid fa-place-of-worship fa-fw"></i>
               Guilds
               </button>
-              <div class="dropdown-container">
+              <div class="dropdown-container dropdown-container-guilds">
               <a class='test' href="/guilds/guilds.html"><span>Overview</span></a>
               <a class='test' href="/guilds/commands.html"><span>Guild Commands</span></a>
               <a class='test' href="/guilds/chat.html"><span>Guild Chat</span></a>

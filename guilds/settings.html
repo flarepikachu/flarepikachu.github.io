@@ -17,67 +17,95 @@
     <script src="../header.js" type="text/javascript"></script>
 </head>
 
-<body>     
-        <header>
-            <div class="headerdiv">
-                <span>
-                    <a class='site-title' href="#"><span>Flairy Domain</span></a>
-                </span>
-            </div>
-        </header>
-
-        <div class="div1"></div>
-
-        <div class="container">
-            <div></div>
-            <nav class="main-nav" role="navigation">
-                <div class="selecter">
-                    <select class="div-toggle" data-target=".my-info-1">
-                        <option value="orange" data-show=".pve">Warlords 2 PvE</option>
-                        <option value="pear" data-show=".pome">Pear</option>
-                    </select>
-                </div>
-                
-                <div class="my-info-1">
-                    <div class="pve hide">
-                        <dropdown-component></dropdown-component>
-                        <script>
-                            var dropdown = document.getElementsByClassName("dropdown-btn");
-                            var i;
+<body>
+    <header-component></header-component>
+    <div class="div1">
+        <span class="wl2pve">
+            <a class='direlink div1-text' href="index.html">Warlords 2 PvE</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="index.html">Overview</a>
+        </span>
+    </div> 
+    <div class="mobile-burger">
+        <a href="javascript:void(0);" class="burger" onclick="navigationbar()">
+            <i class="fa-solid fa-bars fa-2xl">
+            </i>
+        </a>
         
-                            for (i = 0; i < dropdown.length; i++) {
-                            dropdown[i].addEventListener("click", function() {
+        <script>
+            // Function to toggle the bar
+            function navigationbar() {
+                var x = document.getElementById("navigationbar-mobile");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                var y = document.getElementById("dingleberry");
+                if (y.style.display === "none") {
+                    y.style.display = "block";
+                } else {
+                    y.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+    <div class="container">
+        <div></div>
+        <nav class="main-nav" role="navigation">
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">Warlords 2 PvE</option>
+                    <option value="pear" data-show=".pome">Pear</option>
+                </select>
+            </div>
+
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <dropdown-component></dropdown-component>
+                    <script>
+                        var dropdown = document.getElementsByClassName("dropdown-btn");
+                        var i;
+
+                        for (i = 0; i < dropdown.length; i++) {
+                            dropdown[i].addEventListener("click", function () {
                                 this.classList.toggle("active");
                                 var dropdownContent = this.nextElementSibling;
                                 if (dropdownContent.style.display === "block") {
                                     dropdownContent.style.display = "none";
-                            } else {
-                            dropdownContent.style.display = "block";
+                                } else {
+                                    dropdownContent.style.display = "block";
                                 }
                             });
-                            }
-                        </script>
-                    </div>
-                    <div class="pome hide">
-                        A pome is...
-                    </div>
-                </div>   
-            </nav>
-    
-            <div class="main-text">
-                <h1>Guild Settings</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam facilis at quod rem qui maxime consectetur repellendus pariatur, obcaecati harum corrupti dignissimos nemo dolorum doloremque ex aperiam ducimus dicta natus optio. Sunt reiciendis placeat architecto nihil voluptates officiis, eum voluptatibus error aut? Deleniti, officiis quam rerum nobis exercitationem iusto.
-                </p>
-                <p>
-                    Dick
-                </p>
+                        }
+                    </script>
+                </div>
+                <div class="pome hide">
+                    A pome is...
+                </div>
             </div>
-            
-            <div></div>
+        </nav>
+
+        <div class="main-text">
+            <h1>Guild Settings</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam facilis at quod rem qui maxime
+                consectetur repellendus pariatur, obcaecati harum corrupti dignissimos nemo dolorum doloremque ex
+                aperiam ducimus dicta natus optio. Sunt reiciendis placeat architecto nihil voluptates officiis, eum
+                voluptatibus error aut? Deleniti, officiis quam rerum nobis exercitationem iusto.
+            </p>
+            <p>
+                Dick
+            </p>
         </div>
-        
-        </div>
+
+        <div></div>
+    </div>
+
+    </div>
 
 </body>
 

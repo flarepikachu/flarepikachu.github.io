@@ -211,6 +211,7 @@
                         var i;
     
                         for (i = 0; i < dropdown.length; i++) {
+                            
                         dropdown[i].addEventListener("click", function() {
                             this.classList.toggle("active");
                             var dropdownContent = this.nextElementSibling;
@@ -221,7 +222,9 @@
                             }
                         });
                         }
+                        // can add functionality to close all dropdown buttons THEN trigger the open. 
                     </script>
+                    
                 </div>
                 <div class="pome hide">
                     A pome is...

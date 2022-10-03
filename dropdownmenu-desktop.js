@@ -28,7 +28,7 @@ class dropdown1 extends HTMLElement {
               <button class="dropdown-btn"><i class="fa-solid fa-money-bill-wave fa-fw"></i></i>
               Currency
               </button>
-              <div class="dropdown-container">
+              <div class="dropdown-container dropdown-container-currency">
               <a class='test' href="/currency/currency.html"><span>Overview</span></a>
               <a class='test' href="/currency/coins.html"><span>Coins</span></a>
               <a class='test' href="/currency/guild-coins.html"><span>Guild Coins</span></a>

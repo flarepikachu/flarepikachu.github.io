@@ -35,34 +35,29 @@
                 </div>
                 
                 <div class="my-info-1">
-                    <div class="my-info-1">
-                        <div class="pve hide">
-                            <dropdown-component></dropdown-component>
-                            <script>
-                                var dropdown = document.getElementsByClassName("dropdown-btn");
-                                var i;
-            
-                                for (i = 0; i < dropdown.length; i++) {
-                                dropdown[i].addEventListener("click", function() {
-                                    this.classList.toggle("active");
-                                    var dropdownContent = this.nextElementSibling;
-                                    if (dropdownContent.style.display === "block") {
-                                        dropdownContent.style.display = "none";
-                                } else {
-                                dropdownContent.style.display = "block";
-                                    }
-                                });
+                    <div class="pve hide">
+                        <dropdown-component></dropdown-component>
+                        <script>
+                            var dropdown = document.getElementsByClassName("dropdown-btn");
+                            var i;
+        
+                            for (i = 0; i < dropdown.length; i++) {
+                            dropdown[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var dropdownContent = this.nextElementSibling;
+                                if (dropdownContent.style.display === "block") {
+                                    dropdownContent.style.display = "none";
+                            } else {
+                            dropdownContent.style.display = "block";
                                 }
-                            </script>
-                        </div>
-                        <div class="pome hide">
-                            A pome is...
-                        </div>
+                            });
+                            }
+                        </script>
                     </div>
                     <div class="pome hide">
                         A pome is...
                     </div>
-                </div>    
+                </div>  
             </nav>
     
             <div class="main-text">

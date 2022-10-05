@@ -169,6 +169,7 @@ Side navigation box, occupying the second box in the grid.*/
     transition: all 0.5s ease;
     box-sizing: border-box;
     align-items: center;
+    white-space: nowrap;
   }
 
   nav.main-nav ul {

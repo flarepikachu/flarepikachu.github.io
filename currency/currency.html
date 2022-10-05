@@ -4,57 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../styles-mobaaile.css">
-    <link rel="stylesheet" href="../tablettest.css">
-    <link rel="stylesheet" href="currency.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="guilds.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
-    <script src="../script.js" type="text/javascript"></script>
-    <script src="../dropdownmenu-desktop.js" type="text/javascript"></script>
-    <script src="../header.js" type="text/javascript"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body onload="dropdownsdesktop()">
+
     <header-component></header-component>
+
     <div class="div1">
         <span class="wl2pve">
             <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
         </span>
         <i class="fa-solid fa-angle-right div1-text"></i>
         <span>
-            <a class='direlink div1-text' href="/currency/currency.html">Currency</a>
+            <a class='direlink div1-text' href="#">Currency</a>
         </span>
     </div>
-    <div class="mobile-burger">
-        <a href="javascript:void(0);" class="burger" onclick="navigationbar()">
-            <i class="fa-solid fa-bars fa-2xl">
-            </i>
-        </a>
 
-        <script>
-            // Function to toggle the bar
-            function navigationbar() {
-                var x = document.getElementById("navigationbar-mobile");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-                var y = document.getElementById("dingleberry");
-                if (y.style.display === "none") {
-                    y.style.display = "block";
-                } else {
-                    y.style.display = "none";
-                }
-            }
-        </script>
-    </div>
+    <burger-i></burger-i>
+
+    <div class="container">
+
+        <div></div>
+
+        <div id="navigationbar-mobile">
+            <mobile-divs></mobile-divs>
+        </div>
+
+        <nav class="main-nav" role="navigation">
+
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">
+                        <div class="selecter-text">Warlords 2 PvE</div>
+                    </option>
+                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                </select>
+            </div>
+
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <dropdown-component></dropdown-component>
+                </div>
+                <div class="pome hide">A pome is...</div>
+            </div>
+
+        </nav>
 
     <div class="container">
         <div></div>

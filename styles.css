@@ -10,7 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: rgb(34, 33, 33);
   line-height: 1.6;
-  font-weight: normal;
+  font-weight: 200;
   background-color: #f1f1f1;
 }
 
@@ -188,7 +188,7 @@ Side navigation box, occupying the second box in the grid.*/
     font-size: 1.75rem;
     color: #111;
     padding: 0.75rem 0;
-    font-weight: 300;
+    font-weight: 400;
     display: block;
     transition: all 0.5s ease;
     text-decoration: none;
@@ -298,7 +298,7 @@ td {
 
 
 .command, .bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .commandmono {

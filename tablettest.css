@@ -48,7 +48,7 @@
 }
 
 .mobilemenu ul li div ul li a.nopad:active, .mobilemenu ul li div ul li a.nopad:hover,
-.mobilemenu ul li a.nopad:active{
+.mobilemenu ul li a.nopad:active, .mobilemenu ul li a.nopad:hover {
     padding: 0;
 }
 

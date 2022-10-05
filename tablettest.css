@@ -28,18 +28,28 @@
     padding: 1rem 2rem;
 }
 
-.mobilemenu ul div ul li a span{
+.mobilemenu ul li a span {
+    padding-left: 1rem;
+}
+
+.mobilemenu ul li div ul li a span{
     color: #f1f1f1;
     text-decoration: none;
     list-style: none;
     font-size: 2rem;
     padding-left: 5rem;
+    vertical-align: middle;
 }
 
-.mobilemenu ul div ul li a:active, .mobilemenu ul div ul li a:hover, .mobilemenu ul li a:active, .mobilemenu ul li a:hover {
+.mobilemenu ul li div ul li a:active, .mobilemenu ul li div ul li a:hover, .mobilemenu ul li a:active, .mobilemenu ul li a:hover {
     background-color: rgb(202, 58, 56);
     padding: 1rem 1rem;
     color: #f1f1f1;
+}
+
+.mobilemenu ul li div ul li a.nopad:active, .mobilemenu ul li div ul li a.nopad:hover,
+.mobilemenu ul li a.nopad:active, .mobilemenu ul li a.nopad:hover {
+    padding: 0;
 }
 
 .fullwidth {

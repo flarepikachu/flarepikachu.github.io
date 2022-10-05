@@ -13,13 +13,18 @@
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript"></script>
     <script src="dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="dropdownmenu-tablet-function.js" type="text/javascript"></script>
+
     <script src="header.js" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body onload="dropdownsdesktop()">
     <header-component></header-component>
     <div class="div1">
         <span class="wl2pve">
@@ -29,169 +34,18 @@
         <span>
             <a class='direlink div1-text' href="index.html">Overview</a>
         </span>
-    </div> 
+    </div>
     <div class="mobile-burger">
         <a href="javascript:void(0);" class="burger" onclick="navigationbar()">
             <i class="fa-solid fa-bars fa-2xl">
             </i>
         </a>
-        
-        <script>
-            // Function to toggle the bar
-            function navigationbar() {
-                var x = document.getElementById("navigationbar-mobile");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-                var y = document.getElementById("dingleberry");
-                if (y.style.display === "none") {
-                    y.style.display = "block";
-                } else {
-                    y.style.display = "none";
-                }
-            }
-        </script>
     </div>
 
     <div class="container">
         <div></div>
         <div id="navigationbar-mobile">
-            <div class="mobilemenu">
-                <ul>
-                    <li><a class='direlink fullwidth' href="index.html">
-                            <i class="fa-solid fa-magnifying-glass fa-fw"></i>
-                            <span>Overview</span></a></li>
-                    <li>
-                
-                    <li>
-                        <a class="fullwidth" href="javascript:void(0);" onclick="guildsdd()">
-                            <i class="fa-solid fa-place-of-worship fa-fw">
-                            </i>
-                            Guilds
-                        </a>
-                        <script>
-                            function guildsdd() {
-                                var x = document.getElementById("guilds-dropdown");
-                                if (x.style.display === "block") {
-                                    x.style.display = "none";
-                                } else {
-                                    x.style.display = "block";
-                                }
-                            }
-                        </script>
-                    </li>
-                    <div id="guilds-dropdown">
-                        <ul>
-                            <li>
-                                <a class='fullwidtha' href="guilds/guilds.html"><span>Overview</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/chat.html"><span>Guild Chat</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/bank.html"><span>Guild Bank</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/upgrades.html"><span>Guild Upgrades</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/settings.html"><span>Guild Settings and Permissions</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                        <li>
-                            <a class="fullwidth" href="javascript:void(0);" onclick="moneydd()">
-                                <i class="fa-solid fa-money-bill-wave fa-fw">
-                                </i>
-                                Currency
-                            </a>
-                            <script>
-                                function moneydd() {
-                                    var x = document.getElementById("money-dropdown");
-                                    if (x.style.display === "block") {
-                                        x.style.display = "none";
-                                    } else {
-                                        x.style.display = "block";
-                                    }
-                                }
-                            </script>
-                        </li>
-                    <div id="money-dropdown">
-                        <ul>
-                            <li>
-                                <a class='fullwidtha' href="guilds/guilds.html"><span>Overview</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/chat.html"><span>Guild Chat</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/levels.html"><span>Guild Levels and EXP</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/bank.html"><span>Guild Bank</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/upgrades.html"><span>Guild Upgrades</span></a>
-                            </li>
-                            <li>
-                                <a class='fullwidtha' href="guilds/settings.html"><span>Guild Settings and Permissions</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-broom fa-fw"></i>Weapons
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-fire-burner fa-fw"></i>Masterworks Fair
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-parachute-box fa-fw"></i>Supply Drop Susan
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-piggy-bank fa-fw"></i>Level Rewards
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-gem fa-fw"></i>Achievements
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                
-                </ul>
-            </div>
+            <mobile-divs></mobile-divs>
         </div>
         <nav class="main-nav" role="navigation">
             <div class="selecter">
@@ -207,20 +61,7 @@
                 <div class="pve hide">
                     <dropdown-component></dropdown-component>
                     <script>
-                        var dropdown = document.getElementsByClassName("dropdown-btn");
-                        var i;
-    
-                        for (i = 0; i < dropdown.length; i++) {
-                        dropdown[i].addEventListener("click", function() {
-                            this.classList.toggle("active");
-                            var dropdownContent = this.nextElementSibling;
-                            if (dropdownContent.style.display === "block") {
-                                dropdownContent.style.display = "none";
-                        } else {
-                        dropdownContent.style.display = "block";
-                            }
-                        });
-                        }
+                        
                     </script>
                 </div>
                 <div class="pome hide">A pome is...</div>
@@ -230,15 +71,22 @@
         <div id="dingleberry" class="main-text">
             <h1>Warlords 2 PvE</h1>
             <p>
-                Welcome to the documentation page for Warlords 2 PvE! This is work in progress and there are no promises that this will get updated regularly. I hope this documentation gives you better insight towards the development of Warlords 2 PvE and the new features added.
+                Welcome to the documentation page for Warlords 2 PvE! This is work in progress and there are no promises
+                that this will get updated regularly. I hope this documentation gives you better insight towards the
+                development of Warlords 2 PvE and the new features added.
             </p>
             <p>
-                Development for Warlords 2 PvE started around May 2022. The initial idea was to opt for wave defense, where players would be working together to defend a central target from enemy attacks. Instead, we have opted for a simpler wave survival gamemode akin to Hypixel Zombies, albeit with both in-game and out-of-game upgrades and many more features to hopefully keep the game interesting. 
+                Development for Warlords 2 PvE started around May 2022. The initial idea was to opt for wave defense,
+                where players would be working together to defend a central target from enemy attacks. Instead, we have
+                opted for a simpler wave survival gamemode akin to Hypixel Zombies, albeit with both in-game and
+                out-of-game upgrades and many more features to hopefully keep the game interesting.
             </p>
             <p>
-                You can navigate this documentation by using the sidebar to navigate to various topics on desktop, or use the hamburger on the top left to navigate on mobile devices.
+                You can navigate this documentation by using the sidebar to navigate to various topics on desktop, or
+                use the hamburger on the top left to navigate on mobile devices.
             </p>
         </div>
+
 
         <div></div>
     </div>

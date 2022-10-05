@@ -61,6 +61,7 @@ a:link {
  
 
 
+
 /* Actual page is displayed in containers*/
 
 .container {
@@ -202,6 +203,7 @@ Side navigation box, occupying the second box in the grid.*/
 
   nav.main-nav ul li a.test {
     font-size: 1.5rem;
+    white-space: pre-line;
   }
 
   nav.main-nav ul li a:last-child {
@@ -316,7 +318,7 @@ td {
 
 /* logo, navigation menu styling */
 #navigationbar-mobile {
-  overflow: hidden;
+  overflow: auto;
   background-color: rgb(242, 95, 92);
   position: relative;
   width: 100%;

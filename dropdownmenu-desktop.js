@@ -38,10 +38,14 @@ class dropdown1 extends HTMLElement {
           <li>
             <button class="dropdown-btn"><i class="fa-solid fa-broom fa-fw"></i></i>Weapons
               </button>
-              <div class="dropdown-container">
-              <a class='test' href="#"><span>Link 1</span></a>
-              <a class='test' href="#"><span>Link 2</span></a>
-              <a class='test' href="#"><span>Link 3</span></a>
+              <div class="dropdown-container dropdown-container-weapons">
+              <a class='test' href="/weapons/weapons.html"><span>Overview</span></a>
+              <a class='test' href="/weapons/obtain.html"><span>Obtaining Weapons</span></a>
+              <a class='test' href="/weapons/rarity.html"><span>Rarity & Titles</span></a>
+              <a class='test' href="/weapons/shards.html"><span>Synthetic Shards</span></a>
+              <a class='test' href="/weapons/fragments.html"><span>Legend Fragments</span></a>
+              <a class='test' href="/weapons/weapon-upgrades.html"><span>Weapon Upgrades</span></a>
+              <a class='test' href="/weapons/star-pieces.html"><span>Star Pieces</span></a>
               </div>
           </li>
           <li>

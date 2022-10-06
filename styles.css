@@ -264,7 +264,7 @@ li {
   font-size: 1.75rem;
 }
 
-.main-text ul a, .main-text ul li span {
+.main-text ul a /* , .main-text ul li span */{
   margin: 0 1.5rem;
   text-decoration: none;
   color: inherit
@@ -284,7 +284,7 @@ table {
 
 tr:nth-child(even) {background: #CCC}
 tr:nth-child(odd) {background: #FFF}
-.weapon-upgrade-costs tr.white-bk {background: #FFF}
+.weapon-upgrade-costs tr td.white-bk {background: #FFF}
 
 tr.table-header {
   background: rgb(242, 95, 92);

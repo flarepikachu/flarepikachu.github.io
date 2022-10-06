@@ -290,6 +290,7 @@ tr.table-header {
   background: rgb(242, 95, 92);
   color: #f1f1f1;
 }
+
 tr {
   border-bottom: 1px solid black;
 }
@@ -299,7 +300,7 @@ tr {
   margin: -1px;
 }
 
-.guild-levels td {
+.guild-levels td, .susan-rates td {
   text-align: center;
 }
 

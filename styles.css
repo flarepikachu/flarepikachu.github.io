@@ -307,6 +307,10 @@ td {
   font-weight: 700;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .commandmono {
   font-family: 'Courier New', Courier, monospace;
   background-color:rgb(207, 205, 203)

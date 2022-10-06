@@ -70,20 +70,24 @@
         </nav>
 
         <div class="main-text">
-            <h1>Currency</h1>
-            <p>In Warlords 2 PvE, there are three primary currencies involved in purchasing items, weapons and upgrades.
-                Additional currencies may be introduced on a temporary or permanent basis depending on their purpose and
-                objective of those currencies.</p>
+            <h1>Overview</h1>
 
-            <p>There was some consideration to add mob drops as part of costs for various purchases, but we ultimately
-                decided not to do so. While it would make for greater immersion if mob were given drops that were mob
-                related and the unlocked upgrades would have some relation to those mobs’ abilities, adding mob drops
-                was simply unnecessary for our first iteration of PvE. Adding mob drops means saving an extra hundreds
-                of lines of information per player and requires substantial effort to conceptualize (name, iconize) mob
-                drops while designing appropriate upgrades based on mob drops.</p>
-
-            <p>While we will likely not add mob drops for every single mob we add, certain bosses may have unique drops
-                in the future and their drops can be traded in for unique rewards.</p>
+            <p>Just like on Hypixel, Warlords 2 PvE features a fully fledged weapon system. All in all, weapons in Warlords 2 PvE provide players with additional stats for their classes. </p>
+            
+            <p>The values of each ability were previously hard-coded to represent values with level 90 and a perfect Hypixel 4/4 weapon. It was easier to offer upgrades that built upon these stats, so we went ahead and set the existing ability values as the baseline.</p> 
+            
+            <p>As a result, the system has some slight modifications for our PvE implementation, in addition to some mechanical nuances due to how Warlords 2 was coded. Nuances include: </p>
+            
+            <p><span class="italic">Cooldown Reduction is not an evergreen legendary stat</span></p>
+            
+            <p>Modifying a player’s Cooldown Reduction on Warlords 2 requires additional refactoring. This refactor seems to have happened as of the release of Warlords 2 PvE. As a byproduct of this refactor, we refrained from adding cooldown reduction to weapons as a general stat.</p>
+            
+            <p><span class="italic">13% speed is the new base speed in Warlords 2 PvE</span></p>
+            
+            <p>As another byproduct of associating player stats with maxed weapons, the new base speed for Warlords 2 is at 13%. Skills that grant speed also already overwrite weapon speed bonuses if they exceed the weapon speed (Light Infusion, Berserk, Inspiring Presence) so this shouldn’t be a big deal in terms of having too much speed/speed creeping. </p>
+            
+            <p>Weapon Stats Glossary</p>
+            
 
         </div>
 

@@ -310,10 +310,33 @@ tr {
   font-size: 1.7rem;
 }
 
+.weapon-upgrade-costs td.dash {
+  text-align: center;
+}
 
 .weapon-upgrade-costs col:nth-child(1), .weapon-upgrade-costs col:nth-child(2), .weapon-upgrade-costs col:nth-child(3), .weapon-upgrade-costs col:nth-child(4), .weapon-upgrade-costs col:nth-child(5){
   border-right: 1px solid black;
   margin: -1px;
+}
+
+.common {
+  font-weight: 700;
+  color: chartreuse;
+}
+
+.rare {
+  font-weight: 700;
+  color: dodgerblue;
+}
+
+.epic {
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.legendary {
+  font-weight: 700;
+  color: gold;
 }
 
 

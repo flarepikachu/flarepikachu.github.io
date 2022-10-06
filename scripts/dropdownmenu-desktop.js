@@ -7,8 +7,8 @@ class dropdown1 extends HTMLElement {
       this.innerHTML = `
       <ul>
           <li><a class='direlink' href="/index.html">
-          <i class="fa-solid fa-magnifying-glass fa-fw"></i>
-          <span>Overview</span></a></li>
+              <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+              <span>Overview</span></a></li>
           <li>
               <button class="dropdown-btn">
               <i class="fa-solid fa-place-of-worship fa-fw"></i>
@@ -48,24 +48,17 @@ class dropdown1 extends HTMLElement {
               <a class='test' href="/weapons/star-pieces.html"><span>Star Pieces</span></a>
               </div>
           </li>
-          <li>
-            <button class="dropdown-btn"><i class="fa-solid fa-fire-burner fa-fw"></i>Masterworks Fair
-              </button>
-              <div class="dropdown-container">
-              <a class='test' href="#"><span>Link 1</span></a>
-              <a class='test' href="#"><span>Link 2</span></a>
-              <a class='test' href="#"><span>Link 3</span></a>
-              </div>
+
+          <li><a class='direlink' href="/masterworks-fair/masterworks-fair.html">
+              <i class="fa-solid fa-fire-burner fa-fw"></i>
+              <span>Masterworks Fair</span></a>
           </li>
-          <li>
-            <button class="dropdown-btn"><i class="fa-solid fa-parachute-box fa-fw"></i>Supply Drop Susan
-              </button>
-              <div class="dropdown-container">
-              <a class='test' href="#"><span>Link 1</span></a>
-              <a class='test' href="#"><span>Link 2</span></a>
-              <a class='test' href="#"><span>Link 3</span></a>
-              </div>
+
+          <li><a class='direlink' href="/susan/susan.html">
+              <i class="fa-solid fa-parachute-box fa-fw"></i>
+              <span>Supply Drop Susan</span></a>
           </li>
+
           <li>
             <button class="dropdown-btn"><i class="fa-solid fa-piggy-bank fa-fw"></i>Level Rewards
               </button>

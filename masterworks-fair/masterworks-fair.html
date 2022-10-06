@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="weapons.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <header-component></header-component>
+
+    <div class="div1">
+        <span class="wl2pve">
+            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Weapons</a>
+        </span>
+    </div>
+
+    <burger-i></burger-i>
+
+    <div class="container">
+
+        <div></div>
+
+        <div id="navigationbar-mobile">
+            <mobile-divs></mobile-divs>
+        </div>
+
+        <nav class="main-nav" role="navigation">
+
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">
+                        <div class="selecter-text">Warlords 2 PvE</div>
+                    </option>
+                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                </select>
+            </div>
+
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <dropdown-component></dropdown-component>
+                </div>
+                <div class="pome hide">A pome is...</div>
+            </div>
+
+        </nav>
+
+        <div class="main-text">
+            <p>
+                <h1>Masterworks Fair</h1>
+            </p>
+
+            <span class="rare">
+                <p>As <span class="common">Common</span>, <span class="rare">Rare</span> and <span class="epic">Epic</span> weapons aren’t all that exciting when you have <span class="legendary">Legendary</span> weapons, the Masterworks Fair has been added to make these weapons much more exciting. In a nutshell, players compete to submit the weapon with the highest weapon score. Players can use <span class="bold commandmono">/weaponscore</span> to check their weapon score. </p>
+            <span class="epic"></span></span>
+
+            <p>The Masterworks Fair is typically a weekly event, but fairs may be rehosted in a shorter time-frame. The first Masterworks Fair is scheduled to start right at the first public release of Warlords 2 PvE.</p> 
+
+            <p>There will be three separate competitions for each RNG-eligible rarity of <span class="common">Common</span>, <span class="rare">Rare</span> and <span class="epic">Epic</span>. These competitions will run concurrently and players can submit weapons in all three categories during the same week. Players can submit multiple weapons per Masterworks Fair, but only the latest submitted one for each rarity will count.</p>
+
+            <p>Submitted weapons will NOT be returned to the player.</p> 
+
+            <p>The Masterworks Fair is a closed submission contest. Players will not know the weapon scores of other people’s weapons unless other players choose to share their submitted weapon scores. </p>
+
+            <p>When the Masterworks Fair is over, players will receive rewards according to the ranking of their weapons by weaponscore when submissions are closed:</p>
+
+            <ul>
+                <li>The top three submissions will receive a guaranteed Star Piece of the weapon rarity they submitted.</li>
+                <li>The top submission will get 10 Supply Drop roll opportunities, 2nd and 3rd place will get 7 Supply Drop roll opportunities, 4-10 will get 5 Supply Drop roll opportunities.</li>
+                <li>Players who submit a 85%+ weapon will be guaranteed at least 3 Supply Drop opportunities as a reward.</li>
+                <li>Players who submit any weapon will get a guaranteed Supply Drop roll as pity.</li>
+                <li>For more information about the Supply Drop, check out Supply Drop Susan.</li>
+            </ul>
+        </div>
+
+        <div></div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

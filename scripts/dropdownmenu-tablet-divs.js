@@ -90,6 +90,16 @@ class dropdown2 extends HTMLElement {
                         </div>
                     </li>
 
+                    <li><a class='direlink' href="/masterworks-fair/masterworks-fair.html">
+                        <i class="fa-solid fa-fire-burner fa-fw"></i>
+                        <span>Masterworks Fair</span></a>
+                    </li>
+
+                    <li><a class='direlink' href="/susan/susan.html">
+                        <i class="fa-solid fa-parachute-box fa-fw"></i>
+                        <span>Supply Drop Susan</span></a>
+                    </li>
+
                     <li>
                         <a class="fullwidth" href="javascript:void(0);" onclick="moneydd()">
                             <i class="fa-solid fa-money-bill-wave fa-fw">

@@ -36,7 +36,8 @@ class dropdown1 extends HTMLElement {
               </div>
           </li>
           <li>
-            <button class="dropdown-btn"><i class="fa-solid fa-broom fa-fw"></i></i>Weapons
+            <button class="dropdown-btn"><i class="fa-solid fa-broom fa-fw"></i></i>
+            Weapons
               </button>
               <div class="dropdown-container dropdown-container-weapons">
               <a class='test' href="/weapons/weapons.html"><span>Overview</span></a>

@@ -1,3 +1,87 @@
+function classdd() {
+  var x = document.getElementById("class-dropdown");
+  var y = document.getElementById("class");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.backgroundColor = "rgb(242, 95, 92)";
+    y.style.padding = 0;
+  } else {
+    x.style.display = "block";
+    y.style.backgroundColor = "rgb(202, 58, 56)";
+    y.style.padding = "0.5rem 0.5rem";
+  }
+}
+
+function magedd() {
+  var x = document.getElementById("mage-dropdown");
+  var y = document.getElementById("mage");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.backgroundColor = "rgb(242, 95, 92)";
+    y.style.padding = 0;
+  } else {
+    x.style.display = "block";
+    y.style.backgroundColor = "rgb(202, 58, 56)";
+    y.style.padding = "0.5rem 0.5rem";
+  }
+}
+
+function paladindd() {
+  var x = document.getElementById("paladin-dropdown");
+  var y = document.getElementById("paladin");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.backgroundColor = "rgb(242, 95, 92)";
+    y.style.padding = 0;
+  } else {
+    x.style.display = "block";
+    y.style.backgroundColor = "rgb(202, 58, 56)";
+    y.style.padding = "0.5rem 0.5rem";
+  }
+}
+
+function warriordd() {
+  var x = document.getElementById("warrior-dropdown");
+  var y = document.getElementById("warrior");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.backgroundColor = "rgb(242, 95, 92)";
+    y.style.padding = 0;
+  } else {
+    x.style.display = "block";
+    y.style.backgroundColor = "rgb(202, 58, 56)";
+    y.style.padding = "0.5rem 0.5rem";
+  }
+}
+
+function shamandd() {
+  var x = document.getElementById("shaman-dropdown");
+  var y = document.getElementById("shaman");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.backgroundColor = "rgb(242, 95, 92)";
+    y.style.padding = 0;
+  } else {
+    x.style.display = "block";
+    y.style.backgroundColor = "rgb(202, 58, 56)";
+    y.style.padding = "0.5rem 0.5rem";
+  }
+}
+
+function roguedd() {
+  var x = document.getElementById("rogue-dropdown");
+  var y = document.getElementById("rogue");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.backgroundColor = "rgb(242, 95, 92)";
+    y.style.padding = 0;
+  } else {
+    x.style.display = "block";
+    y.style.backgroundColor = "rgb(202, 58, 56)";
+    y.style.padding = "0.5rem 0.5rem";
+  }
+}
+
 function guildsdd() {
   var x = document.getElementById("guilds-dropdown");
   var y = document.getElementById("guilds");
@@ -8,9 +92,10 @@ function guildsdd() {
   } else {
     x.style.display = "block";
     y.style.backgroundColor = "rgb(202, 58, 56)";
-    y.style.padding = "1rem 1rem";
+    y.style.padding = "0.5rem 0.5rem";
   }
 }
+
 
 function moneydd() {
   var x = document.getElementById("money-dropdown");
@@ -22,7 +107,7 @@ function moneydd() {
   } else {
     x.style.display = "block";
     y.style.backgroundColor = "rgb(202, 58, 56)";
-    y.style.padding = "1rem 1rem";
+    y.style.padding = "0.5rem 0.5rem";
   }
 }
 
@@ -36,7 +121,7 @@ function weaponsdd() {
   } else {
     x.style.display = "block";
     y.style.backgroundColor = "rgb(202, 58, 56)";
-    y.style.padding = "1rem 1rem";
+    y.style.padding = "0.5rem 0.5rem";
   }
 }
 

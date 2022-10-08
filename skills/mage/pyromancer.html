@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/tablettest.css">
     <link rel="stylesheet" href="/skills/skills.css">
+    <link rel="stylesheet" href="/skills/mage/pyromancer.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
     <script src="/scripts/script.js" type="text/javascript"></script>
@@ -31,7 +32,22 @@
 
     </div>
 
-    <header-component></header-component>
+    <header>
+        <div class="headerdiv">
+            <span>
+                <a class='site-title' href="#"><span>Flairy Domain</span></a>
+            </span>
+            <div class="mobile-burger">
+                <a href="javascript:void(0);" class="burger" onclick="navigationbar()">
+                    <i class="fa-solid fa-bars fa-2xl">
+                    </i>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    
 
     <div class="div1">
         <span class="wl2pve">
@@ -42,10 +58,7 @@
             <a class='direlink div1-text' href="#">Skills</a>
         </span>
     </div>
-
-    <burger-i></burger-i>
     
-
     <div class="container">
 
         <div></div>
@@ -73,26 +86,116 @@
         </div>
 
         <div id="dingleberry" class="main-text">
-            <div class="class-container">
+            <div>
+                <h1>Pyromancer</h1>
+                <p>A damage-oriented Mage specialization that uses destructive fire spells to obliterate enemies.</p>
+            </div>
+            <div class="class-container skill-1">
                 <div class="skill-title">
                     <h3>Fireball</h3>
                 </div> 
+
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1()">
+                    <span class="button-desktop">Upgrade</span>
+                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
+                </button>
+                </div>
+
+                <div class="master-button-div"><button class="master-button" onclick="popup1m()">
+                    <span class="button-desktop">Master</span>
+                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
+                </button>
+                </div>
                 
                 <div class="skill-description">
                     <p>Shoot a fireball that will explode for 334.4 - 433.4 damage. A direct hit will cause the enemy to take an additional 15% extra damage. Has an optimal range of 50 blocks.</p>
-                </div>
-
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1()">Upgrade</button>
-                </div>
-
-                <div class="master-button-div"><button class="master-button" onclick="popup1m()">Master</button>
-                </div>
-
-                
-
-                
-                
+                </div>   
             </div>
+            <div class="class-container skill-2">
+                <div class="skill-title">
+                    <h3>Flame Burst</h3>
+                </div> 
+
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2()">
+                    <span class="button-desktop">Upgrade</span>
+                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
+                </button>
+                </div>
+
+                <div class="master-button-div"><button class="master-button" onclick="popup2m()">
+                    <span class="button-desktop">Master</span>
+                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
+                </button>
+                </div>
+                
+                <div class="skill-description">
+                    <p>Launch a flame burst that will explode for 557 - 753 damage. The Crit Chance increases by 1% for each travelled block, with a 100% Crit Chance maximum.</p>
+                </div>   
+            </div>
+            <div class="class-container skill-3">
+                <div class="skill-title">
+                    <h3>Time Warp</h3>
+                </div> 
+
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup3()">
+                    <span class="button-desktop">Upgrade</span>
+                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
+                </button>
+                </div>
+
+                <div class="master-button-div"><button class="master-button" onclick="popup3m()">
+                    <span class="button-desktop">Master</span>
+                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
+                </button>
+                </div>
+                
+                <div class="skill-description">
+                    <p>Activate to place a time rune on the ground. After 5 seconds, you will warp back to that location and restore 30% of your health.</p>
+                </div>   
+            </div>
+            <div class="class-container skill-4">
+                <div class="skill-title">
+                    <h3>Arcane Shield</h3>
+                </div> 
+
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup4()">
+                    <span class="button-desktop">Upgrade</span>
+                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
+                </button>
+                </div>
+
+                <div class="master-button-div"><button class="master-button" onclick="popup4m()">
+                    <span class="button-desktop">Master</span>
+                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
+                </button>
+                </div>
+                
+                <div class="skill-description">
+                    <p>Surround yourself with arcane energy, creating a shield that will absorb up to 2600 (50% of your maximum health) incoming damage. Lasts 6 seconds.</p>
+                </div>   
+            </div>
+            <div class="class-container skill-5">
+                <div class="skill-title">
+                    <h3>Inferno</h3>
+                </div> 
+
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup5()">
+                    <span class="button-desktop">Upgrade</span>
+                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
+                </button>
+                </div>
+
+                <div class="master-button-div"><button class="master-button" onclick="popup5m()">
+                    <span class="button-desktop">Master</span>
+                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
+                </button>
+                </div>
+                
+                <div class="skill-description">
+                    <p>Combust into a molten inferno, increasing your Crit Chance and Crit Multiplier by 30%. Lasts 18 seconds.</p>
+                </div>   
+            </div>
+            <div class="bottom-space"></div>
             
             <div id = "popup-1" class="popup-container">
                 <div class="topbar">
@@ -102,8 +205,8 @@
                     </button>
                 </div>
                 <div class="content-primary">
-                    <div class="impair">
-                        <div class="impair-header">
+                    <div class="upgrade-1">
+                        <div class="upgrade-1-header">
                             <span>Impair</span>
                         </div>
                         <div class="upgrade-desc">
@@ -136,9 +239,217 @@
                             </div>
                         </div>
                     </div>
-                    <div class="spark">
-                        <div class="spark-header">
+                    <div class="upgrade-2">
+                        <div class="upgrade-2-header">
                             <span>Spark</span>
+                        </div> 
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Hit Radius (Blocks)</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+0.25</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+0.5</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+0.75</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">+1 Hit Radius (Blocks)</div>
+                                    <div class="upgrade-value">-5 Energy Cost</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup1()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id="popup-1-m" class="popup-container">
+                <div class="topbar">
+                    <span>Fireball Master Upgrade</span>
+                    <button class="x-button" onclick="popup1m()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary-master">
+                    <div class="master">
+                        <div class="master-header">
+                            <span>Fiery Fusillade</span>
+                        </div>
+                        <div class="upgrade-desc-content-master">
+                            <div>Direct-hits apply the BURN status for 5 seconds.</div>
+                            <div>BURN: Enemies take 20% more damage from all sources and will burn for 0.25% of their max health every second.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup1m()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id = "popup-2" class="popup-container">
+                <div class="topbar">
+                    <span>Flame Burst Upgrades</span>
+                    <button class="x-button" onclick="popup2()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary">
+                    <div class="upgrade-1">
+                        <div class="upgrade-1-header">
+                            <span>Zeal</span>
+                        </div>
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Cooldown Reduction</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">-5%</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">-10%</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">-15%</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">-20% Cooldown Reduction</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade-2">
+                        <div class="upgrade-2-header">
+                            <span>Spark</span>
+                        </div> 
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Hit Radius (Blocks)</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+0.5</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+1</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+1.5</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">+2 Hit Radius (Blocks)</div>
+                                    <div class="upgrade-value">+15% Crit Multiplier</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup2()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id="popup-2-m" class="popup-container">
+                <div class="topbar">
+                    <span>Flame Burst Master Upgrade</span>
+                    <button class="x-button" onclick="popup2m()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary-master">
+                    <div class="master">
+                        <div class="master-header">
+                            <span>Flame Awakening</span>
+                        </div>
+                        <div class="upgrade-desc-content-master">
+                            <div>Flame Burst deals significantly more damage and ramps up Crit Chance, Crit Damage and Damage very quickly per blocks traveled at the cost of heavily reduced projectile speed, increased energy cost, and increased cooldown.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup2m()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id = "popup-3" class="popup-container">
+                <div class="topbar">
+                    <span>Fireball Upgrades</span>
+                    <button class="x-button" onclick="popup3()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary">
+                    <div class="upgrade-1">
+                        <div class="upgrade-1-header">
+                            <span>upgrade-1</span>
+                        </div>
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Damage Increase</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+2.5%</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+5%</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+7.5%</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">+10% Damage</div>
+                                    <div class="upgrade-value">+50% Projectile Speed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade-2">
+                        <div class="upgrade-2-header">
+                            <span>upgrade-2</span>
                         </div> 
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
@@ -171,11 +482,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup3()">CLOSE</button>
+                </div>
             </div>
-            <div id="popup-1-m" class="popup-container">
+
+            <div id="popup-3-m" class="popup-container">
                 <div class="topbar">
                     <span>Fireball Master Upgrade</span>
-                    <button class="x-button" onclick="popup1m()">
+                    <button class="x-button" onclick="popup3m()">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
                 </div>
@@ -189,6 +504,219 @@
                             <div>BURN: Enemies take 20% more damage from all sources and will burn for 0.25% of their max health every second.</div>
                         </div>
                     </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup3m()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id = "popup-4" class="popup-container">
+                <div class="topbar">
+                    <span>Fireball Upgrades</span>
+                    <button class="x-button" onclick="popup4()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary">
+                    <div class="upgrade-1">
+                        <div class="upgrade-1-header">
+                            <span>upgrade-1</span>
+                        </div>
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Damage Increase</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+2.5%</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+5%</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+7.5%</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">+10% Damage</div>
+                                    <div class="upgrade-value">+50% Projectile Speed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade-2">
+                        <div class="upgrade-2-header">
+                            <span>upgrade-2</span>
+                        </div> 
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Hit Radius (Blocks)</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+0.25%</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+0.5%</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+0.75%</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">+1% Hit Radius (Blocks)</div>
+                                    <div class="upgrade-value">-5 Energy Cost</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup4()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id="popup-4-m" class="popup-container">
+                <div class="topbar">
+                    <span>Fireball Master Upgrade</span>
+                    <button class="x-button" onclick="popup4m()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary-master">
+                    <div class="master">
+                        <div class="master-header">
+                            <span>Fiery Fusillade</span>
+                        </div>
+                        <div class="upgrade-desc-content-master">
+                            <div>Direct-hits apply the BURN status for 5 seconds.</div>
+                            <div>BURN: Enemies take 20% more damage from all sources and will burn for 0.25% of their max health every second.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup4m()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id = "popup-5" class="popup-container">
+                <div class="topbar">
+                    <span>Fireball Upgrades</span>
+                    <button class="x-button" onclick="popup5()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary">
+                    <div class="upgrade-1">
+                        <div class="upgrade-1-header">
+                            <span>upgrade-1</span>
+                        </div>
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Damage Increase</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+2.5%</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+5%</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+7.5%</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">+10% Damage</div>
+                                    <div class="upgrade-value">+50% Projectile Speed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade-2">
+                        <div class="upgrade-2-header">
+                            <span>upgrade-2</span>
+                        </div> 
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div class="upgrade-desc-content">
+                                <span>Hit Radius (Blocks)</span>
+                            </div>
+                        </div>
+                        <div class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+0.25%</div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+0.5%</div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+0.75%</div>
+                            </div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">Tier IV</div>
+                            </div>
+                            <div class="tier-4-desc">
+                                    <div class="upgrade-value">+1% Hit Radius (Blocks)</div>
+                                    <div class="upgrade-value">-5 Energy Cost</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup5()">CLOSE</button>
+                </div>
+            </div>
+
+            <div id="popup-5-m" class="popup-container">
+                <div class="topbar">
+                    <span>Fireball Master Upgrade</span>
+                    <button class="x-button" onclick="popup5m()">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary-master">
+                    <div class="master">
+                        <div class="master-header">
+                            <span>Fiery Fusillade</span>
+                        </div>
+                        <div class="upgrade-desc-content-master">
+                            <div>Direct-hits apply the BURN status for 5 seconds.</div>
+                            <div>BURN: Enemies take 20% more damage from all sources and will burn for 0.25% of their max health every second.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-button-div">
+                    <button class="close-button" onclick="popup5m()">CLOSE</button>
                 </div>
             </div>
         </div>

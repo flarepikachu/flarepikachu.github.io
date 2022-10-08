@@ -14,13 +14,78 @@ class dropdown2 extends HTMLElement {
                     </li>
                     <li>
 
+                    
+                    <li id="class">
+                        <a class="fullwidth nopad" href="javascript:void(0);" onclick="classdd()">
+                            <i class="fa-solid fa-circle-info fa-fw"></i><span>Skills & Upgrades</span></a>
+                    </li>
+                        <div id="class-dropdown" class="dropdowns">
+                            <ul>
+                                <li id="mage">
+                                    <a class="fullwidth nopad" href="javascript:void(0);" onclick="magedd()">
+                                <span>Mage</span></a>
+                                </li>
+                                <div id="mage-dropdown" class="dropdowns">
+                                    <ul>
+                                        <li><a class='fullwidtha' href="/skills/mage/pyromancer.html"><span>Pyromancer</span></a></li>
+                                        <li><a class='fullwidtha' href="/skills/mage/cryomancer.html"><span>Cryomancer</span></a></li>
+                                        <li><a class='fullwidtha' href="/skills/mage/aquamancer.html"><span>Aquamancer</span></a></li>
+                                    </ul>
+                                </div>
+                                <li id="paladin">
+                                    <a class="fullwidth nopad" href="javascript:void(0);" onclick="paladindd()">
+                                    <span>Paladin</span></a>
+                                </li>
+                                <div id="paladin-dropdown" class="dropdowns">
+                                <ul>
+                                    <li><a class='fullwidtha' href="/skills/paladin/avenger.html"><span>Avenger</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/paladin/crusader.html"><span>Crusader</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/paladin/protector.html"><span>Protector</span></a></li>
+                                </ul>
+                                </div>
+                                <li id="warrior">
+                                    <a class="fullwidth nopad" href="javascript:void(0);" onclick="warriordd()">
+                                    <span>Warrior</span></a>
+                                </li>
+                                <div id="warrior-dropdown" class="dropdowns">
+                                <ul>
+                                    <li><a class='fullwidtha' href="/skills/warrior/berserker.html"><span>Berserker</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/warrior/defender.html"><span>Defender</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/warrior/revenant.html"><span>Revenant</span></a></li>
+                                </ul>
+                                </div>
+                                <li id="shaman">
+                                    <a class="fullwidth nopad" href="javascript:void(0);" onclick="shamandd()">
+                                    <span>Shaman</span></a>
+                                </li>
+                                <div id="shaman-dropdown" class="dropdowns">
+                                <ul>
+                                    <li><a class='fullwidtha' href="/skills/shaman/thunderlord.html"><span>Thunderlord</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/shaman/spiritguard.html"><span>Spiritguard</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/shaman/earthwarden.html"><span>Earthwarden</span></a></li>
+                                </ul>
+                                </div>
+                                <li id="rogue">
+                                    <a class="fullwidth nopad" href="javascript:void(0);" onclick="roguedd()">
+                                    <span>Rogue</span></a>
+                                </li>
+                                <div id="rogue-dropdown" class="dropdowns">
+                                <ul>
+                                    <li><a class='fullwidtha' href="/skills/rogue/assassin.html"><span>Assassin</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/rogue/vindicator.html"><span>Vindicator</span></a></li>
+                                    <li><a class='fullwidtha' href="/skills/rogue/apothecary.html"><span>Apothecary</span></a></li>
+                                </ul>
+                                </div>
+                            </ul>
+                        </div>
+
                     <li id="guilds">
                         <a class="fullwidth nopad" href="javascript:void(0);" onclick="guildsdd()">
                             <i class="fa-solid fa-place-of-worship fa-fw"></i><span>Guilds</span></a>
                     </li>
 
                     <li>
-                        <div id="guilds-dropdown">
+                        <div id="guilds-dropdown" class="dropdowns">
                             <ul>
                                 <li>
                                     <a class='fullwidtha' href="/guilds/guilds.html"><span>Overview</span></a>
@@ -52,7 +117,7 @@ class dropdown2 extends HTMLElement {
                     </li>
 
                     <li>
-                        <div id="money-dropdown">
+                        <div id="money-dropdown" class="dropdowns">
                             <ul>
                                 <li>
                                     <a class='fullwidtha' href="/currency/currency.html"><span>Overview</span></a>
@@ -77,7 +142,7 @@ class dropdown2 extends HTMLElement {
                     </li>
 
                     <li>
-                        <div id="weapons-dropdown">
+                        <div id="weapons-dropdown" class="dropdowns">
                             <ul>
                                 <li><a class='fullwidtha' href="/weapons/weapons.html"><span>Overview</span></a></li>
                                 <li><a class='fullwidtha' href="/weapons/obtain.html"><span>Obtaining Weapons</span></a></li>
@@ -89,15 +154,22 @@ class dropdown2 extends HTMLElement {
                             </ul>
                         </div>
                     </li>
-
-                    <li><a class='direlink' href="/masterworks-fair/masterworks-fair.html">
-                        <i class="fa-solid fa-fire-burner fa-fw"></i>
-                        <span>Masterworks Fair</span></a>
+                    <li>
+                        <a class='fullwidth' href="/index.html">
+                            <i class="fa-solid fa-magnifying-glass fa-fw">
+                            </i><span>Overview</span></a>
+                    </li>
+                    <li>
+                    <li>
+                        <a class='fullwidth direlink' href="/masterworks-fair/masterworks-fair.html">
+                            <i class="fa-solid fa-fire-burner fa-fw">
+                            </i><span>Masterworks Fair</span></a>
                     </li>
 
-                    <li><a class='direlink' href="/susan/susan.html">
-                        <i class="fa-solid fa-parachute-box fa-fw"></i>
-                        <span>Supply Drop Susan</span></a>
+                    <li>
+                        <a class='fullwidth direlink' href="/susan/susan.html">
+                            <i class="fa-solid fa-parachute-box fa-fw">
+                            </i><span>Supply Drop Susan</span></a>
                     </li>
 
                     <li>

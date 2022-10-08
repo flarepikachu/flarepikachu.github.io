@@ -1,5 +1,3 @@
-
-
 .dimmer {
     position: fixed;
     top: 0;
@@ -20,10 +18,36 @@
     opacity: 1;
 }
 
-.class-container{
-    display: grid;
-    grid-template-columns: 60% 20% 20%;
-    grid-template-rows: 2;
+.class-container {
+    position: relative;
+}
+
+.class-container .upgrade-button-div, .class-container .master-button-div {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 60px;
+}
+
+.class-container .upgrade-button-div {
+    right: 80px;
+}
+
+.upgrade-button {
+    background-color: rgb(67, 131, 228);
+    border: none;
+}
+
+.master-button {
+    background-color: rgb(238, 198, 20);
+    border: none;
+}
+
+.class-container .master-button-div {
+    right: 20px;
 }
 
 .skill-title {
@@ -38,23 +62,21 @@
     grid-row-end: 2;
 }
 
-.master-button-div {
-    grid-column-start: 3;
-    grid-row-start: 1;
+.button-desktop {
+    display: none;
 }
 
-.master-button, .upgrade-button {
+.master-button, .upgrade-button, .close-button {
     width: 100%;
+    height: 4rem 
 }
 
-.upgrade-button-div {
-    grid-column-start: 2;
-    grid-row-start: 1;
+.upgrade-button, .master-button {
+    border-radius: 5px;
 }
 
-.master-button-div, .upgrade-button-div {
-    display: flex;
-    margin: 1.5rem 0;
+.close-button {
+    border-radius: 0 0 25px 25px;
 }
 
 h3 {
@@ -65,16 +87,15 @@ h3 {
 .popup-container {   
     color: #f1f1f1;
     display: none;
-    position:absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
-    max-width: 700px;
+    width: 70vw;
     z-index: 100;
 }
 
-.topbar{
+.topbar {
     box-sizing: border-box;
     padding: 2rem;
     display: flex;
@@ -87,27 +108,13 @@ h3 {
     font-weight: 500;
 }
 
-.topbar .x-button {
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    font-size: 1.2rem;
-    color: white;
-    position:absolute; top: 2.55rem; right:4rem;
-    border: none;
-    border-radius: 100px;
-}
-
-
-.x-button:hover {
-    background-color: blue;
+.x-button {
+    display: none;
 }
 
 .content-primary {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
 }
 
 .content-primary-master {
@@ -115,12 +122,10 @@ h3 {
 }
 
 .content-primary-master, .content-primary {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 20px 20px;
-    
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
-.impair, .spark, .master {
+.upgrade-1, .upgrade-2, .master {
     flex-direction: horizontal;
     align-items: center;
     justify-content: center;
@@ -129,26 +134,26 @@ h3 {
     border-radius: 20px;
 }
 
-.impair {
-    margin: 2rem 1rem 2rem 2rem; 
+.upgrade-1 { 
+    margin: 2rem 2rem 1rem 2rem;
 }
 
-.spark {
-    margin: 2rem 2rem 2rem 1rem;
+.upgrade-2 {
+    margin: 1rem 2rem 2rem 2rem;
 }
 
-.master { 
+.master {
     margin: 2rem;
 }
 
-.impair-header, .spark-header, .master-header {
+.upgrade-1-header, .upgrade-2-header, .master-header {
     border-bottom: lime 2px solid;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.impair-header span, .spark-header span, .master-header span {
+.upgrade-1-header span, .upgrade-2-header span, .master-header span {
     padding: 0.5rem;
     font-weight: 500;
 }
@@ -245,4 +250,127 @@ h3 {
 
 #popup-1 .topbar, #popup-1-m .topbar{
     background-color: rgb(61, 192, 72);
+}
+
+#popup-2 .topbar, #popup-2-m .topbar{
+    background-color: rgb(241, 72, 21);
+}
+
+#popup-3 .topbar, #popup-3-m .topbar{
+    background-color: rgb(138,52,175);
+}
+
+#popup-4 .topbar, #popup-4-m .topbar{
+    background-color: rgba(15,183,255);
+}
+
+#popup-5 .topbar, #popup-5-m .topbar{
+    background-color: rgb(255,165,40);
+}
+
+.skill-1 .skill-title h3 {
+    color: rgb(61, 192, 72);
+}
+
+.skill-2 .skill-title h3 {
+    color: rgb(255,34,0);
+}
+
+.skill-3 .skill-title h3 {
+    color: rgb(138,52,175);
+}
+
+.skill-4 .skill-title h3 {
+    color: rgba(15,183,255);
+}
+
+.skill-5 .skill-title h3 {
+    color: rgb(255,165,40);
+}
+
+.icon-attack {
+    background: url('/icons/attack.png');
+    height: 4.8rem;
+    width: 4.8rem;
+    display: inline-block;
+    /* Other styles here */
+}
+@media screen and (min-width: 768px) {
+    .class-container{
+        display: grid;
+        grid-template-columns: 60% 20% 20%;
+        grid-template-rows: 2;
+    }
+
+    .button-tablet {
+        display: none;
+    }
+
+    .button-desktop {
+        display: block;
+    }
+    
+    .master-button-div, .upgrade-button-div {
+        display: flex;
+        margin: 1.5rem 0;
+        min-width: 110px;
+    }
+
+    .class-container .upgrade-button-div {
+        right: 110px;
+    }
+    
+    .class-container .master-button-div {
+        right: 0px;
+    }
+
+    .popup-container {   
+        color: #f1f1f1;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vw;
+        max-width: 700px;
+        z-index: 100;
+    }
+
+    .content-primary {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .upgrade-1 {
+        margin: 2rem 1rem 2rem 2rem; 
+    }
+    
+    .upgrade-2 {
+        margin: 2rem 2rem 2rem 1rem;
+    }
+
+    .topbar .x-button {
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        font-size: 1.2rem;
+        color: white;
+        position:absolute; top: 2.4rem; right:4rem;
+        border: none;
+        border-radius: 100px;
+    }
+    
+    
+    .x-button:hover {
+        background-color: blue;
+    }
+
+    .content-primary-master, .content-primary {
+        border-radius: 0 0 20px 20px;
+    }
+    .close-button {
+        display: none;
+    }
 }

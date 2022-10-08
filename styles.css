@@ -17,6 +17,7 @@ body {
 /* Header divider to display website name */
 
 .headerdiv {
+  position: relative;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -46,22 +47,15 @@ a:link {
 }
 
 .mobile-burger {
-  background-color: rgb(204, 203, 203);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  text-align: center;
-  white-space: nowrap;
+  position: absolute;
+  top: 0.9rem;
+  right: 2rem;
 }
 
 .mobile-burger a {
-  color: #111;
+  color: #f1f1f1;
 }
  
-
-
-
 /* Actual page is displayed in containers*/
 
 .container {
@@ -380,5 +374,9 @@ tr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.918);
   list-style: none;
   padding: 0;
+}
+
+.bottom-space {
+  padding-bottom: 3rem;
 }
 

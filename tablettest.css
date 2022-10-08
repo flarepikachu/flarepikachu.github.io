@@ -1,6 +1,9 @@
-#guilds-dropdown, #money-dropdown, #weapons-dropdown, #mw-fair-dropdown, #susan-dropdown, #level-rewards-dropdown, #achievements-dropdown{
+.dropdowns {
     display: none;
-    
+}
+
+#mage a, #paladin a, #warrior a, #shaman a, #rogue a{
+    padding-left: 5rem;
 }
 .mobilemenu {
     padding: 0;
@@ -21,7 +24,7 @@
     color: #f1f1f1;
     text-decoration: none;
     list-style: none;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .mobilemenu ul li a i {
@@ -32,18 +35,22 @@
     padding-left: 1rem;
 }
 
+#class-dropdown ul div ul li a span {
+    padding-left: 9rem;
+
+}
 .mobilemenu ul li div ul li a span{
     color: #f1f1f1;
     text-decoration: none;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 5rem;
     vertical-align: middle;
 }
 
 .mobilemenu ul li div ul li a:active, .mobilemenu ul li div ul li a:hover, .mobilemenu ul li a:active, .mobilemenu ul li a:hover {
     background-color: rgb(202, 58, 56);
-    padding: 1rem 1rem;
+    padding: 0.5rem;
     color: #f1f1f1;
 }
 
@@ -69,3 +76,7 @@
     display:block;
      /*This will result in centering the link text, which is probably what you want -brianjohnsondesign.com*/
     }
+
+.class-dropdown div li a span {
+    padding: 7rem;
+}

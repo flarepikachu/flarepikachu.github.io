@@ -1,0 +1,248 @@
+
+
+.dimmer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s,visibility .3s;
+    display: grid;
+    place-items: center;
+}
+
+.dimmer-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.class-container{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 2;
+}
+
+.skill-title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.skill-description {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.master-button-div {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.master-button, .upgrade-button {
+    width: 100%;
+}
+
+.upgrade-button-div {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.master-button-div, .upgrade-button-div {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.popup-container {   
+    color: #f1f1f1;
+    display: none;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    max-width: 700px;
+    z-index: 100;
+}
+
+.topbar{
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 25px 25px 0 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.topbar .x-button {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 1.2rem;
+    color: white;
+    position:absolute; top: 2.55rem; right:4rem;
+    border: none;
+    border-radius: 100px;
+}
+
+
+.x-button:hover {
+    background-color: blue;
+}
+
+.content-primary {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.content-primary-master {
+    display: grid;
+}
+
+.content-primary-master, .content-primary {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    
+}
+
+.impair, .spark, .master {
+    flex-direction: horizontal;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(66, 66, 66, 0.3);
+    border-radius: 20px;
+}
+
+.impair {
+    margin: 2rem 1rem 2rem 2rem; 
+}
+
+.spark {
+    margin: 2rem 2rem 2rem 1rem;
+}
+
+.master { 
+    margin: 2rem;
+}
+
+.impair-header, .spark-header, .master-header {
+    border-bottom: lime 2px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.impair-header span, .spark-header span, .master-header span {
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+.upgrade-desc {
+    display: block;
+}
+
+.upgrade-desc-header, .upgrade-desc-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.upgrade-desc-content-master div {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+/* .upgrade-desc-header {
+    margin-top: 0.5rem;
+} */
+
+.upgrade-desc-content {
+    margin: 0.7rem;
+    font-weight: 400;
+}
+
+/* .upgrade-desc-header {
+    font-size: 1.7rem;
+    font-weight: 400;
+} */
+
+.upgrade-desc-content {
+    font-size: 1.7rem;
+}
+
+.upgrade-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tier-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.tier-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.tier-3 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.tier-4 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.tier-4-desc {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    display: block;
+}
+
+.tier-4-desc .upgrade-value {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.upgrade-tier, .upgrade-value {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.upgrade-tier {
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.upgrade-value {
+    font-size: 1.5rem;
+}
+
+#popup-1 .topbar, #popup-1-m .topbar{
+    background-color: rgb(61, 192, 72);
+}

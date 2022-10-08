@@ -11,6 +11,54 @@ class dropdown1 extends HTMLElement {
               <span>Overview</span></a></li>
           <li>
               <button class="dropdown-btn">
+              <i class="fa-solid fa-circle-info fa-fw"></i>
+              Skills & Upgrades
+              </button>
+              <div class="dropdown-container dropdown-container-classes">
+                <button class="dropdown-btn ul">
+                Mage
+                </button>
+                <div class="dropdown-container dropdown-containers-mage">
+                <a class='test' href="/skills/mage/pyromancer.html"><span>Pyromancer</span></a>
+                <a class='test' href="/skills/mage/cryomancer.html"><span>Cryomancer</span></a>
+                <a class='test' href="/skills/mage/aquamancer.html"><span>Aquamancer</span></a>
+                </div>
+                <button class="dropdown-btn ul">
+                Paladin
+                </button>
+                <div class="dropdown-container dropdown-containers-mage">
+                <a class='test' href="/skills/paladin/avenger.html"><span>Avenger</span></a>
+                <a class='test' href="/skills/paladin/crusader.html"><span>Crusader</span></a>
+                <a class='test' href="/skills/paladin/protector.html"><span>Protector</span></a>
+                </div>
+                <button class="dropdown-btn ul">
+                Warrior
+                </button>
+                <div class="dropdown-container dropdown-containers-mage">
+                <a class='test' href="/skills/warrior/berserker.html"><span>Berserker</span></a>
+                <a class='test' href="/skills/warrior/defender.html"><span>Defender</span></a>
+                <a class='test' href="/skills/warrior/revenant.html"><span>Revenant</span></a>
+                </div>
+                <button class="dropdown-btn ul">
+                Shaman
+                </button>
+                <div class="dropdown-container dropdown-containers-mage">
+                <a class='test' href="/skills/shaman/thunderlord.html"><span>Thunderlord</span></a>
+                <a class='test' href="/skills/shaman/spiritguard.html"><span>Spiritguard</span></a>
+                <a class='test' href="/skills/shaman/earthwarden.html"><span>Earthwarden</span></a>
+                </div>
+                <button class="dropdown-btn">
+                Rogue
+                </button>
+                <div class="dropdown-container dropdown-containers-mage">
+                <a class='test' href="/skills/rogue/assassin.html"><span>Assassin</span></a>
+                <a class='test' href="/skills/rogue/vindicator.html"><span>Vindicator</span></a>
+                <a class='test' href="/skills/rogue/apothecary.html"><span>Apothecary</span></a>
+                </div>
+              </div>
+          </li>
+          <li>
+              <button class="dropdown-btn">
               <i class="fa-solid fa-place-of-worship fa-fw"></i>
               Guilds
               </button>

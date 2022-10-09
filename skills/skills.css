@@ -113,8 +113,9 @@ h3 {
 }
 
 .content-primary {
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content-primary-master {
@@ -135,11 +136,11 @@ h3 {
 }
 
 .upgrade-1 { 
-    margin: 2rem 2rem 1rem 2rem;
+    margin: 2rem;
 }
 
 .upgrade-2 {
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 2rem;
 }
 
 .master {
@@ -168,6 +169,10 @@ h3 {
     justify-content: center;
 }
 
+.upgrade-desc-header span, .upgrade-desc-content span {
+    text-align: center;
+}
+
 .upgrade-desc-content-master div {
     margin: 2rem;
     font-size: 1.5rem;
@@ -178,7 +183,7 @@ h3 {
 } */
 
 .upgrade-desc-content {
-    margin: 0.7rem;
+    margin: 0.7rem 0;
     font-weight: 400;
 }
 
@@ -190,6 +195,8 @@ h3 {
 .upgrade-desc-content {
     font-size: 1.7rem;
 }
+
+
 
 .upgrade-grid {
     display: grid;
@@ -213,9 +220,10 @@ h3 {
     grid-row-start: 1;
 }
 
-.tier-4 {
+.tier-4 .upgrade-tier {
     grid-column-start: 1;
     grid-row-start: 2;
+    font-size: 2rem;
 }
 
 .tier-4-desc {
@@ -226,16 +234,21 @@ h3 {
 }
 
 .tier-4-desc .upgrade-value {
+    font-size: 1.7rem;
+}
+
+.tier-4 .upgrade-tier, .tier-4-desc .upgrade-value {
     display: flex;
     width: 100%;
-    justify-content: left;
-    margin: 1rem;
-    font-size: 1.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+    text-align: center;
 }
 
 .upgrade-tier, .upgrade-value {
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: center;
 }
 
@@ -295,7 +308,7 @@ h3 {
     display: inline-block;
     /* Other styles here */
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .class-container{
         display: grid;
         grid-template-columns: 60% 20% 20%;

@@ -8,13 +8,30 @@
     z-index: 50;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .3s,visibility .3s;
+    transition: opacity .3s, visibility .3s;
     display: grid;
     place-items: center;
 }
 
 .dimmer-active {
     visibility: visible;
+    opacity: 1;
+}
+
+#closer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    opacity: 0;
+    display: none;
+    place-items: center;
+}
+
+.closer-active {
+    display: block;
     opacity: 1;
 }
 
@@ -208,6 +225,10 @@ h3 {
     align-items: center;
 }
 
+.tier-4-container {
+    display: flex;
+}
+
 .tier-1 {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -223,29 +244,34 @@ h3 {
     grid-row-start: 1;
 }
 
-.tier-4 .upgrade-tier {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    font-size: 2rem;
-}
-
 .tier-4-desc {
-    grid-column-start: 2;
+    /* grid-column-start: 2;
     grid-column-end: span 2;
-    grid-row-start: 2;
+    grid-row-start: 2; */
     display: block;
 }
 
-.tier-4-desc .upgrade-value {
-    font-size: 1.7rem;
+.tier-4 .upgrade-tier {
+    margin: 0.5rem 0 0.7rem;
 }
+
+.tier-4-desc .upgrade-value {
+    margin: 0 0 0.5rem;
+}
+
+.tier-4-desc {
+    margin-bottom: 1.5rem;
+}
+
 
 .tier-4 .upgrade-tier, .tier-4-desc .upgrade-value {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 1rem 0;
+    align-items: center;
     text-align: center;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .upgrade-tier, .upgrade-value {

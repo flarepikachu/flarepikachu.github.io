@@ -32,6 +32,10 @@
 
     </div>
 
+    <div id="closer" onclick="closepopups();">
+
+    </div>
+
     <header>
         <div class="headerdiv">
             <span>
@@ -95,7 +99,7 @@
                     <h3>Fireball</h3>
                 </div> 
 
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1()">
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1();">
                     <span class="button-desktop">Upgrade</span>
                     <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
                 </button>
@@ -116,7 +120,7 @@
                     <h3>Flame Burst</h3>
                 </div> 
 
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2()">
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2();">
                     <span class="button-desktop">Upgrade</span>
                     <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
                 </button>
@@ -210,9 +214,6 @@
                             <span>Impair</span>
                         </div>
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
                             <div class="upgrade-desc-content">
                                 <span>Damage Increase</span>
                             </div>
@@ -230,12 +231,14 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">+7.5%</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier equal-row-1-child">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
-                            <div class="tier-4-desc equal-row-1">
-                                    <div class="upgrade-value">+10% Damage</div>
-                                    <div class="upgrade-value">+50% Projectile Speed</div>
+                            <div class="tier-4-desc">
+                                <div class="upgrade-value">+10% Damage</div>
+                                <div class="upgrade-value">+50% Projectile Speed</div>
                             </div>
                         </div>
                     </div>
@@ -264,12 +267,14 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">+0.75</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier equal-row-1-child">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
-                            <div class="tier-4-desc equal-row-1-child">
-                                    <div class="upgrade-value">+1 Hit Radius (Blocks)</div>
-                                    <div class="upgrade-value">-5 Energy Cost</div>
+                            <div class="tier-4-desc">
+                                <div class="upgrade-value">+1 Hit Radius (Blocks)</div>
+                                <div class="upgrade-value">-5 Energy Cost</div>
                             </div>
                         </div>
                     </div>
@@ -305,7 +310,7 @@
             <div id = "popup-2" class="popup-container">
                 <div class="topbar">
                     <span>Flame Burst Upgrades</span>
-                    <button class="x-button" onclick="popup2()">
+                    <button class="x-button" onclick="popup2();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
                 </div>
@@ -315,9 +320,6 @@
                             <span>Zeal</span>
                         </div>
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
                             <div class="upgrade-desc-content">
                                 <span>Cooldown Reduction</span>
                             </div>
@@ -335,22 +337,24 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">-15%</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">-20% Cooldown Reduction</div>
+                            <div class="upgrade-value">
+                                <span>-20% Cooldown Reduction</span>
+                            </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
                             <span>Spark</span>
                         </div> 
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
                             <div class="upgrade-desc-content">
                                 <span>Hit Radius (Blocks)</span>
                             </div>
@@ -368,16 +372,18 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">+1.5</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">+2 Hit Radius (Blocks)</div>
-                                    <div class="upgrade-value">+15% Crit Multiplier</div>
+                                <div class="upgrade-value uu">+2 Hit Radius (Blocks)</div>
+                                <div class="upgrade-value uu">+15% Crit Multiplier</div>
                             </div>
                         </div>
+                        </div>
                     </div>
-                </div>
                 <div class="close-button-div">
                     <button class="close-button" onclick="popup2()">CLOSE</button>
                 </div>
@@ -438,11 +444,13 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">+9%</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">+12% Healing</div>
+                                <div class="upgrade-value">+12% Healing</div>
                             </div>
                         </div>
                     </div>
@@ -451,9 +459,6 @@
                             <span>Spark</span>
                         </div> 
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
                             <div class="upgrade-desc-content">
                                 <span>Cooldown Reduction</span>
                             </div>
@@ -471,11 +476,13 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">-15%</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">-20% Cooldown Reduction</div>
+                                <div class="upgrade-value">-20% Cooldown Reduction</div>
                             </div>
                         </div>
                     </div>
@@ -540,11 +547,13 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">+15%</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">+20% Shield Health</div>
+                                <div class="upgrade-value">+20% Shield Health</div>
                             </div>
                         </div>
                     </div>
@@ -553,9 +562,6 @@
                             <span>Spark</span>
                         </div> 
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
                             <div class="upgrade-desc-content">
                                 <span>Cooldown Reduction</span>
                             </div>
@@ -573,11 +579,13 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">-15%</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">-20% Cooldown Reduction</div>
+                                <div class="upgrade-value">-20% Cooldown Reduction</div>
                             </div>
                         </div>
                     </div>
@@ -642,11 +650,13 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">+45%</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">+60% Crit Multiplier Bonus</div>
+                                <div class="upgrade-value">+60% Crit Multiplier Bonus</div>
                             </div>
                         </div>
                     </div>
@@ -675,11 +685,13 @@
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">30 Hits</div>
                             </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">Tier IV</div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                    <div class="upgrade-value">40 Hits</div>
+                                <div class="upgrade-value">40 Hits</div>
                             </div>
                         </div>
                     </div>

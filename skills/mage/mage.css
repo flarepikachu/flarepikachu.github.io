@@ -1,0 +1,32 @@
+/* @media screen and (min-width: 768px) {
+
+/* #popup-2 .content-primary .upgrade-1 .upgrade-grid .tier-4 .upgrade-value, 
+#popup-2 .content-primary .upgrade-1 .upgrade-grid  .tier-4-desc .upgrade-value {
+    height: 100%;
+    margin: 15px;
+}
+
+#popup-3 .content-primary .upgrade-1 .upgrade-grid .tier-4 .upgrade-value, 
+#popup-3 .content-primary .upgrade-1 .upgrade-grid  .tier-4-desc .upgrade-value {
+    height: 100%;
+    margin: 22px;
+}
+
+#popup-5 .content-primary .upgrade-2 .upgrade-grid .tier-4 .upgrade-value, 
+#popup-5 .content-primary .upgrade-2 .upgrade-grid  .tier-4-desc .upgrade-value {
+    height: 100%;
+    margin: 34px;
+} */
+
+
+
+/* @media screen and (min-width: 1200px) {
+    #popup-5 .content-primary .upgrade-2 .upgrade-desc-content {
+        font-size: 1.4rem;
+        padding: 0.3rem;
+    }
+}  */
+
+div.dropdown-container-mage, div.dropdown-container-classes {
+    display: block;
+}

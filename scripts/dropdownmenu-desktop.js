@@ -18,7 +18,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Mage
                 </button>
-                <div class="dropdown-container dropdown-containers-mage">
+                <div class="dropdown-container dropdown-container-mage">
                 <a class='test' href="/skills/mage/pyromancer.html"><span>Pyromancer</span></a>
                 <a class='test' href="/skills/mage/cryomancer.html"><span>Cryomancer</span></a>
                 <a class='test' href="/skills/mage/aquamancer.html"><span>Aquamancer</span></a>
@@ -26,7 +26,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Paladin
                 </button>
-                <div class="dropdown-container dropdown-containers-mage">
+                <div class="dropdown-container dropdown-container-paladin">
                 <a class='test' href="/skills/paladin/avenger.html"><span>Avenger</span></a>
                 <a class='test' href="/skills/paladin/crusader.html"><span>Crusader</span></a>
                 <a class='test' href="/skills/paladin/protector.html"><span>Protector</span></a>
@@ -34,7 +34,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Warrior
                 </button>
-                <div class="dropdown-container dropdown-containers-mage">
+                <div class="dropdown-container dropdown-container-warrior">
                 <a class='test' href="/skills/warrior/berserker.html"><span>Berserker</span></a>
                 <a class='test' href="/skills/warrior/defender.html"><span>Defender</span></a>
                 <a class='test' href="/skills/warrior/revenant.html"><span>Revenant</span></a>
@@ -42,7 +42,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Shaman
                 </button>
-                <div class="dropdown-container dropdown-containers-mage">
+                <div class="dropdown-container dropdown-container-shaman">
                 <a class='test' href="/skills/shaman/thunderlord.html"><span>Thunderlord</span></a>
                 <a class='test' href="/skills/shaman/spiritguard.html"><span>Spiritguard</span></a>
                 <a class='test' href="/skills/shaman/earthwarden.html"><span>Earthwarden</span></a>
@@ -50,7 +50,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn">
                 Rogue
                 </button>
-                <div class="dropdown-container dropdown-containers-mage">
+                <div class="dropdown-container dropdown-container-rogue">
                 <a class='test' href="/skills/rogue/assassin.html"><span>Assassin</span></a>
                 <a class='test' href="/skills/rogue/vindicator.html"><span>Vindicator</span></a>
                 <a class='test' href="/skills/rogue/apothecary.html"><span>Apothecary</span></a>

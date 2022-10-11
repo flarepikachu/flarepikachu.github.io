@@ -155,3 +155,136 @@ function closepopups() {
 //   }
 // }
 
+
+function align1() {
+  var x = document.getElementById("upgrade-desc-1-1");
+  var y = document.getElementById("upgrade-desc-1-2");
+  var u = document.getElementById("grid-1-1");
+  var v = document.getElementById("grid-1-2");
+  console.log("upgrade 1");
+  console.log(x.offsetHeight);
+  console.log("upgrade 2");
+  console.log(y.offsetHeight);
+  if (x.offsetHeight > y.offsetHeight) {
+    y.style.height = x.offsetHeight+"px";
+  } else {
+    x.style.height = y.offsetHeight+"px";
+    console.log("black")
+  }
+  console.log("upgrade 1");
+  console.log(u.offsetHeight);
+  console.log("upgrade 2");
+  console.log(v.offsetHeight);
+  if (u.offsetHeight > v.offsetHeight) {
+    v.style.height = u.offsetHeight+"px";
+  } else {
+    u.style.height = v.offsetHeight+"px";
+    console.log("black");
+  }
+}
+
+function align2() {
+  var x = document.getElementById("upgrade-desc-2-1");
+  var y = document.getElementById("upgrade-desc-2-2");
+  var u = document.getElementById("grid-2-1");
+  var v = document.getElementById("grid-2-2");
+  console.log("upgrade 1");
+  console.log(x.offsetHeight);
+  console.log("upgrade 2");
+  console.log(y.offsetHeight);
+  if (x.offsetHeight > y.offsetHeight) {
+    y.style.height = x.offsetHeight+"px";
+  } else {
+    x.style.height = y.offsetHeight+"px";
+    console.log("black")
+  }
+  console.log("upgrade 1");
+  console.log(u.offsetHeight);
+  console.log("upgrade 2");
+  console.log(v.offsetHeight);
+  if (u.offsetHeight > v.offsetHeight) {
+    v.style.height = u.offsetHeight+"px";
+  } else {
+    u.style.height = v.offsetHeight+"px";
+    console.log("black");
+  }
+}
+function align3() {
+  var x = document.getElementById("upgrade-desc-3-1");
+  var y = document.getElementById("upgrade-desc-3-2");
+  var u = document.getElementById("grid-3-1");
+  var v = document.getElementById("grid-3-2");
+  console.log("upgrade 1");
+  console.log(x.offsetHeight);
+  console.log("upgrade 2");
+  console.log(y.offsetHeight);
+  if (x.offsetHeight > y.offsetHeight) {
+    y.style.height = x.offsetHeight+"px";
+  } else {
+    x.style.height = y.offsetHeight+"px";
+    console.log("black")
+  }
+  console.log("upgrade 1");
+  console.log(u.offsetHeight);
+  console.log("upgrade 2");
+  console.log(v.offsetHeight);
+  if (u.offsetHeight > v.offsetHeight) {
+    v.style.height = u.offsetHeight+"px";
+  } else {
+    u.style.height = v.offsetHeight+"px";
+    console.log("black");
+  }
+}
+function align4() {
+  var x = document.getElementById("upgrade-desc-4-1");
+  var y = document.getElementById("upgrade-desc-4-2");
+  var u = document.getElementById("grid-4-1");
+  var v = document.getElementById("grid-4-2");
+  console.log("upgrade 1");
+  console.log(x.offsetHeight);
+  console.log("upgrade 2");
+  console.log(y.offsetHeight);
+  if (x.offsetHeight > y.offsetHeight) {
+    y.style.height = x.offsetHeight+"px";
+  } else {
+    x.style.height = y.offsetHeight+"px";
+    console.log("black")
+  }
+  console.log("upgrade 1");
+  console.log(u.offsetHeight);
+  console.log("upgrade 2");
+  console.log(v.offsetHeight);
+  if (u.offsetHeight > v.offsetHeight) {
+    v.style.height = u.offsetHeight+"px";
+  } else {
+    u.style.height = v.offsetHeight+"px";
+    console.log("black");
+  }
+}
+
+function align5() {
+  var x = document.getElementById("upgrade-desc-5-1");
+  var y = document.getElementById("upgrade-desc-5-2");
+  var u = document.getElementById("grid-5-1");
+  var v = document.getElementById("grid-5-2");
+  console.log("upgrade 1");
+  console.log(x.offsetHeight);
+  console.log("upgrade 2");
+  console.log(y.offsetHeight);
+  if (x.offsetHeight > y.offsetHeight) {
+    y.style.height = x.offsetHeight+"px";
+  } else {
+    x.style.height = y.offsetHeight+"px";
+    console.log("black")
+  }
+  console.log("upgrade 1");
+  console.log(u.offsetHeight);
+  console.log("upgrade 2");
+  console.log(v.offsetHeight);
+  if (u.offsetHeight > v.offsetHeight) {
+    v.style.height = u.offsetHeight+"px";
+  } else {
+    u.style.height = v.offsetHeight+"px";
+    console.log("black");
+  }
+}

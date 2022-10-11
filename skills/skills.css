@@ -79,6 +79,13 @@
     grid-row-end: 2;
 }
 
+.crit-stats {
+    margin-top: 1rem;
+}
+.crit-stats p {
+    margin: 0;
+}
+
 .button-desktop {
     display: none;
     vertical-align: middle;
@@ -276,6 +283,8 @@ h3 {
     vertical-align: top;
 }
 
+
+
 .tier-4 .upgrade-tier, .tier-4-desc .upgrade-value {
     display: flex;
     width: 100%;
@@ -300,6 +309,8 @@ h3 {
 
 .upgrade-value {
     font-size: 1.5rem;
+    font-family: "Inconsolata", monospace;
+    font-weight: 500;
 }
 
 #popup-1 .topbar, #popup-1-m .topbar{
@@ -342,13 +353,64 @@ h3 {
     color: rgb(255,165,40);
 }
 
+.local-icon {
+    color: #f1f1f1;
+}
 .icon-attack {
     background: url('/icons/attack.png');
     height: 4.8rem;
     width: 4.8rem;
     display: inline-block;
+    color: white;
+    
     /* Other styles here */
 }
+
+.local-icons {
+    display: inline-block;
+    filter: invert(87%) sepia(3%) saturate(0%) hue-rotate(110deg) brightness(106%) contrast(108%);
+    vertical-align: middle;
+    z-index: 1000;
+    visibility: visible;
+    opacity: 100;
+    /* Other styles here */
+}
+
+.title-icons {
+    height: 2.3rem;
+    width: 2.3rem;
+    margin: 0px 0px 4px 0px;
+}
+
+.value-icons {
+    height: 2rem;
+    width: 2rem;
+    margin: 0px 0px 2px 0px;
+}
+
+.icon-battery {
+    background-image: url(/icons/batteryvector.svg);
+    height: 2rem;
+    width: 2rem;
+    margin: 0px 0px 2px 0px;
+}
+.icon-cube {
+    background-image: url(/icons/cubevector.svg);
+    margin: 1px 0px 0px 0px;
+}
+.icon-clock {
+    background-image: url(/icons/clockvector.svg);
+    margin: 2px 0px 0px 0px;
+}
+
+.icon-snowflake {
+    background-image: url(/icons/snowflakevector.svg);
+    height: 1.6rem;
+    width: 1.426rem;
+    margin: 3px 0px 2px 2px;
+}
+
+
 @media screen and (min-width: 1200px) {
     .class-container{
         display: grid;
@@ -428,5 +490,18 @@ h3 {
 
     .close-button {
         display: none;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .skill-title {
+        font-size: 1.7rem;
+        height: 40px;
+        display: flex;
+    }
+    .skill-title h3 {
+        vertical-align: middle;
+        margin-top: 5px;
     }
 }

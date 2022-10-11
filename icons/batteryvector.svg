@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   xml:space="preserve"
+   width="100%"
+   height="100%"
+   viewBox="0 0 1600 1600"
+   sodipodi:docname="batteryvector.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs6" /><sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0" /><g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="ink_ext_XXXXXX"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1600)"><g
+       id="g10"
+       transform="scale(0.1)"><path
+         d="m 7825.91,1827.5 c 0,-159.4 -128.42,-289.1 -286.26,-289.1 h -3244.3 c -157.84,0 -286.26,129.7 -286.26,289.1 v 7410.92 c 0,159.44 128.42,289.15 286.26,289.15 h 837.58 v 471.22 c 0,23.21 19.42,42.81 42.41,42.81 h 1463.12 c 22.98,0 42.4,-19.6 42.4,-42.81 v -471.22 h 858.79 c 157.84,0 286.26,-129.71 286.26,-289.15 z m -286.26,8128.45 h -434.7 v 42.84 c 0,259.81 -209.27,471.21 -466.49,471.21 H 5175.34 c -257.23,0 -466.5,-211.4 -466.5,-471.21 v -42.84 H 4295.35 C 3903.66,9955.95 3585,9634.07 3585,9238.42 V 1827.5 c 0,-395.6 318.66,-717.5 710.35,-717.5 h 3244.3 c 391.69,0 710.35,321.9 710.35,717.5 v 7410.92 c 0,395.65 -318.66,717.53 -710.35,717.53"
+         style="fill:#100f0d;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path12" /><path
+         d="M 6182.4,8403.09 4549.8,5176.36 H 5917.1 L 4876.32,2791.38 7263.98,5933.94 5896.69,6074.23 6182.4,8403.09"
+         style="fill:#100f0d;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path14" /></g></g></svg>

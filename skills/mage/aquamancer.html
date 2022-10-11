@@ -25,6 +25,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body onload="dropdownsdesktop()">
@@ -91,12 +92,12 @@
 
         <div id="dingleberry" class="main-text">
             <div>
-                <h1>Pyromancer</h1>
-                <p>A damage-oriented Mage specialization that uses destructive fire spells to obliterate enemies.</p>
+                <h1>Aquamancer</h1>
+                <p>A healing-oriented Mage specialization that uses Water spells to heal allies and to deal minor damage to enemies. This specialization has access to the 'Overheal' ability."</p>
             </div>
             <div class="class-container skill-1">
                 <div class="skill-title">
-                    <h3>Fireball</h3>
+                    <h3>Water Bolt</h3>
                 </div> 
 
                 <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1();">
@@ -110,14 +111,21 @@
                     <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
                 </button>
                 </div>
+
+                <div class="crit-stats">
+                    <p>Crit Chance: 20%</p>
+                    <p>Crit Multiplier: 175%</p>
+                </div>
                 
                 <div class="skill-description">
-                    <p>Shoot a fireball that will explode for 334.4 - 433.4 damage. A direct hit will cause the enemy to take an additional 15% extra damage. Has an optimal range of 50 blocks.</p>
+                    <p>Shoot a bolt of water that will burst for 231 - 299 damage and restore 315 - 434 health to allies. A direct hit will heal for 15% extra damage or healing.</p>
+                    <p>Has an optimal range of 40 blocks.</p>
+                    <p>Water Bolt can overheal allies for up to 10% of their max health as bonus health. The bonus health lasts for 15 seconds.</p>
                 </div>   
             </div>
             <div class="class-container skill-2">
                 <div class="skill-title">
-                    <h3>Flame Burst</h3>
+                    <h3>Water Breath</h3>
                 </div> 
 
                 <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2();">
@@ -133,7 +141,14 @@
                 </div>
                 
                 <div class="skill-description">
-                    <p>Launch a flame burst that will explode for 557 - 753 damage. The Crit Chance increases by 1% for each travelled block, with a 100% Crit Chance maximum.</p>
+                    
+                    <div class="crit-stats">
+                        <p>Crit Chance: 25%</p>
+                        <p>Crit Multiplier: 175%</p>
+                    </div>
+                   
+                    <p>Breathe water in a cone in front of you, knocking back enemies, cleansing all debuffs, and restoring 528 - 723 health to yourself and all allies hit.</p>
+                    <p>Water Breath can overheal allies for up to 10% of their max health as bonus health. The bonus health lasts for 15 seconds.</p>
                 </div>   
             </div>
             <div class="class-container skill-3">
@@ -175,12 +190,12 @@
                 </div>
                 
                 <div class="skill-description">
-                    <p>Surround yourself with arcane energy, creating a shield that will absorb up to 2600 (50% of your maximum health) incoming damage. Lasts 6 seconds.</p>
+                    <p>Surround yourself with arcane energy, creating a shield that will absorb incoming damage for up to 50% of your maximum health. Lasts 6 seconds.</p>
                 </div>   
             </div>
             <div class="class-container skill-5">
                 <div class="skill-title">
-                    <h3>Inferno</h3>
+                    <h3>Healing Rain</h3>
                 </div> 
 
                 <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup5()">
@@ -196,14 +211,20 @@
                 </div>
                 
                 <div class="skill-description">
-                    <p>Combust into a molten inferno, increasing your Crit Chance and Crit Multiplier by 30%. Lasts 18 seconds.</p>
+                    <div class="crit-stats">
+                        <p>Crit Chance: 25%</p>
+                        <p>Crit Multiplier: 200%</p>
+                    </div>
+                    <p>Conjure rain at targeted location that will restore 100-125 health every 0.5 seconds to allies. Lasts 12 seconds.</p>
+                    <p>You may move Healing Rain to your location by pressing your shift key or activating your Healing Rain again.</p>
+                    <p>Healing Rain can overheal allies for up to 10% of their max health as bonus health. The bonus health lasts for 15 seconds.</p>
                 </div>   
             </div>
             <div class="bottom-space"></div>
             
             <div id = "popup-1" class="popup-container">
                 <div class="topbar">
-                    <span>Fireball Upgrades</span>
+                    <span>Frostbolt Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -211,25 +232,26 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Impair</span>
+                            <span>Alleviate</span>
                         </div>
                         <div class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Damage Increase</span>
+                                <span>Healing & Damage Increase</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+2.5%</div>
+                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+5%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+7.5%</div>
+                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -237,35 +259,35 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+10% Damage</div>
-                                <div class="upgrade-value">+50% Projectile Speed</div>
+                                <div class="upgrade-value">+30% Healing</div>
+                                <div class="upgrade-value">+15% Damage</div>
                             </div>
                         </div>
                     </div>
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
                             <span>Spark</span>
-                        </div> 
+                        </div>
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
                             <div class="upgrade-desc-content">
-                                <span>Hit Radius (Blocks)</span>
+                                <span>Energy Reduction & Hit Radius (Blocks)</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+0.25</div>
+                                <div class="upgrade-value ">-2.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value floor">+0.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+0.5</div>
+                                <div class="upgrade-value">&nbsp;-5&nbsp;&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value floor">&nbsp;+1&nbsp;&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+0.75</div>
+                                <div class="upgrade-value">-7.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></i></div>
+                                <div class="upgrade-value floor">+1.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -273,8 +295,8 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+1 Hit Radius (Blocks)</div>
-                                <div class="upgrade-value">-5 Energy Cost</div>
+                                <div class="upgrade-value">-10 Energy</div>
+                                <div class="upgrade-value">+2 Hit Radius (Blocks)</div>
                             </div>
                         </div>
                     </div>
@@ -283,7 +305,7 @@
 
             <div id="popup-1-m" class="popup-container">
                 <div class="topbar">
-                    <span>Fireball Master Upgrade</span>
+                    <span>Water Bolt Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -291,11 +313,11 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Fiery Fusillade</span>
+                            <span>Aquatic Assault</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>Direct-hits apply the BURN status for 5 seconds.</div>
-                            <div>BURN: Enemies take 20% more damage from all sources and will burn for 0.25% of their max health every second.</div>
+                            <div>+100% Projectile Speed</div>
+                            <div>Water Bolt increases the damage dealt of all allies it hits by 15% for 10 seconds.</div>
                         </div>
                     </div>
                 </div>
@@ -303,7 +325,7 @@
 
             <div id = "popup-2" class="popup-container">
                 <div class="topbar">
-                    <span>Flame Burst Upgrades</span>
+                    <span>Water Breath Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -311,25 +333,25 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Zeal</span>
+                            <span>Alleviate</span>
                         </div>
                         <div class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Cooldown Reduction</span>
+                                <span>Healing Increase</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%</div>
+                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%</div>
+                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -337,34 +359,35 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                            <div class="upgrade-value">
-                                <span>-20% Cooldown Reduction</span>
-                            </div>
+                                <div class="upgrade-value">+30% Healing</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
-                            <span>Spark</span>
+                            <span>Zeal</span>
                         </div> 
                         <div class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Hit Radius (Blocks)</span>
+                                <span>Knockback and Range Increase</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+0.5</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-forward fa-fw"></i></div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-wifi fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+1</div>
+                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-forward fa-fw"></i></div>
+                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-wifi fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+1.5</div>
+                                <div class="upgrade-value">+45%&nbsp;<i class="fa-solid fa-forward fa-fw"></i></div>
+                                <div class="upgrade-value">+45%&nbsp;<i class="fa-solid fa-wifi fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -372,8 +395,8 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value uu">+2 Hit Radius (Blocks)</div>
-                                <div class="upgrade-value uu">+15% Crit Multiplier</div>
+                                <div class="upgrade-value uu">+60% Knockback</div>
+                                <div class="upgrade-value uu">+60% Cone Range</div>
                             </div>
                         </div>
                         </div>
@@ -382,7 +405,7 @@
 
             <div id="popup-2-m" class="popup-container">
                 <div class="topbar">
-                    <span>Flame Burst Master Upgrade</span>
+                    <span>Water Breath Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -390,10 +413,11 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Flame Awakening</span>
+                            <span>Typhoon</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>Flame Burst deals significantly more damage and ramps up Crit Chance, Crit Damage and Damage very quickly per blocks traveled at the cost of heavily reduced projectile speed, increased energy cost, and increased cooldown.</div>
+                            <div>+100% Additional Cone Range</div>
+                            <div>All allies hit by Water Breath are healed by 1% of their max health per second for 5 seconds.</div>
                         </div>
                     </div>
                 </div>
@@ -402,9 +426,6 @@
             <div id = "popup-3" class="popup-container">
                 <div class="topbar">
                     <span>Time Warp Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
                 </div>
                 <div class="content-primary">
                     <div class="upgrade-1">
@@ -422,15 +443,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+3%</div>
+                                <div class="upgrade-value">+3%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+6%</div>
+                                <div class="upgrade-value">+6%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+9%</div>
+                                <div class="upgrade-value">+9%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -444,7 +465,7 @@
                     </div>
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
-                            <span>Spark</span>
+                            <span>Zeal</span>
                         </div> 
                         <div class="upgrade-desc">
                             <div class="upgrade-desc-content">
@@ -454,15 +475,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%</div>
+                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%</div>
+                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%</div>
+                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -519,15 +540,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+5%</div>
+                                <div class="upgrade-value">+5%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+10%</div>
+                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+15%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -551,15 +572,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%</div>
+                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%</div>
+                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%</div>
+                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -595,7 +616,7 @@
 
             <div id = "popup-5" class="popup-container">
                 <div class="topbar">
-                    <span>Inferno Upgrades</span>
+                    <span>Healing Rain Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -603,28 +624,28 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Impair</span>
+                            <span>Alleviate</span>
                         </div>
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div class="upgrade-desc-content">
-                                <span>Crit Multiplier Bonus Increase</span>
+                                <span>Healing Increase</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+15%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+30%</div>
+                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+45%</div>
+                                <div class="upgrade-value">+45%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -632,34 +653,34 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+60% Crit Multiplier Bonus</div>
+                                <div class="upgrade-value">+60% Healing</div>
                             </div>
                         </div>
                     </div>
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
-                            <span>Spark</span>
+                            <span>Zeal</span>
                         </div> 
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div class="upgrade-desc-content">
-                                <span>0.25s Cooldown Reduction per Hit</span>
+                                <span>Healing Rain Radius (Blocks) & Duration Increase</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">10 Hits</div>
+                                <div class="upgrade-value">+1&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">20 Hits</div>
+                                <div class="upgrade-value">+2&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">30 Hits</div>
+                                <div class="upgrade-value">+3&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -667,7 +688,8 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">40 Hits</div>
+                                <div class="upgrade-value">+4 Blocks Rain Radius</div>
+                                <div class="upgrade-value">+8s Duration</div>
                             </div>
                         </div>
                     </div>
@@ -676,7 +698,7 @@
 
             <div id="popup-5-m" class="popup-container">
                 <div class="topbar">
-                    <span>Fireball Master Upgrade</span>
+                    <span>Ice Barrier Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -684,11 +706,11 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Fiery Fusillade</span>
+                            <span>Electrifying Storm</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>Direct-hits apply the BURN status for 5 seconds.</div>
-                            <div>BURN: Enemies take 20% more damage from all sources and will burn for 0.25% of their max health every second.</div>
+                            <div>+4s Additional Duration</div>
+                            <div>Up to 5 enemies in Healing Rain will be struck by lightning for 124 - 277 (+1% of their max health) damage every 2 seconds.</div>
                         </div>
                     </div>
                 </div>

@@ -25,6 +25,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body onload="dropdownsdesktop()">
@@ -110,6 +111,11 @@
                     <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
                 </button>
                 </div>
+
+                <div class="crit-stats">
+                    <p>Crit Chance: 20%</p>
+                    <p>Crit Multiplier: 175%</p>
+                </div>
                 
                 <div class="skill-description">
                     <p>Shoot a frostbolt that will shatter for 268.8 - 345.5 damage and slow by 25% for 7 seconds. A direct hit will cause the enemy to take an additional 15% extra damage. </p>
@@ -133,6 +139,11 @@
                 </button>
                 </div>
                 
+                <div class="crit-stats">
+                    <p>Crit Chance: 20%</p>
+                    <p>Crit Multiplier: 175%</p>
+                </div>
+
                 <div class="skill-description">
                     <p>Breathe cold air in a cone in front of you, dealing 422 to 585 damage to all enemies and slowing them by 35% for 4 seconds.</p>
                 </div>   
@@ -222,15 +233,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+7.5%</div>
+                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+15%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+22.5%</div>
+                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -246,11 +257,8 @@
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
                             <span>Spark</span>
-                        </div> 
+                        </div>
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
                             <div class="upgrade-desc-content">
                                 <span>Energy Reduction & Hit Radius (Blocks)</span>
                             </div>
@@ -258,15 +266,18 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-2.5e, +0.5b</div>
+                                <div class="upgrade-value ">-2.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value floor">+0.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-5e, +1b</div>
+                                <div class="upgrade-value">&nbsp;-5&nbsp;&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value floor">&nbsp;+1&nbsp;&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-7.5e, +1.5b</div>
+                                <div class="upgrade-value">-7.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></i></div>
+                                <div class="upgrade-value floor">+1.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -274,7 +285,7 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">-10 Hit Energy</div>
+                                <div class="upgrade-value">-10 Energy</div>
                                 <div class="upgrade-value">+2 Hit Radius (Blocks)</div>
                             </div>
                         </div>
@@ -284,7 +295,7 @@
 
             <div id="popup-1-m" class="popup-container">
                 <div class="topbar">
-                    <span>Fireball Master Upgrade</span>
+                    <span>Frostbolt Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -321,15 +332,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+7.5%</div>
+                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+15%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+22.5%</div>
+                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -350,21 +361,24 @@
                         </div> 
                         <div class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Cooldown Reduction & Slowness</span>
+                                <span>Cooldown Reduction (CDR) & Slowness</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%cdr, +4%s </div>
+                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">+4s&nbsp;<i class="fa-regular fa-snowflake fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%cdr, +6%s</div>
+                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+6s&nbsp;<i class="fa-regular fa-snowflake fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%cdr, +8%s </div>
+                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+8s&nbsp;<i class="fa-regular fa-snowflake fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -402,9 +416,6 @@
             <div id = "popup-3" class="popup-container">
                 <div class="topbar">
                     <span>Time Warp Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
                 </div>
                 <div class="content-primary">
                     <div class="upgrade-1">
@@ -422,15 +433,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+3%</div>
+                                <div class="upgrade-value">+3%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+6%</div>
+                                <div class="upgrade-value">+6%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+9%</div>
+                                <div class="upgrade-value">+9%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -444,7 +455,7 @@
                     </div>
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
-                            <span>Spark</span>
+                            <span>Zeal</span>
                         </div> 
                         <div class="upgrade-desc">
                             <div class="upgrade-desc-content">
@@ -454,15 +465,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%</div>
+                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%</div>
+                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%</div>
+                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -519,15 +530,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+5%</div>
+                                <div class="upgrade-value">+5%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+10%</div>
+                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+15%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -551,15 +562,15 @@
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%</div>
+                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%</div>
+                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%</div>
+                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -595,7 +606,7 @@
 
             <div id = "popup-5" class="popup-container">
                 <div class="topbar">
-                    <span>Inferno Upgrades</span>
+                    <span>Ice Barrier Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -603,28 +614,28 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Impair</span>
+                            <span>Fortify</span>
                         </div>
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div class="upgrade-desc-content">
-                                <span>Crit Multiplier Bonus Increase</span>
+                                <span>Damage Reduction Increase</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+15%</div>
+                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+30%</div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+45%</div>
+                                <div class="upgrade-value">+20%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -632,34 +643,35 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+60% Crit Multiplier Bonus</div>
+                                <div class="upgrade-value">+25% Damage Reduction</div>
+                                <div class="upgrade-value">+10% Cooldown Reduction</div>
                             </div>
                         </div>
                     </div>
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
-                            <span>Spark</span>
+                            <span>Zeal</span>
                         </div> 
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div class="upgrade-desc-content">
-                                <span>0.25s Cooldown Reduction per Hit</span>
+                                <span>Duration Increase</span>
                             </div>
                         </div>
                         <div class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">10 Hits</div>
+                                <div class="upgrade-value">+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">20 Hits</div>
+                                <div class="upgrade-value">+4s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">30 Hits</div>
+                                <div class="upgrade-value">+6s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -667,7 +679,8 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">40 Hits</div>
+                                <div class="upgrade-value">+8s Duration</div>
+                                <div class="upgrade-value">+20% Slowness on Melee Hit</div>
                             </div>
                         </div>
                     </div>
@@ -676,7 +689,7 @@
 
             <div id="popup-5-m" class="popup-container">
                 <div class="topbar">
-                    <span>Fireball Master Upgrade</span>
+                    <span>Ice Barrier Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -684,11 +697,10 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Fiery Fusillade</span>
+                            <span>Aggravating Hailstorm</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>Direct-hits apply the BURN status for 5 seconds.</div>
-                            <div>BURN: Enemies take 20% more damage from all sources and will burn for 0.25% of their max health every second.</div>
+                            <div>Surround yourself in a glacial super shield, slowing all nearby enemies by 80% for 1 second. Additionally, reduce their damage reduction by 3% for each second in your glacial shield.</div>
                         </div>
                     </div>
                 </div>

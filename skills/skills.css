@@ -413,7 +413,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
     .class-container{
-        display: grid;
+        display: block;
         grid-template-columns: 60% 20% 20%;
         grid-template-rows: 2;
     }
@@ -433,7 +433,7 @@ h3 {
     
     .master-button-div, .upgrade-button-div {
         display: flex;
-        margin: 1.5rem 0;
+        margin: 0 0;
         min-width: 110px;
     }
 

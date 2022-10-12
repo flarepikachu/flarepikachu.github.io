@@ -53,7 +53,7 @@
     right: 100px;
 }
 
-.upgrade-button {
+/* .upgrade-button {
     background-color: rgb(67, 131, 228);
     border: none;
 }
@@ -61,7 +61,7 @@
 .master-button {
     background-color: rgb(238, 198, 20);
     border: none;
-}
+} */
 
 .class-container .master-button-div {
     right: 20px;
@@ -101,6 +101,11 @@
 
 .upgrade-button, .master-button {
     border-radius: 5px;
+}
+
+.upgrade-button:hover, .master-button:hover {
+    background-color: rgb(150, 148, 148);
+    padding-bottom: 0.5rem;
 }
 
 .close-button {

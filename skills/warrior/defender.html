@@ -92,8 +92,8 @@
 
         <div id="dingleberry" class="main-text">
             <div>
-                <h1>Berserker</h1>
-                <p>A damage-oriented Warrior specialization with a lust for blood and anger issues.</p>
+                <h1>Defender</h1>
+                <p>A defense-oriented Warrior specialization that can protect teammates by mitigating damage and intercepting enemy hits.</p>
             </div>
             <div class="class-container skill-1">
                 <div class="skill-title">
@@ -115,11 +115,11 @@
                 <div class="crit-stats">
                     <p>Energy Cost: 100</p>
                     <p>Crit Chance: 20%</p>
-                    <p>Crit Multiplier: 175%</p>
+                    <p>Crit Multiplier: 200%</p>
                 </div>
                 
                 <div class="skill-description">
-                    <p>Strike the targeted enemy, dealing 497-632 damage and wounding them for 3 seconds. A wounded player receives 40% less healing for the duration of the effect.</p>
+                    <p>Strike the targeted enemy, dealing 415.8-556.5 damage and wounding them for 3 seconds. A wounded player receives 40% less healing for the duration of the effect.</p>
                 </div>   
             </div>
             <div class="class-container skill-2">
@@ -147,7 +147,7 @@
                 </div>
                 
                 <div class="skill-description">          
-                    <p>Send a wave of incredible force forward that deals 557 - 753 damage to all enemies hit and knocks them back slightly.</p>
+                    <p>Send a wave of incredible force forward that deals 506 - 685 damage to all enemies hit and knocks them back slightly.</p>
                 </div>   
             </div>
             <div class="class-container skill-3">
@@ -167,13 +167,13 @@
                 </button>
                 </div>
                 <div class="crit-stats">
-                    <p>Cooldown: 9.32s</p>
-                    <p>Energy Cost: 60</p>
+                    <p>Cooldown: 7.34s</p>
+                    <p>Energy Cost: 0</p>
                     <p>Crit Chance: 15%</p>
                     <p>Crit Multiplier: 200%</p>
                 </div>
                 <div class="skill-description">
-                    <p>Slam the ground, creating a shockwave around you that deals 448.8 - 606.1 damage and knocks enemies back slightly.</p>
+                    <p>Slam the ground, creating a shockwave around you that deals 326 - 441 damage and knocks enemies back slightly.</p>
                 </div>   
             </div>
             <div class="class-container skill-4">
@@ -194,17 +194,18 @@
                 </div>
 
                 <div class="crit-stats">
-                    <p>Cooldown: 31.32s</p>
+                    <p>Cooldown: 14.09s</p>
                     <p>Energy Cost: 20</p>
                 </div>
                 
                 <div class="skill-description">
-                    <p>You lust for blood, healing yourself for 65% of all the damage you deal. Lasts 15 seconds.</p>
+                    <p>Protect the target ally, reducing the damage they take by 100% and redirecting 50% of the damage they would have taken back to you. You can protect the target for a maximum of 3600 damage. You must remain within 15 blocks of each other. Lasts 5 seconds.</p>
+                    <p>Has an initial cast range of 10 blocks.</p>
                 </div>   
             </div>
             <div class="class-container skill-5">
                 <div class="skill-title">
-                    <h3>Berserk</h3>
+                    <h3>Last Stand</h3>
                 </div> 
 
                 <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup5(); align5();">
@@ -220,12 +221,13 @@
                 </div>
 
                 <div class="crit-stats">
-                    <p>Cooldown: 46.98s</p>
-                    <p>Energy Cost: 30</p>
+                    <p>Cooldown: 56.38s</p>
+                    <p>Energy Cost: 40</p>
                 </div>
                 
                 <div class="skill-description">
-                    <p>You go into a berserker rage, increasing your damage by 30% and movement speed by 30%. While active, you also take 10% more damage.</p>
+                    <p>Enter a defensive stance, reducing all damage you take by 50% for 12 seconds and also reduce all damage nearby allies take by 40% for 6 seconds. You are healed for the amount of damage prevented on allies.</p>
+                    <p>Has a maximum range of 7 blocks.</p>
                 </div>   
             </div>
             <div class="bottom-space"></div>
@@ -250,15 +252,15 @@
                         <div id="grid-1-1" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+3.75%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">&nbsp;+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+10%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+11.25%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>                              
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>                              
                             </div>
                         </div>
                         <div class="tier-4">
@@ -266,7 +268,7 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+15% Damage</div>
+                                <div class="upgrade-value">+20% Damage</div>
                             </div>
                         </div>
                     </div>
@@ -276,24 +278,21 @@
                         </div>
                         <div id="upgrade-desc-1-2" class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Energy Cost Reduction & Wounding Duration Increase</span>
+                                <span>Energy Cost Reduction</span>
                             </div>
                         </div>
                         <div id="grid-1-2" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
                                 <div class="upgrade-value">&nbsp;-2.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                                <div class="upgrade-value">&nbsp;+1s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
                                 <div class="upgrade-value">&nbsp;&nbsp;-5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                                <div class="upgrade-value">&nbsp;+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">&nbsp;-7.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                                <div class="upgrade-value">&nbsp;+3s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -302,7 +301,6 @@
                             </div>
                             <div class="tier-4-desc">
                                 <div class="upgrade-value">-10 Energy Cost</div>
-                                <div class="upgrade-value">+4s Wounding Duration</div>
                             </div>
                         </div>
                     </div>
@@ -322,7 +320,8 @@
                             <span>Lacerating Strike</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>Wounding Strike now applies BLEED instead of wounding.  BLEED: Enemies afflicted take 50% more damage from Wounding Strike while Blood Lust is active. Bleeding enemies have healing reduced by 70% and lose 0.25% of their max health per second.</div>
+                            <div>+20% Crit Chance</div>
+                            <div>Crit Strikes increase damage reduction by 30% for 5 seconds.</div>
                         </div>
                     </div>
                 </div>
@@ -522,7 +521,7 @@
 
             <div id = "popup-4" class="popup-container">
                 <div class="topbar">
-                    <span>Blood Lust Upgrades</span>
+                    <span>Intervene Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -530,37 +529,37 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Alleviate</span>
+                            <span>Zeal</span>
                         </div>
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div id="upgrade-desc-4-1" class="upgrade-desc-content">
-                                <span>Healing Conversion Increase</span>
+                                <span>Cooldown Reduction</span>
                             </div>
                             <div id="grid-4-1" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+3%&nbsp;<i class="fa-solid fa-arrow-right-arrow-left fa-fw"></i></div>
+                                <div class="tier-1">
+                                    <div class="upgrade-tier">Tier I</div>
+                                    <div class="upgrade-value">-2.5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                </div>
+                                <div class="tier-2">
+                                    <div class="upgrade-tier">Tier II</div>
+                                    <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                </div>
+                                <div class="tier-3">
+                                    <div class="upgrade-tier">Tier III</div>
+                                    <div class="upgrade-value">-7.5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                </div>
                             </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+6%&nbsp;<i class="fa-solid fa-arrow-right-arrow-left fa-fw"></i></div>
+                            <div class="tier-4">
+                                <div class="upgrade-tier">
+                                    Tier IV
+                                </div>
+                                <div class="tier-4-desc">
+                                    <div class="upgrade-value">-10% Cooldown</div>
+                                </div>
                             </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+9%&nbsp;<i class="fa-solid fa-arrow-right-arrow-left fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+12% Damage Conversion to Healing</div>
-                            </div>
-                        </div>
                         </div>
                         
                     </div>
@@ -570,21 +569,21 @@
                         </div> 
                         <div class="upgrade-desc">
                             <div id="upgrade-desc-4-2" class="upgrade-desc-content">
-                                <span>Cooldown Reduction</span>
+                                <span>Damage Prevented Increase</span>
                             </div>
                         </div>
                         <div id="grid-4-2" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-3.75%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">+250&nbsp;<i class="fa-solid fa-shield fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-7.5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">+500&nbsp;<i class="fa-solid fa-shield fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-11.25%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">+750&nbsp;<i class="fa-solid fa-shield fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -592,7 +591,7 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">-15% Cooldown</div>
+                                <div class="upgrade-value">+1000 Damage Prevented</div>
                             </div>
                         </div>
                     </div>
@@ -601,7 +600,7 @@
 
             <div id="popup-4-m" class="popup-container">
                 <div class="topbar">
-                    <span>Blood Lust Master Upgrade</span>
+                    <span>Intervene Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -609,11 +608,10 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Sanguineous</span>
+                            <span>Heroic Intervention</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>+3s Duration</div>
-                            <div>  While Blood Lust is active, increase all damage against bleeding or wounded targets by 20%</div>
+                            <div>While Blood Lust is active, increase all damage against bleeding or wounded targets by 20%</div>
                         </div>
                     </div>
                 </div>
@@ -621,7 +619,7 @@
 
             <div id = "popup-5" class="popup-container">
                 <div class="topbar">
-                    <span>Berserk Upgrades</span>
+                    <span>Last Stand Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -629,28 +627,28 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Impair</span>
+                            <span>Bulwark</span>
                         </div>
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div id="upgrade-desc-5-1" class="upgrade-desc-content">
-                                <span>Energy Per Second Increase</span>
+                                <span>Damage Reduction Increase</span>
                             </div>
                         </div>
                         <div id="grid-5-1" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+3%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+6%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>                              
+                                <div class="upgrade-value">+9%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -658,7 +656,7 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+30% Damage</div>
+                                <div class="upgrade-value">+12% Damage Reduction</div>
                             </div>
                         </div>
                     </div>
@@ -671,23 +669,20 @@
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div id="upgrade-desc-5-2" class="upgrade-desc-content">
-                                <span>Speed and Duration Increase</span>
+                                <span>Duration Increase</span>
                             </div>
                         </div>
                         <div id="grid-5-2" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+3%&nbsp;<i class="fa-solid fa-feather-pointed fa-fw"></i></div>
                                 <div class="upgrade-value">+1s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+6%&nbsp;<i class="fa-solid fa-feather-pointed fa-fw"></i></div>
                                 <div class="upgrade-value">+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+9%&nbsp;<i class="fa-solid fa-feather-pointed fa-fw"></i></div>
                                 <div class="upgrade-value">+3s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
                             </div>
                         </div>
@@ -696,7 +691,6 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+12% Speed</div>
                                 <div class="upgrade-value">+4s Duration</div>
                             </div>
                         </div>
@@ -706,7 +700,7 @@
 
             <div id="popup-5-m" class="popup-container">
                 <div class="topbar">
-                    <span>Berserk Master Upgrade</span>
+                    <span>Last Stand Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -714,11 +708,11 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Maniacal Rage</span>
+                            <span>Final Stand</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>+20% Additional damage increase but increase damage taken by 10%.</div>
-                            <div>Gain 0.2% Crit chance and Crit Multiplier for each instance of damage you deal to an enemy while Berserk is active. (Max 30%)</div>
+                            <div>-25% Cooldown</div>
+                            <div>Enemies within the Last Stand radius get pushed outwards with heavy force on cast. Reduce cooldown by 25%</div>
                         </div>
                     </div>
                 </div>

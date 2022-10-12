@@ -60,7 +60,15 @@
         </span>
         <i class="fa-solid fa-angle-right div1-text"></i>
         <span>
-            <a class='direlink div1-text' href="#">Skills</a>
+            <a class='direlink div1-text' href="/skills/skills.html">Skills</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="/skills/shaman.html">Shaman</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Thunderlord</a>
         </span>
     </div>
     
@@ -92,12 +100,12 @@
 
         <div id="dingleberry" class="main-text">
             <div>
-                <h1>Crusader</h1>
-                <p>A defense-oriented Paladin specialization that inspires allies by granting them more energy in battle and has access to minor healing.</p>
+                <h1>Thunderlord</h1>
+                <p>A damage-oriented Shaman specialization that calls upon the power of Lightning to electrocute enemies.</p>
             </div>
             <div class="class-container skill-1">
                 <div class="skill-title">
-                    <h3>Crusader's Strike</h3>
+                    <h3>Lightning Bolt</h3>
                 </div> 
 
                 <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1(); align1();">
@@ -113,22 +121,22 @@
                 </div>
 
                 <div class="crit-stats">
-                    <p>Energy Cost: 90</p>
-                    <p>Crit Chance: 25%</p>
-                    <p>Crit Multiplier: 175%</p>
+                    <p>Energy Cost: 60</p>
+                    <p>Crit Chance: 20%</p>
+                    <p>Crit Multiplier: 200%</p>
                 </div>
                 
                 <div class="skill-description">
-                    <p>Strike the targeted enemy, dealing 326-441 damage and restoring 24 energy to 2 nearby allies within 10 blocks.</p>
-                    <p>Marked allies get priority in restoring energy. Every time marked allies gain energy, they will also get a 40% Speed increase for 1 second.</p>
+                    <p>Hurl a fast, piercing bolt of lightning that deals 228 - 385 damage to all enemies it passes through. Each target hit reduces the cooldown of Chain Lightning by 2 seconds.</p>
+                    <p>Has a maximum range of 60 blocks.</p>
                 </div>   
             </div>
             <div class="class-container skill-2">
                 <div class="skill-title">
-                    <h3>Consecrate</h3>
+                    <h3>Chain Lightning</h3>
                 </div> 
 
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2();">
+                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2(); align2();">
                     <span class="button-desktop">Upgrade</span>
                     <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
                 </button>
@@ -141,21 +149,20 @@
                 </div>
 
                 <div class="crit-stats">
-                    <p>Cooldown: 7.8s</p>
-                    <p>Energy Cost: 50</p>
-                    <p>Crit Chance: 15%</p>
-                    <p>Crit Multiplier: 200%</p>
+                    <p>Cooldown: 9.4s</p>
+                    <p>Energy Cost: 40</p>
+                    <p>Crit Chance: 20%</p>
+                    <p>Crit Multiplier: 175%</p>
                 </div>
                 
-                <div class="skill-description">
-                
-                    <p>Consecrate the ground below your feet, declaring it sacred. Enemies standing on it will take 144 - 194.4 damage per second and take 15% increased damage from your paladin strikes. Lasts 5 seconds.</p>
-
+                <div class="skill-description">          
+                    <p>Discharge a bolt of lightning at the targeted enemy player that deals 294 - 575 damage and jumps to 3 additional targets within 10 blocks. Each time the lightning jumps the damage is decreased by 15%. You gain 10% damage resistance for each target hit, up to 30% damage resistance. This buff lasts 4.5 seconds.</p>
+                    <p>Has an initial cast range of 20 blocks.</p>
                 </div>   
             </div>
             <div class="class-container skill-3">
                 <div class="skill-title">
-                    <h3>Light Infusion</h3>
+                    <h3>Windfury Weapon</h3>
                 </div> 
 
                 <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup3(); align3();">
@@ -170,15 +177,18 @@
                 </button>
                 </div>
                 <div class="crit-stats">
-                    <p>Cooldown: 15.7s </p>
+                    <p>Cooldown: 15.7s</p>
+                    <p>Energy Cost: 30</p>
+                    <p>Crit Chance: 25%</p>
+                    <p>Crit Multiplier: 200%</p>
                 </div>
                 <div class="skill-description">
-                    <p>You become infused with light, restoring 120 energy and increasing your movement speed by 40% for 3 seconds.</p>
+                    <p>Imbue your weapon with the power of the wind, causing each of your melee attacks to have a 35% chance to hit 2 additional times for 135% weapon damage. The first melee hit is guaranteed to activate Windfury. Lasts 8 seconds.</p>
                 </div>   
             </div>
             <div class="class-container skill-4">
                 <div class="skill-title">
-                    <h3>Holy Radiance</h3>
+                    <h3>Lightning Rod</h3>
                 </div> 
 
                 <div class="upgrade-button-div" onresize="align4();"><button class="upgrade-button" onclick="popup4(); align4();">
@@ -194,26 +204,17 @@
                 </div>
 
                 <div class="crit-stats">
-                    <p>Cooldown: 19.6s</p>
-                    <p>Energy Cost: 20</p>
-                    <p>Crit Chance: 15%</p>
-                    <p>Crit Multiplier: 175%</p>
+                    <p>Cooldown: 31.32s</p>
                 </div>
                 
                 <div class="skill-description">
-                    <p>Radiate with holy energy, healing yourself and all nearby allies for 582 - 760 health.</p>
-                    <p>You may look at an ally to mark them for 8 seconds. Crusader's Mark increases the allied player's energy regeneration by 6 and their speed by 25%.   </p>
-                    <p>Crusader's Mark has an optimal range of 15 blocks.</p>
+                    <p>Call down an energizing bolt of lightning upon yourself, restoring 30% health and 160 energy and knock all nearby enemies in a 5 block radius back.</p>
                 </div>   
             </div>
             <div class="class-container skill-5">
                 <div class="skill-title">
-                    <h3>Inspiring Presence</h3>
+                    <h3>Capacitor Totem</h3>
                 </div> 
-
-                <div class="crit-stats">
-                    <p>Cooldown: 70.5s</p>
-                </div>
 
                 <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup5(); align5();">
                     <span class="button-desktop">Upgrade</span>
@@ -226,16 +227,23 @@
                     <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
                 </button>
                 </div>
+
+                <div class="crit-stats">
+                    <p>Cooldown: 62.64s</p>
+                    <p>Energy Cost: 20</p>
+                    <p>Crit Chance: 20%</p>
+                    <p>Crit Multiplier: 200%</p>
+                </div>
                 
                 <div class="skill-description">
-                    <p>Your presence on the battlefield inspires your allies, increasing their energy regeneration by 10 per second and their movement speed by 30%. Lasts 12 seconds.</p>
+                    <p>Place a highly conductive totem on the ground. Casting Chain Lightning or Lightning Rod on the totem will cause it to pulse, dealing 404 - 523 damage to all enemies nearby. Lasts 8 seconds.</p>
                 </div>   
             </div>
             <div class="bottom-space"></div>
             
             <div id = "popup-1" class="popup-container">
                 <div class="topbar">
-                    <span>Crusader's Strike Upgrades</span>
+                    <span>Lightning Bolt Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -247,21 +255,24 @@
                         </div>
                         <div class="upgrade-desc">
                             <div id="upgrade-desc-1-1" class="upgrade-desc-content">
-                                <span>Damage Increase</span>
+                                <span>Damage and Projectile Speed Increase</span>
                             </div>
                         </div>
                         <div id="grid-1-1" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+7%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+20%&nbsp;<i class="fa-solid fa-meteor fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
                                 <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+40%&nbsp;<i class="fa-solid fa-meteor fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>                              
+                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;&nbsp;+60%&nbsp;<i class="fa-solid fa-meteor fa-fw"></i></div>                              
                             </div>
                         </div>
                         <div class="tier-4">
@@ -270,6 +281,8 @@
                             </div>
                             <div class="tier-4-desc">
                                 <div class="upgrade-value">+30% Damage</div>
+                                <div class="upgrade-value">+80% Projectile Speed</div>
+
                             </div>
                         </div>
                     </div>
@@ -279,24 +292,24 @@
                         </div>
                         <div id="upgrade-desc-1-2" class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Energy Cost Reduction & Allied Energy Increase</span>
+                                <span>Energy Cost Reduction & Impact Radius Increase</span>
                             </div>
                         </div>
                         <div id="grid-1-2" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">&nbsp;-2.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                                <div class="upgrade-value floor">&nbsp;&nbsp;&nbsp;+1&nbsp;<i class="fa-solid fa-plug-circle-plus fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;-5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value floor">+0.25&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">&nbsp;&nbsp;-5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                                <div class="upgrade-value floor">&nbsp;&nbsp;+2&nbsp;<i class="fa-solid fa-plug-circle-plus fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;-10&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value floor">+0.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">&nbsp;-7.5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                                <div class="upgrade-value floor">&nbsp;&nbsp;&nbsp;+3&nbsp;<i class="fa-solid fa-plug-circle-plus fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;-15&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value floor">+0.75&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -305,7 +318,7 @@
                             </div>
                             <div class="tier-4-desc">
                                 <div class="upgrade-value">-10 Energy Cost</div>
-                                <div class="upgrade-value">+4 Energy given to allies</div>
+                                <div class="upgrade-value">+1 Impact Radius</div>
                             </div>
                         </div>
                     </div>
@@ -314,7 +327,7 @@
 
             <div id="popup-1-m" class="popup-container">
                 <div class="topbar">
-                    <span>Crusader's Strike Master Upgrade</span>
+                    <span>Lightning Bolt Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -322,11 +335,10 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Crusader's Slash</span>
+                            <span>Lightning Volley</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>Double the effective range of providing energy to allies.</div>
-                            <div>Crusader's Strike hits up to two additional enemies. Energy will not be given from these additional strikes.</div>
+                            <div>Lightning Bolt shoots two additional projectiles.</div>
                         </div>
                     </div>
                 </div>
@@ -334,7 +346,7 @@
 
             <div id = "popup-2" class="popup-container">
                 <div class="topbar">
-                    <span>Consecrate Upgrades</span>
+                    <span>Chain Lightning Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -346,21 +358,24 @@
                         </div>
                         <div id="upgrade-desc-2-1" class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Damage Increase & Cooldown Reduction</span>
+                                <span>Damage Increase & Cast and Bounce Range</span>
                             </div>
                         </div>
                         <div id="grid-2-1" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
                                 <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+2&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+20%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+4&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">+20%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>  
+                                <div class="upgrade-value">+6&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>                            
                             </div>
                         </div>
                         <div class="tier-4">
@@ -368,33 +383,34 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+40% Damage</div>
-                                <div class="upgrade-value">+15% Cooldown Reduction</div>
+                                <div class="upgrade-value">+25% Damage</div>
+                                <div class="upgrade-value">+8 Blocks Cast and Bounce Range</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
-                            <span>Zeal</span>
+                            <span>Spark</span>
                         </div> 
                         <div id="upgrade-desc-2-2" class="upgrade-desc">
                             <div class="upgrade-desc-content">
-                                <span>Range (Blocks) and Duration Increase</span>
+                                <span>Energy Cost Reduction and Chain Bounce Increase</span>
                             </div>
                         </div>
                         <div id="grid-2-2" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+0.25&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;-5<i class="fa-solid fa-bolt fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+0.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
+                                <div class="upgrade-value">-10<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+1&nbsp;<i class="fa-solid arrow-trend-up fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+0.75&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
+                                <div class="upgrade-value">-15<i class="fa-solid fa-bolt fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -402,8 +418,8 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+1 Range (Blocks)</div>
-                                <div class="upgrade-value">+1s Duration</div>
+                                <div class="upgrade-value">-20 Energy Cost</div>
+                                <div class="upgrade-value">+2 Chain Bounces</div>
                             </div>
                         </div>
                         </div>
@@ -412,7 +428,7 @@
 
             <div id="popup-2-m" class="popup-container">
                 <div class="topbar">
-                    <span>Consecrate Master Upgrade</span>
+                    <span>Chain Lightning Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -420,12 +436,10 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Sanctify</span>
+                            <span>Electrifying Chains</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>-30 Energy Cost</div>
-                            <div>+2 Additional Range (Radii)</div>
-                            <div>-20% Additional Cooldown Reduction</div>
+                            <div>Increase max Damage Reduction cap by 10%. Additionally, Chain Lightning now deals 6% more damage per bounce instead of less.</div>
                         </div>
                     </div>
                 </div>
@@ -433,7 +447,7 @@
 
             <div id = "popup-3" class="popup-container">
                 <div class="topbar">
-                    <span>Light Infusion Upgrades</span>
+                    <span>Windfury Weapon Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -441,63 +455,30 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Zeal</span>
+                            <span>Impair</span>
                         </div>
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div id="upgrade-desc-3-1" class="upgrade-desc-content">
-                                <span>Speed & Energy Gain Increase</span>
+                                <span>Weapon Damage Increase & Cooldown Reduction</span>
                             </div>
                         </div>
                         <div id="grid-3-1" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+5%&nbsp;<i class="fa-solid fa-feather-pointed fa-fw"></i></div>
-                                <div class="upgrade-value">&nbsp;+5&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
+                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-feather-pointed fa-fw"></i></div>
-                                <div class="upgrade-value">&nbsp;+10&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-feather-pointed fa-fw"></i></div>
-                                <div class="upgrade-value">&nbsp;+15&nbsp;<i class="fa-solid fa-bolt fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+6s Duration</div>
-                                <div class="upgrade-value">+20 Energy Given</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="upgrade-2">
-                        <div class="upgrade-2-header">
-                            <span>Zeal PLIKIEEEEEEEEEEEE</span>
-                        </div> 
-                        <div class="upgrade-desc">
-                            <div id="upgrade-desc-3-2" class="upgrade-desc-content">
-                                <span>Cooldown Reduction</span>
-                            </div>
-                        </div>
-                        <div id="grid-3-2" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                                 <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+45%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                                 <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                         </div>
@@ -506,7 +487,41 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">-20% Cooldown Reduction</div>
+                                <div class="upgrade-value">+60% Weapon Damage</div>
+                                <div class="upgrade-value">-20% Cooldown</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade-2">
+                        <div class="upgrade-2-header">
+                            <span>Bing</span>
+                        </div> 
+                        <div class="upgrade-desc">
+                            <div id="upgrade-desc-3-2" class="upgrade-desc-content">
+                                <span>Proc Chance and Windfury Hit Increase</span>
+                            </div>
+                        </div>
+                        <div id="grid-3-2" class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+4%&nbsp;<i class="fa-solid fa-dice-d20 fa-fw"></i></div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+8%&nbsp;<i class="fa-solid fa-dice-d20 fa-fw"></i></div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+12%&nbsp;<i class="fa-solid fa-dice-d20 fa-fw"></i></div>
+                            </div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
+                            </div>
+                            <div class="tier-4-desc">
+                                <div class="upgrade-value">+16% Proc Chance</div>
+                                <div class="upgrade-value">+1 Windfury Hit</div>
                             </div>
                         </div>
                     </div>
@@ -515,7 +530,7 @@
 
             <div id="popup-3-m" class="popup-container">
                 <div class="topbar">
-                    <span>Light Infusion Master Upgrade</span>
+                    <span>Windfury Weapon Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -523,11 +538,11 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Beacon of Light</span>
+                            <span>Shredding Fury</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>+3s Duration</div>
-                            <div>Casting Light Infusion near other allies will now grant them bonus energy and speed. (Half the energy given).</div>
+                            <div>`100% Additional Weapon Damage</div>
+                            <div>Hits on an enemy will permanenetly reduce their damage reduction by 2% for each Windfury Hit</div>
                         </div>
                     </div>
                 </div>
@@ -535,105 +550,7 @@
 
             <div id = "popup-4" class="popup-container">
                 <div class="topbar">
-                    <span>Holy Radiance Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
-                </div>
-                <div class="content-primary">
-                    <div class="upgrade-1">
-                        <div class="upgrade-1-header">
-                            <span>Alleviate</span>
-                        </div>
-                        <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
-                            <div id="upgrade-desc-4-1" class="upgrade-desc-content">
-                                <span>Healing Increase</span>
-                            </div>
-                            <div id="grid-4-1" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+30% Healing</div>
-                            </div>
-                        </div>
-                        </div>
-                        
-                    </div>
-                    <div class="upgrade-2">
-                        <div class="upgrade-2-header">
-                            <span>Zeal</span>
-                        </div> 
-                        <div class="upgrade-desc">
-                            <div id="upgrade-desc-4-2" class="upgrade-desc-content">
-                                <span>Cooldown Reduction</span>
-                            </div>
-                        </div>
-                        <div id="grid-4-2" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">-20% Cooldown Reduction</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="popup-4-m" class="popup-container">
-                <div class="topbar">
-                    <span>Holy Radiance Master Upgrade</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
-                </div>
-                <div class="content-primary-master">
-                    <div class="master">
-                        <div class="master-header">
-                            <span>Edifying Radiance</span>
-                        </div>
-                        <div class="upgrade-desc-content-master">
-                            <div>Crusader's Holy Mark provides triple the energy per second and speed at the cost of increased energy cost.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id = "popup-5" class="popup-container">
-                <div class="topbar">
-                    <span>Inspiring Presence Upgrades</span>
+                    <span>Lightning Rod Upgrades</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -644,25 +561,25 @@
                             <span>Energize</span>
                         </div>
                         <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
-                            <div id="upgrade-desc-5-1" class="upgrade-desc-content">
-                                <span>Energy Per Second Increase</span>
+                            <div id="upgrade-desc-4-1" class="upgrade-desc-content">
+                                <span>Energy Increase and Cooldown Reduction</span>
                             </div>
                         </div>
-                        <div id="grid-5-1" class="upgrade-grid">
+                        <div id="grid-4-1" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value ">&nbsp;+2&nbsp;<i class="fa-solid fa-bolt fa-fw"></i>/s</div>
+                                <div class="upgrade-value ">+10<i class="fa-solid fa-bolt fa-fw"></i>/s</div>
+                                <div class="upgrade-value">-5%<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">&nbsp;+4&nbsp;<i class="fa-solid fa-bolt fa-fw"></i>/s</div>
+                                <div class="upgrade-value ">&nbsp;+20<i class="fa-solid fa-bolt fa-fw"></i>/s</div>
+                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">&nbsp;+6&nbsp;<i class="fa-solid fa-bolt fa-fw"></i>/s</div>
+                                <div class="upgrade-value ">&nbsp;+30<i class="fa-solid fa-bolt fa-fw"></i>/s</div>
+                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -670,37 +587,139 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">+8 Energy Per Second</div>
+                                <div class="upgrade-value">+40 Energy</div>
+                                <div class="upgrade-value">-20% Cooldown</div>
                             </div>
                         </div>
                     </div>
                     <div class="upgrade-2">
                         <div class="upgrade-2-header">
-                            <span>Zeal</span>
+                            <span>Alleviate</span>
+                        </div> 
+                        <div class="upgrade-desc">
+                            <div id="upgrade-desc-4-2" class="upgrade-desc-content">
+                                <span>Healing Increase</span>
+                            </div>
+                        </div>
+                        <div id="grid-4-2" class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+6%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+12%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+18%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
+                            </div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
+                            </div>
+                            <div class="tier-4-desc">
+                                <div class="upgrade-value">+24% Healing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-4-m" class="popup-container">
+                <div class="topbar">
+                    <span>Lightning Rod Master Upgrade</span>
+                    <button class="x-button" onclick="closepopups();">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary-master">
+                    <div class="master">
+                        <div class="master-header">
+                            <span>Thunderbolt</span>
+                        </div>
+                        <div class="upgrade-desc-content-master">
+                            <div>Lightning Rod increase damage dealt by 30% for 8 seconds after the initial cast.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "popup-5" class="popup-container">
+                <div class="topbar">
+                    <span>Capacitor Totem Upgrades</span>
+                    <button class="x-button" onclick="closepopups();">
+                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+                    </button>
+                </div>
+                <div class="content-primary">
+                    <div class="upgrade-1">
+                        <div class="upgrade-1-header">
+                            <span>Impair</span>
+                        </div>
+                        <div class="upgrade-desc">
+                            <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                            <div id="upgrade-desc-5-1" class="upgrade-desc-content">
+                                <span>Damage Increase & Cooldown Reduction</span>
+                            </div>
+                        </div>
+                        <div id="grid-5-1" class="upgrade-grid">
+                            <div class="tier-1">
+                                <div class="upgrade-tier">Tier I</div>
+                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                            </div>
+                            <div class="tier-2">
+                                <div class="upgrade-tier">Tier II</div>
+                                <div class="upgrade-value">+20%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                            </div>
+                            <div class="tier-3">
+                                <div class="upgrade-tier">Tier III</div>
+                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
+                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                            </div>
+                        </div>
+                        <div class="tier-4">
+                            <div class="upgrade-tier">
+                                Tier IV
+                            </div>
+                            <div class="tier-4-desc">
+                                <div class="upgrade-value">+40% Damage</div>
+                                <div class="upgrade-value">-20% Cooldown</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrade-2">
+                        <div class="upgrade-2-header">
+                            <span>Chronos</span>
                         </div> 
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div id="upgrade-desc-5-2" class="upgrade-desc-content">
-                                <span>Duration and Ability Radius Increase</span>
+                                <span>Duration and Ability Range</span>
                             </div>
                         </div>
                         <div id="grid-5-2" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
                                 <div class="upgrade-value">&nbsp;+1s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
-                                <div class="upgrade-value">+1.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
+                                <div class="upgrade-value">+0.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
                                 <div class="upgrade-value">&nbsp;+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
-                                <div class="upgrade-value">+3&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
+                                <div class="upgrade-value">+1&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
                                 <div class="upgrade-value">&nbsp;+3s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
-                                <div class="upgrade-value">+4.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
+                                <div class="upgrade-value">+1.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
                             </div>
                         </div>
                         <div class="tier-4">
@@ -709,7 +728,7 @@
                             </div>
                             <div class="tier-4-desc">
                                 <div class="upgrade-value">+4s Duration</div>
-                                <div class="upgrade-value">+6 Blocks Ability Radius</div>
+                                <div class="upgrade-value">+2 Blocks Ability Radius</div>
                             </div>
                         </div>
                     </div>
@@ -718,7 +737,7 @@
 
             <div id="popup-5-m" class="popup-container">
                 <div class="topbar">
-                    <span>Inspiring Presence Master Upgrade</span>
+                    <span>Capacitor Totem Master Upgrade</span>
                     <button class="x-button" onclick="closepopups();">
                         <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
                     </button>
@@ -726,11 +745,10 @@
                 <div class="content-primary-master">
                     <div class="master">
                         <div class="master-header">
-                            <span>Transcendent Presence</span>
+                            <span>Incapacitating Totem</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>20% Cooldown Reduction</div>
-                            <div>Reset the cooldown on all caster's and nearby allies' abilities (other than Inspiring Presence.)</div>
+                            <div>Each Capacitor Totem proc increases the hit radius by 0.5 Blocks and all enemies hit have their damage resistance permanently reduced by 20%</div>
                         </div>
                     </div>
                 </div>

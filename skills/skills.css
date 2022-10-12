@@ -196,6 +196,7 @@ h3 {
 
 .upgrade-desc {
     display: block;
+    margin: 0.7rem 0;
 }
 
 .upgrade-desc-header, .upgrade-desc-content {
@@ -221,7 +222,7 @@ h3 {
     font-size: 1.7rem;
 }
 .upgrade-desc-content {
-    margin: 0.7rem 0;
+    
     font-weight: 400;
 }
 

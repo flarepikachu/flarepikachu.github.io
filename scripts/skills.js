@@ -157,6 +157,7 @@ function closepopups() {
 
 
 function align1() {
+  var mm = window.matchMedia("(min-width: 1200px)")
   var x = document.getElementById("upgrade-desc-1-1");
   var y = document.getElementById("upgrade-desc-1-2");
   var u = document.getElementById("grid-1-1");
@@ -165,25 +166,28 @@ function align1() {
   console.log(x.offsetHeight);
   console.log("upgrade 2");
   console.log(y.offsetHeight);
-  if (x.offsetHeight > y.offsetHeight) {
-    y.style.height = x.offsetHeight+"px";
-  } else {
-    x.style.height = y.offsetHeight+"px";
-    console.log("black")
-  }
-  console.log("upgrade 1");
-  console.log(u.offsetHeight);
-  console.log("upgrade 2");
-  console.log(v.offsetHeight);
-  if (u.offsetHeight > v.offsetHeight) {
-    v.style.height = u.offsetHeight+"px";
-  } else {
-    u.style.height = v.offsetHeight+"px";
-    console.log("black");
+  if (mm.matches) {
+    if (x.offsetHeight > y.offsetHeight) {
+      y.style.height = x.offsetHeight+"px";
+    } else {
+      x.style.height = y.offsetHeight+"px";
+      console.log("black")
+    }
+    console.log("upgrade 3");
+    console.log(u.offsetHeight);
+    console.log("upgrade 4");
+    console.log(v.offsetHeight);
+    if (u.offsetHeight > v.offsetHeight) {
+      v.style.height = u.offsetHeight+"px";
+    } else {
+      u.style.height = v.offsetHeight+"px";
+      console.log("black");
+    }
   }
 }
 
 function align2() {
+  var mm = window.matchMedia("(min-width: 1200px)")
   var x = document.getElementById("upgrade-desc-2-1");
   var y = document.getElementById("upgrade-desc-2-2");
   var u = document.getElementById("grid-2-1");
@@ -192,24 +196,28 @@ function align2() {
   console.log(x.offsetHeight);
   console.log("upgrade 2");
   console.log(y.offsetHeight);
-  if (x.offsetHeight > y.offsetHeight) {
-    y.style.height = x.offsetHeight+"px";
-  } else {
-    x.style.height = y.offsetHeight+"px";
-    console.log("black")
-  }
-  console.log("upgrade 1");
-  console.log(u.offsetHeight);
-  console.log("upgrade 2");
-  console.log(v.offsetHeight);
-  if (u.offsetHeight > v.offsetHeight) {
-    v.style.height = u.offsetHeight+"px";
-  } else {
-    u.style.height = v.offsetHeight+"px";
-    console.log("black");
+  if (mm.matches) {
+    if (x.offsetHeight > y.offsetHeight) {
+      y.style.height = x.offsetHeight+"px";
+    } else {
+      x.style.height = y.offsetHeight+"px";
+      console.log("black")
+    }
+    console.log("upgrade 3");
+    console.log(u.offsetHeight);
+    console.log("upgrade 4");
+    console.log(v.offsetHeight);
+    if (u.offsetHeight > v.offsetHeight) {
+      v.style.height = u.offsetHeight+"px";
+    } else {
+      u.style.height = v.offsetHeight+"px";
+      console.log("black");
+    }
   }
 }
+
 function align3() {
+  var mm = window.matchMedia("(min-width: 1200px)")
   var x = document.getElementById("upgrade-desc-3-1");
   var y = document.getElementById("upgrade-desc-3-2");
   var u = document.getElementById("grid-3-1");
@@ -218,24 +226,28 @@ function align3() {
   console.log(x.offsetHeight);
   console.log("upgrade 2");
   console.log(y.offsetHeight);
-  if (x.offsetHeight > y.offsetHeight) {
-    y.style.height = x.offsetHeight+"px";
-  } else {
-    x.style.height = y.offsetHeight+"px";
-    console.log("black")
-  }
-  console.log("upgrade 1");
-  console.log(u.offsetHeight);
-  console.log("upgrade 2");
-  console.log(v.offsetHeight);
-  if (u.offsetHeight > v.offsetHeight) {
-    v.style.height = u.offsetHeight+"px";
-  } else {
-    u.style.height = v.offsetHeight+"px";
-    console.log("black");
+  if (mm.matches) {
+    if (x.offsetHeight > y.offsetHeight) {
+      y.style.height = x.offsetHeight+"px";
+    } else {
+      x.style.height = y.offsetHeight+"px";
+      console.log("black")
+    }
+    console.log("upgrade 3");
+    console.log(u.offsetHeight);
+    console.log("upgrade 4");
+    console.log(v.offsetHeight);
+    if (u.offsetHeight > v.offsetHeight) {
+      v.style.height = u.offsetHeight+"px";
+    } else {
+      u.style.height = v.offsetHeight+"px";
+      console.log("black");
+    }
   }
 }
+
 function align4() {
+  var mm = window.matchMedia("(min-width: 1200px)")
   var x = document.getElementById("upgrade-desc-4-1");
   var y = document.getElementById("upgrade-desc-4-2");
   var u = document.getElementById("grid-4-1");
@@ -244,25 +256,28 @@ function align4() {
   console.log(x.offsetHeight);
   console.log("upgrade 2");
   console.log(y.offsetHeight);
-  if (x.offsetHeight > y.offsetHeight) {
-    y.style.height = x.offsetHeight+"px";
-  } else {
-    x.style.height = y.offsetHeight+"px";
-    console.log("black")
-  }
-  console.log("upgrade 1");
-  console.log(u.offsetHeight);
-  console.log("upgrade 2");
-  console.log(v.offsetHeight);
-  if (u.offsetHeight > v.offsetHeight) {
-    v.style.height = u.offsetHeight+"px";
-  } else {
-    u.style.height = v.offsetHeight+"px";
-    console.log("black");
+  if (mm.matches) {
+    if (x.offsetHeight > y.offsetHeight) {
+      y.style.height = x.offsetHeight+"px";
+    } else {
+      x.style.height = y.offsetHeight+"px";
+      console.log("black")
+    }
+    console.log("upgrade 3");
+    console.log(u.offsetHeight);
+    console.log("upgrade 4");
+    console.log(v.offsetHeight);
+    if (u.offsetHeight > v.offsetHeight) {
+      v.style.height = u.offsetHeight+"px";
+    } else {
+      u.style.height = v.offsetHeight+"px";
+      console.log("black");
+    }
   }
 }
 
 function align5() {
+  var mm = window.matchMedia("(min-width: 1200px)")
   var x = document.getElementById("upgrade-desc-5-1");
   var y = document.getElementById("upgrade-desc-5-2");
   var u = document.getElementById("grid-5-1");
@@ -271,20 +286,22 @@ function align5() {
   console.log(x.offsetHeight);
   console.log("upgrade 2");
   console.log(y.offsetHeight);
-  if (x.offsetHeight > y.offsetHeight) {
-    y.style.height = x.offsetHeight+"px";
-  } else {
-    x.style.height = y.offsetHeight+"px";
-    console.log("black")
-  }
-  console.log("upgrade 1");
-  console.log(u.offsetHeight);
-  console.log("upgrade 2");
-  console.log(v.offsetHeight);
-  if (u.offsetHeight > v.offsetHeight) {
-    v.style.height = u.offsetHeight+"px";
-  } else {
-    u.style.height = v.offsetHeight+"px";
-    console.log("black");
+  if (mm.matches) {
+    if (x.offsetHeight > y.offsetHeight) {
+      y.style.height = x.offsetHeight+"px";
+    } else {
+      x.style.height = y.offsetHeight+"px";
+      console.log("black")
+    }
+    console.log("upgrade 3");
+    console.log(u.offsetHeight);
+    console.log("upgrade 4");
+    console.log(v.offsetHeight);
+    if (u.offsetHeight > v.offsetHeight) {
+      v.style.height = u.offsetHeight+"px";
+    } else {
+      u.style.height = v.offsetHeight+"px";
+      console.log("black");
+    }
   }
 }

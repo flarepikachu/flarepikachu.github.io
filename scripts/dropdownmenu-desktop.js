@@ -9,6 +9,9 @@ class dropdown1 extends HTMLElement {
           <li><a class='direlink' href="/index.html">
               <i class="fa-solid fa-magnifying-glass fa-fw"></i>
               <span>Overview</span></a></li>
+          <li><a class='direlink' href="/wave-defense/wave-defense.html">
+              <i class="fa-solid fa-house-tsunami fa-fw"></i>
+              <span>Wave Defense</span></a></li>
           <li>
               <button class="dropdown-btn">
               <i class="fa-solid fa-circle-info fa-fw"></i>
@@ -108,24 +111,13 @@ class dropdown1 extends HTMLElement {
               <span>Supply Drop Susan</span></a>
           </li>
 
-          <li>
-            <button class="dropdown-btn"><i class="fa-solid fa-piggy-bank fa-fw"></i>Level Rewards
-              </button>
-              <div class="dropdown-container">
-              <a class='test' href="#"><span>Link 1</span></a>
-              <a class='test' href="#"><span>Link 2</span></a>
-              <a class='test' href="#"><span>Link 3</span></a>
-              </div>
-          </li>
-          <li>
-            <button class="dropdown-btn"><i class="fa-solid fa-gem fa-fw"></i>Achievements
-              </button>
-              <div class="dropdown-container">
-              <a class='test' href="#"><span>Link 1</span></a>
-              <a class='test' href="#"><span>Link 2</span></a>
-              <a class='test' href="#"><span>Link 3</span></a>
-              </div>
-          </li>
+          <li><a class='direlink' href="/levels/levels.html">
+              <i class="fa-solid fa-piggy-bank fa-fw"></i>
+              <span>Levels & Rewards</span></a></li>
+
+          <li><a class='direlink' href="/achievements/achievements.html">
+              <i class="fa-solid fa-gem fa-fw"></i>
+              <span>Achievements</span></a></li>
       </ul>
       `;
     }

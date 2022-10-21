@@ -1,0 +1,47 @@
+.patch-notes {
+    background-color: white;
+    padding: 4rem;
+    font-size: 1.5rem;
+}
+
+.pn-header {
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-bottom: 2px lightgray solid;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pn-header-text {
+    
+}
+
+.susan, .level-rewards {
+    position: relative;
+}
+  
+.susan-gif, .level-rewards-gif {
+    position: relative;
+    z-index: 5;
+}
+
+.susan-static, .level-rewards-static {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+}
+
+.susan:hover .susan-static, .level-rewards:hover .level-rewards-static {
+    opacity: 0;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+.weapon-image {
+    max-width: 55%;
+}

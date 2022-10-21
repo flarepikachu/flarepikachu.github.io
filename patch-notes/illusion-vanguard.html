@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="/patch-notes/patch-notes.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <header-component></header-component>
+
+    <div class="div1">
+        <span class="wl2pve">
+            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Patch Notes</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Illusion Vanguard</a>
+        </span>
+    </div>
+
+    <burger-i></burger-i>
+
+    <div class="container">
+
+        <div></div>
+
+        <div id="navigationbar-mobile">
+            <mobile-divs></mobile-divs>
+        </div>
+
+        <nav class="main-nav" role="navigation">
+
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">
+                        <div class="selecter-text">Warlords 2 PvE</div>
+                    </option>
+                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                </select>
+            </div>
+
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <dropdown-component></dropdown-component>
+                </div>
+                <div class="pome hide">A pome is...</div>
+            </div>
+
+        </nav>
+
+        <div id="dingleberry" class="patch-notes">
+            <img src="illusion-vanguard-banner.png" />
+            <div class="pn-header"><span class="pn-header-text">Illusion Vanguard</span></div>
+
+            <p>Ever wonder how Warlords would look like with PvE? We humbly present to you our edition of Warlords PvE.</p>
+            <p>The following patch notes will provide a simple introduction to the various features introduced with PvE. Further information on PvE can be found in the Warlords 2 PvE Documentation. You can navigate the documentation using the sidebar to your left on desktop, or by using the hamburger on mobile devices. (yes it sucks on mobile I know :shrug)</p>
+
+            <div class="pn-header"><span class="pn-header-text">NEW PvE Gamemode: Wave Defense</span></div>
+
+            <p>Wave Defense is the first PvE gamemode released on Warlords 2. The main objective is to beat waves of enemies by killing them all. </p>
+
+            <p>To play the new gamemode, simply click the Wave Defense NPC in the front of the lobby to join a game. </p>
+
+            <p>The maximum number of players is 4 per game, although you can play the game with less players. It is highly suggested that you play the mode with 4 players.</p>
+
+            <p>The new wave defense gamemode comes with 3 sub modes:</p>
+
+            <p>
+                <span class="bold">Normal</span><br>
+                    The normal mode comes with the most basic, classical experience. Survive 25 waves of onslaught from the blighted mobs to secure your victory… for now.
+            </p>
+    
+            <p>
+                <span class="bold">Hard </span><br>
+                    The bosses have recuperated and are now back with a vengeance. Your objective is still to survive 25 waves, but mobs will now have 50% more HP, deal 50% mode damage, and have additional abilities. <span class="bold">As this mode is still unpolished, we will be disabling it for now.</span>
+            </p>
+            <p>
+                <span class="bold">Endless </span> <br>
+                    With this gamemode, there is no end in sight. Kill as many enemies as you can to reach waves of mobs that your fellow players have never seen before!
+            </p>
+
+            <p>Wave Defense features in-game upgrades, which are bought with Insignia obtained from killing mobs and the end of rounds. More information can be found <a class='direlink' href="/wave-defense/wave-defense.html">here</a>.</p>
+
+            <p>When each game ends, you will be rewarded handsomely according to your performance. Rewards include Coins, Guild Coins (if you’re in a guild), Spec/Class/Universal EXP and weapons. More information on each item will be found below.</p>
+
+            <div class="pn-header"><span class="pn-header-text">New Maps</span></div>
+            <br>
+            <img src="crossfire.png" />
+            <br>
+            <br>
+            <img src="rift.png" />
+
+            <div class="pn-header"><span class="pn-header-text">Masterworks Fair</span></div>
+
+            <p>Ever get a great roll on a weapon but have no use for it? The Masterworks Fair is here to allow you to flex your perfect common rolls and earn rewards for such perfection. </p>
+
+            <p>The Masterworks Fair lasts a week and ends upon server reset every Monday. Participants compete by trying to submit the weapon with the highest weapon score. There are three categories of weapons, Common, Rare and Epic. Players can participate in all three categories at once. After the conclusion of each Masterworks Fair, players earn rewards based on their weapon’s placement compared to other players.</p>
+
+            <div class="pn-header"><span class="pn-header-text">Supply Drop Susan</span></div>
+            <br>
+            <div class="susan">
+                <img class = "susan-gif" src="susan.gif" /> 
+                <img class = "susan-static" src="susan.png" />
+            </div>
+
+            <p>Supply Drop Susan is essentially a lucky draw. You may roll rewards from Susan once per token. Tokens are obtained as rewards from the Masterworks Fair, every 10 levels of Spec Rewards, and if you have a ton of extra coins, you could purchase Susan tokens at 10k per token.</p>
+
+            <div class="pn-header"><span class="pn-header-text">Level Rewards</span></div>
+            <br>
+            <div class="level-rewards">
+                <img class = "level-rewards-gif" src="level-rewards.gif" /> 
+                <img class = "level-rewards-static" src="level-rewards.png" />
+            </div>
+
+
+            <p>You now can earn rewards while you level up your favorite specs! Rewards primarily consist of Coins and Synthetic Shards, but occasionally you will be rewarded with Fairy Essence and Susan tokens too. Level Rewards can be accessed by clicking your skull in the 8th slot of your hotbar.</p>
+
+            <div class="pn-header"><span class="pn-header-text">Achievements</span></div>
+            <br>
+            <p>Achievement hunters can rejoice, for that Achievements have finally arrived in Warlords 2. Truth be told, we created some achievements for PvP but thought it wasn’t so suitable to be implemented within competitive play as some people might throw for the achievements. We also wanted the achievements out with public games release, but the ship had already sailed on that by the time we came around with achievement ideas. With PvE, we have been given the perfect opportunity to release achievements. </p>
+
+            <p>There are two types of achievements, being challenge and tiered. Challenge achievements are generally one-time endeavors while tiered achievements are based on cumulative stats. Certain challenge achievements have their description obfuscated as a surprise for players, and their achievement descriptions will be displayed once you unlock the achievement. Feel free to share the content of hidden achievements once anyone has unlocked the achievement.</p>
+
+            <p>We anticipate further refining the concept of achievements in the future, so stay tuned on this!</p>
+
+            <div class="pn-header"><span class="pn-header-text">Weapons</span></div>
+            <br>
+            <span class="bold">Obtaining Weapons</span>
+
+            <p>Weapons are dropped randomly by mobs. Only common, rare and epic weapons can be dropped by mobs. Mob-dropped weapons have randomized stats and therefore have a weapon score. </p>
+
+            <p>Legendary weapons are craft/redeemed only and have fixed stats. Titles can be applied to legendary weapons to modify their stat distribution.</p>
+
+            <span class="bold">Synthetic Shards</span>
+
+            <p>This is the basic currency for upgrading weapons. Salvaging weapons will award Synthetic Shards. Synthetic Shards are the main cost for upgrading weapons.</p>
+
+            <span class="bold">Legend Fragments</span>
+
+            <p>Legend Fragments are needed to upgrade your legendary weapon. You can accumulate legend fragments by playing games with your legendary weapon equipped. </p>
+
+            <span class="bold">Star Pieces</span>
+
+            <p>Star Pieces can be applied on legendary weapons to upgrade a singular, random stat by 20%/30%/40%, depending on if the star piece is Common/Rare/Epic. Star Pieces are consumables and will be destroyed upon usage. You can apply a star piece on a weapon that already has a stat boosted. This will reroll the stat that the Star Piece boosts.</p>
+
+            <p>Star Pieces are mainly obtained as a reward for placing in the top 3 in the Masterworks Fair, more details on this right below. If you’re lucky, you could also get Star Pieces from Susan!</p>
+
+            <div class="pn-header"><span class="pn-header-text">Guilds</span></div>
+
+            <p>Players can create a guild by paying 500k coins as long as they clear any PvE mode (Normal + Hard) 20 times. Guilds offer some amazing perks that can help boost the quality of gameplay and speed up your progression. We will likely have guild-based events in the near future, so stay tuned!</p>
+
+            <div class="pn-header"><span class="pn-header-text">Currency</span></div>
+            <br>
+            <span class="bold">Coins</span>
+
+            <p>Coins are the generic currency for PvE in Warlords 2 and are involved in many transactions within PvE. Coins will be rewarded after the completion of every game. Coins can also be obtained from leveling rewards, which you can read about further down this document. </p> 
+            
+            <span class="bold">Guild Coins</span>  
+
+            <p>Guild coins are earned if you are in a guild. You will be awarded a base of 2% of your coin gain per game as Guild coins. Guild coins can be used to purchase temporary and permanent upgrades. Active upgrades will boost all members currently in the guild. You can explore guild upgrade options in /g menu while you’re in a guild.</p>
+
+            <span class="bold">Fairy Essence</span>
+
+            <p>Fairy Essence is used to unlock weapon skins. Once a weapon skin is unlocked, you can pick that skin with no additional cost in the future even if you swap it off. If you’re in dire need of Fairy Essence, consider subscribing to our Patreon… or… consult Susan??</p>
+
+            <div class="pn-header"><span class="pn-header-text">Team Deathmatch</span></div>
+            <br>
+            <span class="bold">Team Deathmatch Maps</span>
+            <ul>
+                <li>Ruins</li>
+                <li>Siege</li>
+                <li>Falstad Gate</li>
+                <li>Black Temple</li>
+                <li>Stormwind</li>
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Weapon Skins</span></div>
+            <p>This update has also brought 2 new skins!</p>
+            <img class = "weapon-image" src="lunar-justice.png" />
+            <img class = "weapon-image" src="vorpal-sword.png" />
+            
+            <div class="pn-header"><span class="pn-header-text">Balance Changes</span></div>
+            <br>
+            <span class="bold">Energy Powerup</span>
+            <ul>
+                <li>Energy increase: 40% -> 50%</li>
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Earthwarden</span></div>
+            <br>
+            <span class="bold">Chain Heal</span>
+            <br>
+            <ul>
+                <li>Removed healing reduction on last bounce</li>
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Vindicator</span></div>
+            <p class="italic">Prism Guard received a small rework as voted in by the playerbase.</p>
+
+            <span class="bold">Prism Guard</span>
+
+            <p>Cooldown: 24s -> 26s</p>
+
+            <p>Create a bubble shield around you that lasts 6 seconds. All projectiles that pass through the barrier have their damage reduced by 75%. After 6 seconds the bubble will burst, healing all allies for 200 + [1.5% missing health * HITS] health and grant [3% * HITS] damage reduction (up to 30%) for 6 seconds. </p>
+
+            <p>HITS = Each damage instance (both melee and ability) you took from an enemy while your Prism guard was active.</p>
+
+            <div class="pn-header"><span class="pn-header-text">Skill Boosts</span></div>
+
+            <p>Nearly all skill boosts have had a small overhaul to either stat or overall functionality.</p>
+
+            <span class="bold">Pyromancer</span>
+
+            <ul>
+                <li>Flame Burst</li>
+                <li>Arcane Shield</li>
+                <li>Inferno</li>
+            </ul>
+
+            <span class="bold">Cryomancer</span>
+
+            <ul>
+                <li>Frostbolt</li>
+                <li>Freezing Breath</li>
+                <li>Time Warp</li>
+                <li>Arcane Shield</li>
+                <li>Ice Barrier</li>
+            </ul>
+
+            <span class="bold">Aquamancer</span>
+
+            <ul>
+                <li>Water Breath</li>
+                <li>Arcane Shield</li>
+            </ul>
+
+            <span class="bold">Berserker</span>
+
+            <ul>
+                <li>Wounding Strike</li>
+                <li>Seismic Wave</li>
+                <li>Ground Slam</li>
+                <li>Blood Lust</li>
+                <li>Berserk</li>
+            </ul>
+
+            <span class="bold">Defender</span>
+
+            <ul>
+                <li>Wounding Strike</li>
+                <li>Intervene</li>
+                <li>Last Stand</li>
+            </ul>
+
+            <span class="bold">Revenant</span>
+
+            <ul>
+                <li>Crippling Strike</li>
+                <li>Reckless Charge</li>
+                <li>Orbs of Life</li>
+                <li>Undying Army</li>
+            </ul>
+
+            <span class="bold">Avenger</span>
+
+            <ul>
+                <li>Avenger's Strike</li>
+                <li>Consecrate</li>
+                <li>Light Infusion</li>
+                <li>Holy Radiance / Avenger's Mark</li>
+                <li>Avenger's Wrath</li>
+            </ul>
+
+            <span class="bold">Crusader</span>
+
+            <ul>
+                <li>Consecrate</li>
+                <li>Light Infusion</li>
+                <li>Holy Radiance / Crusader's Mark</li>
+                <li>Inspiring Presence</li>
+            </ul>
+
+            <span class="bold">Protector</span>
+
+            <ul>
+                <li>Protector's Strike</li>
+                <li>Consecrate</li>
+                <li>Light Infusion</li>
+                <li>Hammer of Light</li>
+            </ul>
+
+            <span class="bold">Thunderlord</span>
+
+            <ul>
+                <li>Chain Lightning</li>
+                <li>Windfury Weapon</li>
+                <li>Capacitor Totem</li>
+            </ul>
+
+            <span class="bold">Spiritguard</span>
+
+            <ul>
+                <li>Spirit Link</li>
+                <li>Soulbinding Weapon</li>
+                <li>Death's Debt</li>
+            </ul>
+
+            <span class="bold">Earthwarden</span>
+
+            <ul>
+                <li>Earthen Spike</li>
+                <li>Boulder</li>
+                <li>Chain Heal</li>
+                <li>Healing Totem</li>
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Additions</span></div>
+
+            <ul>
+                <li>Added flag message toggle (you can now swap between "YOUR/ENEMY" or BLUE/RED flag messages.) - Requested by shart#2149</li>
+                <li>Added total melee hits in the end of game summary - Requested by SmrtDiskordu#9887</li>
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Bug Fixes</span></div>
+
+            <ul>
+                <li>Fixed flags sometimes dropping in the Lobby during warp back</li>
+                <li>Fixed teammates affected by Last Stand granting the Defender slightly too much healing due to a calculcation error</li>
+                <li>Fixed typo in Death's Debt description</li>
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Credits</span></div>
+
+            <p>Coding: Plikie, sumSmash and Ferrybig<br>
+            PvE Game Design: Flare, Plikie, sumSmash and Balancing Team<br>
+            PvE Maps: Godcipe and Plikie<br>
+            Trailer: MrSoupy07<br>
+            Image Rendering: pekk<br>
+            Update Banner: Melowo</p>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

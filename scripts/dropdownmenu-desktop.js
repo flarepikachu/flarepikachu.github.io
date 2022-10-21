@@ -6,6 +6,9 @@ class dropdown1 extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <ul>
+          <li><a class='direlink' href="/patch-notes/illusion-vanguard.html">
+              <i class="fa-solid fa-hashtag fa-fw"></i>
+              <span>Patch Notes</span></a></li>
           <li><a class='direlink' href="/index.html">
               <i class="fa-solid fa-magnifying-glass fa-fw"></i>
               <span>Overview</span></a></li>

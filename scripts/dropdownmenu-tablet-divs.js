@@ -8,13 +8,21 @@ class dropdown2 extends HTMLElement {
       <div class="mobilemenu">
                 <ul>
                     <li>
+                        <a class='fullwidth' href="/patch-notes/illusion-vanguard.html">
+                            <i class="fa-solid fa-hashtag fa-fw">
+                            </i><span>Patch Notes</span></a>
+                    </li>
+                    <li>
                         <a class='fullwidth' href="/index.html">
                             <i class="fa-solid fa-magnifying-glass fa-fw">
                             </i><span>Overview</span></a>
                     </li>
                     <li>
-
-                    
+                        <a class='direlink' href="/wave-defense/wave-defense.html">
+                            <i class="fa-solid fa-house-tsunami fa-fw">
+                            </i><span>Wave Defense</span></a>
+                    </li>
+                    <li>
                     <li id="class">
                         <a class="fullwidth nopad" href="javascript:void(0);" onclick="classdd()">
                             <i class="fa-solid fa-circle-info fa-fw"></i><span>Skills & Upgrades</span></a>
@@ -154,11 +162,7 @@ class dropdown2 extends HTMLElement {
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a class='fullwidth' href="/index.html">
-                            <i class="fa-solid fa-magnifying-glass fa-fw">
-                            </i><span>Overview</span></a>
-                    </li>
+        
                     <li>
                     <li>
                         <a class='fullwidth direlink' href="/masterworks-fair/masterworks-fair.html">
@@ -173,74 +177,16 @@ class dropdown2 extends HTMLElement {
                     </li>
 
                     <li>
-                        <a class="fullwidth" href="javascript:void(0);" onclick="moneydd()">
-                            <i class="fa-solid fa-money-bill-wave fa-fw">
-                            </i>
-                            Currency
-                        </a>
-                    </li>
+                        <a class='direlink' href="/levels/levels.html">
+                            <i class="fa-solid fa-piggy-bank fa-fw">
+                            </i><span>Levels & Rewards</span></a></li>
 
                     <li>
-                        <a class="fullwidth" href="javascript:void(0);" onclick="moneydd()">
-                            <i class="fa-solid fa-money-bill-wave fa-fw">
-                            </i>
-                            Currency
-                        </a>
-                    </li>
+                        <a class='direlink' href="/achievements/achievements.html">
+                            <i class="fa-solid fa-gem fa-fw">
+                            </i><span>Achievements</span></a></li>
 
-                    <li>
-                        <a class="fullwidth" href="javascript:void(0);" onclick="moneydd()">
-                            <i class="fa-solid fa-money-bill-wave fa-fw">
-                            </i>
-                            Currency
-                        </a>
-                    </li>
-
-                    <li>
-                        <button class="dropdown-btn">
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-fire-burner fa-fw"></i>Masterworks Fair
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-parachute-box fa-fw"></i>Supply Drop Susan
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-piggy-bank fa-fw"></i>Level Rewards
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="dropdown-btn"><i class="fa-solid fa-gem fa-fw"></i>Achievements
-                        </button>
-                        <div class="dropdown-container">
-                            <a class='test' href="#"><span>Link 1</span></a>
-                            <a class='test' href="#"><span>Link 2</span></a>
-                            <a class='test' href="#"><span>Link 3</span></a>
-                        </div>
-                    </li>
+                
 
                 </ul>
             </div>

@@ -70,12 +70,12 @@ class dropdown1 extends HTMLElement {
               </button>
               <div class="dropdown-container dropdown-container-guilds">
               <a class='test' href="/guilds/guilds.html"><span>Overview</span></a>
-              <a class='test' href="/guilds/commands.html"><span>Guild Commands</span></a>
-              <a class='test' href="/guilds/chat.html"><span>Guild Chat</span></a>
+              <!--<a class='test' href="/guilds/commands.html"><span>Guild Commands</span></a>
+              <a class='test' href="/guilds/chat.html"><span>Guild Chat</span></a>-->
               <a class='test' href="/guilds/levels.html"><span>Guild Levels and EXP</span></a>
-              <a class='test' href="/guilds/bank.html"><span>Guild Bank</span></a>
+              <!--<a class='test' href="/guilds/bank.html"><span>Guild Bank</span></a>
               <a class='test' href="/guilds/upgrades.html"><span>Guild Upgrades</span></a>
-              <a class='test' href="/guilds/settings.html"><span>Guild Settings and Permissions</span></a>
+              <a class='test' href="/guilds/settings.html"><span>Guild Settings and Permissions</span></a>-->
               </div>
           </li>
           <li>

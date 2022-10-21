@@ -95,16 +95,17 @@ class dropdown2 extends HTMLElement {
                     <li>
                         <div id="guilds-dropdown" class="dropdowns">
                             <ul>
+                            
                                 <li>
                                     <a class='fullwidtha' href="/guilds/guilds.html"><span>Overview</span></a>
                                 </li>
-                                <li>
+                                <!--<li>
                                     <a class='fullwidtha' href="/guilds/chat.html"><span>Guild Chat</span></a>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a class='fullwidtha' href="/guilds/levels.html"><span>Guild Levels and EXP</span></a>
                                 </li>
-                                <li>
+                                <!--<li>
                                     <a class='fullwidtha' href="/guilds/bank.html"><span>Guild Bank</span></a>
                                 </li>
                                 <li>
@@ -113,7 +114,7 @@ class dropdown2 extends HTMLElement {
                                 <li>
                                     <a class='fullwidtha' href="/guilds/settings.html"><span>Guild Settings and
                                             Permissions</span></a>
-                                </li>
+                                </li>-->
                             </ul>
                         </div>
                     </li>

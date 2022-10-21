@@ -1,0 +1,18 @@
+.cont-gif-1 {
+    position: relative;
+}
+  
+.gif {
+    position: relative;
+    z-index: 5;
+}
+
+.static {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+}
+
+.cont-gif-1:hover .static {
+    opacity: 0;
+}

@@ -385,21 +385,3 @@ img {
   max-width: 100%;
 }
 
-.ach-gif-1 {
-  position: relative;
-}
-
-.achgif {
-  position: relative;
-  z-index: 5;
-}
-
-.achstatic {
-  position: absolute;
-  z-index: 10;
-  left: 0;
-}
-
-.ach-gif-1:hover .achstatic {
-  opacity: 0;
-}

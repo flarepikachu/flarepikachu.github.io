@@ -6,15 +6,24 @@ class dropdown1 extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <ul>
-          <li><a class='direlink' href="/patch-notes/illusion-vanguard.html">
-              <i class="fa-solid fa-hashtag fa-fw"></i>
-              <span>Patch Notes</span></a></li>
+  
+
+          <li>
+              <button class="dropdown-btn"><i class="fa-solid fa-hashtag fa-fw"></i></i>
+              Patch Notes
+              </button>
+              <div class="dropdown-container dropdown-container-currency">
+              <a class='test' href="/patch-notes/illusion-vanguard.html"><span>Illusion Vanguard</span></a>
+              <a class='test' href="/patch-notes/illusion-vanguard-1.html"><span>Illusion Vanguard Hotfix - 1.0.1</span></a>
+              </div>
+          </li>
           <li><a class='direlink' href="/index.html">
               <i class="fa-solid fa-magnifying-glass fa-fw"></i>
               <span>Overview</span></a></li>
           <li><a class='direlink' href="/wave-defense/wave-defense.html">
               <i class="fa-solid fa-house-tsunami fa-fw"></i>
               <span>Wave Defense</span></a></li>
+          
           <li>
               <button class="dropdown-btn">
               <i class="fa-solid fa-circle-info fa-fw"></i>

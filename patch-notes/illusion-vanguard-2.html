@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.0.2" />
+    <meta property="og:description" content="Warlords 2 PvE Documentation" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="/patch-notes/patch-notes.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <header-component></header-component>
+
+    <div class="div1">
+        <span class="wl2pve">
+            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Patch Notes</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Illusion Vanguard</a>
+        </span>
+    </div>
+
+    <burger-i></burger-i>
+
+    <div class="container">
+
+        <div></div>
+
+        <div id="navigationbar-mobile">
+            <mobile-divs></mobile-divs>
+        </div>
+
+        <nav class="main-nav" role="navigation">
+
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">
+                        <div class="selecter-text">Warlords 2 PvE</div>
+                    </option>
+                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                </select>
+            </div>
+
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <dropdown-component></dropdown-component>
+                </div>
+                <div class="pome hide">A pome is...</div>
+            </div>
+
+        </nav>
+
+        <div id="dingleberry" class="patch-notes">
+            <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.0.2</span></div>
+
+            <div class="pn-header"><span class="pn-header-text">Wave Defense</span></div>
+            <br>
+
+            <div class="bold">General</div>
+
+            <ul>
+                <li>Weapon shard amount on salvage has been tripled. The new values are as follows:
+                    <ul>
+                        <li>Common: 1-2 > 4-6</li>
+                        <li>Rare: 6-9 > 10-12</li>
+                        <li>Epic: 12-18 > 42-48</li>
+                    </ul>
+                </li>
+                <li>Fixed tiered achievements not being awarded to players.</li>
+                <li>Added hoverable upgrade descriptions in the chat. (Useful to see what your teammates are getting).</li>
+                <li>Changed the color of list of players in game on spectator menu.</li>
+                <li>Fixed bot wave message in the server status PvE game description.</li>
+            </ul>
+
+            <div class="bold">Class Balance</div>
+
+            <ul>  
+                <li>Assassin's Order of Eviscerate now properly reduces the cooldown of Blinding Assault.</li>
+                <li>Assassin's Death Strike (Judgement Strike Master) now awards the player with kill credit instead of an assist. This allows the class to properly synergize with it's ultimate ability.</li>
+                <li>Assassin's Killing Order (Order of Eviscerate Master) now reduces active cooldowns by 3s instead of 1s.</li>
+            
+                <li>Protector's Holy Radiance Tier IV Alleviate now has -30 Energy Cost in addition to 40% Healing Increase.</li>
+                <li>Protector's Holy Radiance Tier IV Zeal now has 20% Cooldown Reduction instead of 10% Cooldown Reduction.</li>
+                <li>FINALLY fixed Apothecary's right click master to deal double damage instead of triple.</li>
+                <li>Apothecary's Crystalizing Chains (Remedic Chains Master) health and damage bonus changed from 30% to 25%.</li>
+                <li>Earthwarden's Earthen Rupture (Earthen Spike Master) now only hits and slows one enemy (instead of AOE) and the damage has been decreased slightly.</li>
+                <li>Earthwarden's Terrestrial Meteor (Boulder Master) damage reduced from 5x to 4x.</li> 
+            </ul>
+
+            <div class="bold">Mob Balance</div>
+
+            <ul>
+                <li>There is now a hint message on how to beat Narmer.</li>
+                <li>Acolyte's Revenge range reduced from 20 to 15 blocks.</li>
+                <li>Fixed Zenith's Armageddon hitting Assassin while invisible.</li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

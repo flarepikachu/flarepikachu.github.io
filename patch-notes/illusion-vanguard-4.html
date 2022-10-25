@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.0.3" />
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.0.4" />
     <meta property="og:description" content="Warlords 2 PvE Documentation" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,54 +76,56 @@
         </nav>
 
         <div id="dingleberry" class="patch-notes">
-            <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.0.3</span></div>
+            <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.0.4</span></div>
             <div class="pn-header"><span class="pn-header-text">Wave Defense</span></div>
             <div class="pn-header">General</div>
             <ul>
-                <li>Fixed not getting coins per wave past 25 in Endless.</li>
+                <li>Added an enchantment effect on classes with unclaimed rewards.</li>
+            </ul>
+  
+            <div class="pn-header">Weapons</div>
+            <ul>
+                <li><span class="bold">Assists can now drop weapons at half the rate of kills.</span></li>
+                <li>Added basic sounds to all weapon interactions.</li>
+                <li>Your bound weapons in your inventory are now enchanted.</li>
+                <li>Added more filters to weapons menu. You can now filter by spec and by bound weapons instead of having to scavenge for that one weapon!!</li>
+                <li>Added an option to salvage all weapons.</li>
+                    <ul>
+                        <li>This feature is currently Patreon-only. 
+                            <ul>
+                                <li>You can subscribe to our Patreon <a href="https://www.patreon.com/warlords2?l=en">here</a>.</li> <li>All donations will be used to pay for costs associated with running the server itself.</li>
+                            </ul>
+                        </li>
+                        <li>You can use filters to select which weapons you want to salvage.</li>
+                        <li>This feature supports an option to ignores all weapons with a weaponscore that is 70 or higher.
+                            <ul>
+                                <li>The weaponscore parameter for salvage all cannot be modified yet.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </ul>
+           
+            <div class="pn-header"><span class="pn-header-text">Guilds</span></div>
+            <ul>
+                <li>Increased Base Guild Coin Conversion to 5%.</li>
+                <li>Increased Guild Coin Conversion Upgrade from 5% to 10%.</li>
+                <li>Decreased the costs of guild upgrades over the board.</li>
+                <li>Fixed Guild Leaderboard starting at 0.</li>
+                <li>Fixed Guild Upgrade lore.</li>
             </ul>
 
-            <div class="pn-header"><span class="pn-header-text">Class Balance</span></div><br>
-
-            <div class="bold">Pyromancer</div>
-            <ul><li>Fixed a calculcation error in Fiery Fusilade's max health burn damage. It should now properly do 0.2% max health damage per tick.</li></ul>
+            <div class="pn-header"><span class="pn-header-text">Bug Fixes</span></div>
             
-            <div class="bold">Avenger</div>
             <ul>
-                <li>Increased the duration upgrade of Avenger's Wrath from 1/2/3/4s to 2/4/6/8s</li>
-                <li>Avenger's Wrath master upgrade now doubles the hit radius as well.</li>
-            </ul>
-            
-            <div class="bold">Protector</div>
-            <ul>
-                <li>Increased the base damage of Protector's Strike by 25%.</li>
-                <li>Increased the damage upgrade of Protector's Strike from 3.75/7.5/11.25/15% to 7.5%/15/22.5/30%</li>
+                <li>
+                    Fixed Mage's Arcane Aegis (Arcane Shield Master) not activating on shield break.
+                </li>
+                <li>
+                    Fixed Assassin's Killing Order (Judgement Strike Master) leaving mobs on 0 HP.
+                </li>
+                <li>Added 's' to Legend Fragments in sidebar</li>
             </ul>
 
-            <div class="bold">Revenant</div>
-            <ul>
-                <li>Fixed Orbs skill boost being applied in PvE</li>
-                <li>Fixed Reckless Charge permanently stunning mobs. (probably) - epic</li>
-            </ul>
-
-            <div class="bold">Assassin</div>
-            <ul><li>Reduced the cooldown reduction on Shadow Step after killing enemies from 8s to 2s.</li></ul>
-            
-            <div class="bold">Earthwarden</div>
-            <ul>
-                <li>Fixed a bug where Earthen Spike master upgrade would trigger multiple times at once.</li>
-                <li>Increased the damage of Earthen Spike's master upgrade by 20%.</li>
-                <li>Increased the radius of Earthen's Spike's master upgrade by 2 blocks.</li>
-            </ul>
-            
-            DEV Note: The wave use to trigger on every enemy instead of the spike impact, resulting in it proccing at least 10-20 waves of 1000 damage per hit.
-
-            <div class="pn-header">Mob Balance</div>
-
-            <ul>
-                <li>Increased Zenith's Armageddon cooldown from 8s to 12s.</li>
-                <li>Reduced the range on Void Singularity's Void Pool from 5 to 4 blocks.</li>
-            </ul>
 
         </div>
 

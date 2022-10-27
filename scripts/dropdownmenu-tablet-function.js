@@ -148,11 +148,11 @@ function navnew() {
     x.style.left = "300px";
     x.style.height = "80vh";
     x.style.overflowX = "hidden";
-
     x.style.top = "10vh";
     x.style.boxShadow = "0 0 10px 2px black";
     y.style.zIndex = "100";
     x.style.transition = "all 0.5s ease-out";
+    x.style.visibility = "visible"
   } 
 }
 
@@ -168,6 +168,7 @@ function closemobilemenu() {
     x.style.top = "0";
     x.style.boxShadow = "0";
     y.style.zIndex = "-1";
+    x.style.visibility = "hidden"
   }
 }
 

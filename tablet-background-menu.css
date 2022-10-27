@@ -51,6 +51,7 @@ html, body {
     overflow-x: hidden;
     top: 10vh;
     background-color: transparent;  
+    visibility: hidden;
 }
 
 .site-name, .login {

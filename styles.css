@@ -1,6 +1,7 @@
 /* Setting the global font size to base 10*/
 html {
   font-size: 62.5%;
+  background-color: rgb(242, 95, 92);
 }
 
 /* Setting configurations for all elements in the body (basically everything)*/

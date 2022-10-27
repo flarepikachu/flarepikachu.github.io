@@ -50,7 +50,7 @@ html, body {
     width: calc(100vw - 300px); 
     overflow-x: hidden;
     top: 10vh;
-    background-color: none;  
+    background-color: transparent;  
 }
 
 .site-name, .login {

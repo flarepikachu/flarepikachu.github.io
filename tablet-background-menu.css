@@ -43,7 +43,7 @@ html, body {
 }
 
 #cover-up {
-    z-index: 2;
+    z-index: 0;
     left: 300px;
     position: absolute;
     height: 80vh;
@@ -51,7 +51,6 @@ html, body {
     overflow-x: hidden;
     top: 10vh;
     background-color: none;  
-    z-index: -1;
 }
 
 .site-name, .login {

@@ -2,12 +2,20 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warlords 2 PvE Documentation</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
     <link rel="stylesheet" href="currency.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
@@ -27,7 +35,8 @@
 
 <body onload="dropdownsdesktop()">
 
-    <header-component></header-component>
+    <div id="main-screen">
+        <header-component></header-component>
 
     <div class="div1">
         <span class="wl2pve">
@@ -97,8 +106,8 @@
 
         <div></div>
     </div>
-
-    </div>
+        </div>
+<new-tablet></new-tablet>
 
 </body>
 

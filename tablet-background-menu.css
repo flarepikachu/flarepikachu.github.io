@@ -1,0 +1,181 @@
+html, body {
+    overflow: hidden;
+    position: relative;
+    
+}
+#dingleberry {
+    min-height: calc(100vh - 5rem);
+}
+
+.mobile-burger {
+    position: absolute;
+    top: 0.9rem;
+    left: 2rem;
+}
+  
+.mobile-burger a {
+    color: #f1f1f1;
+}
+
+.tablet-background-menu {
+    z-index: 0;
+    background: rgb(224,36,36);
+    background: linear-gradient(180deg, rgba(224,36,36,1) 0%, rgba(189,23,23,1) 44%, rgb(231, 221, 72) 100%);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #f1f1f1;
+}
+
+#main-screen {
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: "none";
+    overflow-x: auto;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 1;
+    transition: all 0.5s ease-out;
+    position: relative;
+}
+
+#cover-up {
+
+    z-index: 2;
+    left: 300px;
+    position: absolute;
+    height: 80vh;
+    width: calc(100vw - 300px); 
+    overflow-x: hidden;
+    top: 10vh;
+    background-color: none;  
+}
+
+.site-name, .login {
+    padding-left: 2rem;
+}
+
+.site-name {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.login {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.login div {
+
+}
+
+.login-button {
+    width: 100%;
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 3rem;
+}
+
+.login-button:hover {
+    background: black;
+}
+
+
+.myass {
+    text-align: left;
+    border-right: 1px solid rgb(202, 201, 201);
+    width: 88.55px;
+}
+
+.mysettings {
+    text-align: center;
+    width: 74.2px;
+}
+
+.mylogout {
+    width: 66.9px;
+    border-left: 1px solid rgb(202, 201, 201);
+    text-align: center;
+}
+
+.tablet-background-menu {
+    list-style: none;
+}
+
+.menu {
+    overflow: scroll;
+    color: #f1f1f1;
+}
+
+.menu ul {
+    padding-left: 2rem;
+    margin-top: 0;
+}
+
+
+
+.menu ul li, .test {
+list-style: none;
+padding: 0;
+}
+
+
+.menu ul li a, .menu ul li button {
+font-size: 1.75rem;
+color: #f1f1f1;
+padding: 0.3rem 0;
+font-weight: 400;
+display: block;
+transition: all 0.5s ease;
+text-decoration: none;
+width: 100%;
+text-align: left;
+}
+
+.menu ul li a.test {
+font-size: 1.5rem;
+white-space: pre-line;
+}
+
+.menu ul li button.ul {
+    font-size: 1.5rem;
+    padding: 0.6rem 0;
+    letter-spacing: 0.05rem;
+}
+
+.menu ul li a:last-child {
+border: none;
+}
+
+.menu ul li a:hover, .menu ul li button:hover {
+background: rgb(167, 26, 26)
+}
+
+.menu ul li i {
+padding: 0.5rem;
+}
+
+.menu ul li button:focus {
+background: rgb(167, 26, 26)
+}
+
+.dropdown-container {
+    margin-left: 35.88px;
+    border-left: solid 0.5px rgb(202, 201, 201);
+    padding-left: 0.7rem;
+}
+
+.menu ul li button.dropdown-container-classes {
+    font-size: 1.6rem;
+}
+
+.dropdown-container-class {
+    margin-left: 10px;
+} 

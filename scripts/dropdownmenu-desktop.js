@@ -12,7 +12,7 @@ class dropdown1 extends HTMLElement {
               <button class="dropdown-btn"><i class="fa-solid fa-hashtag fa-fw"></i></i>
               Patch Notes
               </button>
-              <div class="dropdown-container dropdown-container-currency">
+              <div class="dropdown-container dropdown-container-patch-notes">
               <a class='test' href="/patch-notes/illusion-vanguard.html"><span>Illusion Vanguard</span></a>
               <a class='test' href="/patch-notes/illusion-vanguard-1.html"><span>Illusion Vanguard Hotfix - 1.0.1</span></a>
               <a class='test' href="/patch-notes/illusion-vanguard-2.html"><span>Illusion Vanguard Hotfix - 1.0.2</span></a>
@@ -36,7 +36,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Mage
                 </button>
-                <div class="dropdown-container dropdown-container-mage">
+                <div class="dropdown-container dropdown-container-class dropdown-container-mage">
                 <a class='test' href="/skills/mage/pyromancer.html"><span>Pyromancer</span></a>
                 <a class='test' href="/skills/mage/cryomancer.html"><span>Cryomancer</span></a>
                 <a class='test' href="/skills/mage/aquamancer.html"><span>Aquamancer</span></a>
@@ -44,7 +44,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Paladin
                 </button>
-                <div class="dropdown-container dropdown-container-paladin">
+                <div class="dropdown-container dropdown-container-class dropdown-container-paladin">
                 <a class='test' href="/skills/paladin/avenger.html"><span>Avenger</span></a>
                 <a class='test' href="/skills/paladin/crusader.html"><span>Crusader</span></a>
                 <a class='test' href="/skills/paladin/protector.html"><span>Protector</span></a>
@@ -52,7 +52,7 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Warrior
                 </button>
-                <div class="dropdown-container dropdown-container-warrior">
+                <div class="dropdown-container dropdown-container-class dropdown-container-warrior">
                 <a class='test' href="/skills/warrior/berserker.html"><span>Berserker</span></a>
                 <a class='test' href="/skills/warrior/defender.html"><span>Defender</span></a>
                 <a class='test' href="/skills/warrior/revenant.html"><span>Revenant</span></a>
@@ -60,15 +60,15 @@ class dropdown1 extends HTMLElement {
                 <button class="dropdown-btn ul">
                 Shaman
                 </button>
-                <div class="dropdown-container dropdown-container-shaman">
+                <div class="dropdown-container dropdown-container-class dropdown-container-shaman">
                 <a class='test' href="/skills/shaman/thunderlord.html"><span>Thunderlord</span></a>
                 <a class='test' href="/skills/shaman/spiritguard.html"><span>Spiritguard</span></a>
                 <a class='test' href="/skills/shaman/earthwarden.html"><span>Earthwarden</span></a>
                 </div>
-                <button class="dropdown-btn">
+                <button class="dropdown-btn ul">
                 Rogue
                 </button>
-                <div class="dropdown-container dropdown-container-rogue">
+                <div class="dropdown-container dropdown-container-class dropdown-container-rogue">
                 <a class='test' href="/skills/rogue/assassin.html"><span>Assassin</span></a>
                 <a class='test' href="/skills/rogue/vindicator.html"><span>Vindicator</span></a>
                 <a class='test' href="/skills/rogue/apothecary.html"><span>Apothecary</span></a>

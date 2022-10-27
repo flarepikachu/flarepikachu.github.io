@@ -2,12 +2,28 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warlords 2 PvE Documentation</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
     <link rel="stylesheet" href="weapons.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
@@ -27,162 +43,150 @@
 
 <body onload="dropdownsdesktop()">
 
-    <header-component></header-component>
-
-    <div class="div1">
-        <span class="wl2pve">
-            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
-        </span>
-        <i class="fa-solid fa-angle-right div1-text"></i>
-        <span>
-            <a class='direlink div1-text' href="#">Supply Drop Susan</a>
-        </span>
-    </div>
-
-    <burger-i></burger-i>
-
-    <div class="container">
-
-        <div></div>
-
-        <div id="navigationbar-mobile">
-            <mobile-divs></mobile-divs>
+    <div id="main-screen">
+        <header-component></header-component>
+        <div class="div1">
+            <span class="wl2pve">
+                <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Supply Drop Susan</a>
+            </span>
         </div>
-
-        <nav class="main-nav" role="navigation">
-
-            <div class="selecter">
-                <select class="div-toggle" data-target=".my-info-1">
-                    <option value="orange" data-show=".pve">
-                        <div class="selecter-text">Warlords 2 PvE</div>
-                    </option>
-                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
-                </select>
+        <burger-i></burger-i>
+        <div class="container">
+            <div></div>
+            <div id="navigationbar-mobile">
+                <mobile-divs></mobile-divs>
             </div>
-
-            <div class="my-info-1">
-                <div class="pve hide">
-                    <dropdown-component></dropdown-component>
+            <nav class="main-nav" role="navigation">
+                <div class="selecter">
+                    <select class="div-toggle" data-target=".my-info-1">
+                        <option value="orange" data-show=".pve">
+                            <div class="selecter-text">Warlords 2 PvE</div>
+                        </option>
+                        <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                    </select>
                 </div>
-                <div class="pome hide">A pome is...</div>
+                <div class="my-info-1">
+                    <div class="pve hide">
+                        <dropdown-component></dropdown-component>
+                    </div>
+                    <div class="pome hide">A pome is...</div>
+                </div>
+            </nav>
+            <div class="main-text">
+                <h1>Supply Drop Susan</h1>
+                <p>This cute little bunny will give you great rewards if you feed her Supply Drop tokens! Supply Drop tokens can be obtained primarily through the Masterworks Fair. Supply Drop tokens are also available from Level Rewards and can be purchased for 10,000 Coins. </p>
+                <p>The prized rewards from the Supply Drop are the Star Pieces and the Skill Boost Modifier. The drop rates as of release are as follows:</p>
+                <table class="susan-rates">
+                    <col>
+                    <col>
+                    <col>
+                    <tr class="table-header">
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Drop Chance</th>
+                    </tr>
+                    <tr>
+                        <td>Synthetic Shards</td>
+                        <td>3</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Synthetic Shards</td>
+                        <td>5</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Synthetic Shards</td>
+                        <td>10</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Synthetic Shards</td>
+                        <td>20</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Synthetic Shards </td>
+                        <td>50 </td>
+                        <td>20 </td>
+                    </tr>
+                    <tr>
+                        <td><span class="common">Common Star Piece</span></td>
+                        <td>1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><span class="rare">Rare Star Piece</span></td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><span class="epic">Epic Star Piece</span></td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><span class="epic">Skill Boost Modifier</span></td>
+                        <td>1 </td>
+                        <td>1 </td>
+                    </tr>
+                    <tr>
+                        <td>Coins</td>
+                        <td>1000</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Coins</td>
+                        <td>2000</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Coins</td>
+                        <td>5000</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Coins</td>
+                        <td>10000</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Coins</td>
+                        <td>50000</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Coins</td>
+                        <td>100000</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Fairy Essence</td>
+                        <td>20</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Fairy Essence</td>
+                        <td>40</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>TOTAL WEIGHT</td>
+                        <td>1035</td>
+                    </tr>
+                </table>
+                <br>
             </div>
-
-        </nav>
-
-        <div class="main-text">
-            <h1>Supply Drop Susan</h1>
-
-            <p>This cute little bunny will give you great rewards if you feed her Supply Drop tokens! Supply Drop tokens can be obtained primarily through the Masterworks Fair. Supply Drop tokens are also available from Level Rewards and can be purchased for 10,000 Coins. </p>
-
-            <p>The prized rewards from the Supply Drop are the Star Pieces and the Skill Boost Modifier. The drop rates as of release are as follows:</p>
-
-            <table class="susan-rates">
-                <col>
-                <col>
-                <col>
-                <tr class="table-header">
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Drop Chance</th>
-                </tr>
-                <tr>
-                    <td>Synthetic Shards</td>
-                    <td>3</td>
-                    <td>150</td>
-                </tr>
-                <tr>
-                    <td>Synthetic Shards</td>
-                    <td>5</td>
-                    <td>200</td>
-                </tr>
-                <tr>
-                    <td>Synthetic Shards</td>
-                    <td>10</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Synthetic Shards</td>
-                    <td>20</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Synthetic Shards </td>
-                    <td>50 </td>
-                    <td>20 </td>
-                </tr>
-                <tr>
-                    <td><span class="common">Common Star Piece</span></td>
-                    <td>1</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td><span class="rare">Rare Star Piece</span></td>
-                    <td>1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td><span class="epic">Epic Star Piece</span></td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td><span class="epic">Skill Boost Modifier</span></td>
-                    <td>1 </td>
-                    <td>1 </td>
-                </tr>
-                <tr>
-                    <td>Coins</td>
-                    <td>1000</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Coins</td>
-                    <td>2000</td>
-                    <td>150</td>
-                </tr>
-                <tr>
-                    <td>Coins</td>
-                    <td>5000</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Coins</td>
-                    <td>10000</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Coins</td>
-                    <td>50000</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Coins</td>
-                    <td>100000</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Fairy Essence</td>
-                    <td>20</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Fairy Essence</td>
-                    <td>40</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>TOTAL WEIGHT</td>
-                    <td>1035</td>
-                </tr>
-            </table>
-            <br>
+            <div></div>
         </div>
-
-        <div></div>
+        </div>
     </div>
-
-    </div>
+    <new-tablet></new-tablet>
 
 </body>
 

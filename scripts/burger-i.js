@@ -6,7 +6,7 @@ class burgerinsert extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="mobile-burger">
-        <a href="javascript:void(0);" class="burger" onclick="navigationbar()">
+        <a href="javascript:void(0);" class="burger" onclick="navnew()">
             <i class="fa-solid fa-bars fa-2xl">
             </i>
         </a>

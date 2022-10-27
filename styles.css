@@ -7,7 +7,8 @@ html {
 
 body {
   font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.05rem;
   color: rgb(34, 33, 33);
   line-height: 1.6;
   font-weight: 300;
@@ -32,7 +33,7 @@ body {
 
 .site-title {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 75px;
   line-height: normal;
   text-decoration: none;
   color: #f1f1f1;
@@ -46,22 +47,13 @@ a:link {
   text-decoration: none;
 }
 
-.mobile-burger {
-  position: absolute;
-  top: 0.9rem;
-  right: 2rem;
-}
 
-.mobile-burger a {
-  color: #f1f1f1;
-}
  
 /* Actual page is displayed in containers*/
 
 .container {
   display: grid;
   grid-template-columns: 100vw;
-  border: 2px solid black;
 }
 /* Documentation topic chooser */
 
@@ -106,6 +98,11 @@ nav.main-nav, .hide {
 Side navigation box, occupying the second box in the grid.*/
 
 @media screen and (min-width: 768px) {
+
+  .site-title {
+    margin-left: 20px;
+  }
+  
   .div1 {
     background-color: rgb(204, 203, 203);
     height: 3rem;
@@ -148,7 +145,6 @@ Side navigation box, occupying the second box in the grid.*/
   .container {
     display: grid;
     grid-template-columns: 2% 23% 50% 23% 2%;
-    border: 2px solid black;
   }
 
   .container div.dingy {
@@ -201,6 +197,11 @@ Side navigation box, occupying the second box in the grid.*/
     text-decoration: none;
     width: 100%;
     text-align: left;
+  }
+
+  nav.main-nav ul li .ul {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
   }
 
   nav.main-nav ul li a.test {
@@ -362,7 +363,7 @@ tr {
 
 /* logo, navigation menu styling */
 #navigationbar-mobile {
-  overflow: auto;
+  overflow: hidden;
   background-color: rgb(242, 95, 92);
   position: relative;
   width: 100%;

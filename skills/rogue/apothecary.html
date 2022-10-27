@@ -2,12 +2,20 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warlords 2 PvE Documentation</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
     <link rel="stylesheet" href="/skills/skills.css">
     <link rel="stylesheet" href="/skills/rogue/rogue.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -29,9 +37,10 @@
 </head>
 
 <body onload="dropdownsdesktop()">
-    <div id= "dim" class="dimmer">
 
-    </div>
+  <div id="main-screen">
+
+    <div id="dim" class="dimmer"></div>
 
     <div id="closer" onclick="closepopups();">
 
@@ -715,8 +724,9 @@
 
 
         <div></div>
-    </div>
-
+        </div>
+        </div>
+        <new-tablet></new-tablet>
 </body>
 
 </html>

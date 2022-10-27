@@ -140,6 +140,37 @@ function navigationbar() {
   }
 }
 
+function navnew() {
+  var x = document.getElementById("main-screen");
+  var y = document.getElementById("cover-up");
+  if (x.style.left = "0") {
+    x.style.position = "absolute";
+    x.style.left = "300px";
+    x.style.height = "80vh";
+    x.style.overflowX = "hidden";
+
+    x.style.top = "10vh";
+    x.style.boxShadow = "0 0 10px 2px black";
+    y.style.zIndex = "100";
+    x.style.transition = "all 0.5s ease-out";
+  } 
+}
+
+function closemobilemenu() {
+  var x = document.getElementById("main-screen");
+  var y = document.getElementById("cover-up");
+  if (x.style.left = "300") {
+    x.style.left = "0";
+    x.style.height = "100vh";
+    x.style.width = "100vw";
+    x.style.maxWidth = "none";
+    x.style.overflowX = "auto";
+    x.style.top = "0";
+    x.style.boxShadow = "0";
+    y.style.zIndex = "-1";
+  }
+}
+
 function dropdownsdesktop() {
   var dropdown = document.getElementsByClassName("dropdown-btn");
   var i;

@@ -2,12 +2,20 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warlords 2 PvE Documentation</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/tablettest.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
     <link rel="stylesheet" href="guilds.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
@@ -27,71 +35,72 @@
 
 <body onload="dropdownsdesktop()">
 
-    <header-component></header-component>
+    <div id="main-screen">
+        <header-component></header-component>
 
-    <div class="div1">
-        <span class="wl2pve">
-            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
-        </span>
-        <i class="fa-solid fa-angle-right div1-text"></i>
-        <span>
-            <a class='direlink div1-text' href="/skills/skills.html">Skills & Upgrades</a>
-        </span>
-        <i class="fa-solid fa-angle-right div1-text"></i>
-        <span>
-            <a class='direlink div1-text' href="#">Warrior</a>
-        </span>
-    </div>
-
-    <burger-i></burger-i>
-
-    <div class="container">
-
-        <div></div>
-
-        <div id="navigationbar-mobile">
-            <mobile-divs></mobile-divs>
+        <div class="div1">
+            <span class="wl2pve">
+                <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="/skills/skills.html">Skills & Upgrades</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Warrior</a>
+            </span>
         </div>
 
-        <nav class="main-nav" role="navigation">
+        <burger-i></burger-i>
 
-            <div class="selecter">
-                <select class="div-toggle" data-target=".my-info-1">
-                    <option value="orange" data-show=".pve">
-                        <div class="selecter-text">Warlords 2 PvE</div>
-                    </option>
-                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
-                </select>
+        <div class="container">
+
+            <div></div>
+
+            <div id="navigationbar-mobile">
+                <mobile-divs></mobile-divs>
             </div>
 
-            <div class="my-info-1">
-                <div class="pve hide">
-                    <dropdown-component></dropdown-component>
+            <nav class="main-nav" role="navigation">
+
+                <div class="selecter">
+                    <select class="div-toggle" data-target=".my-info-1">
+                        <option value="orange" data-show=".pve">
+                            <div class="selecter-text">Warlords 2 PvE</div>
+                        </option>
+                        <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                    </select>
                 </div>
-                <div class="pome hide">A pome is...</div>
-            </div>
 
-        </nav>
-    
+                <div class="my-info-1">
+                    <div class="pve hide">
+                        <dropdown-component></dropdown-component>
+                    </div>
+                    <div class="pome hide">A pome is...</div>
+                </div>
+
+            </nav>
+
             <div class="main-text">
                 <h1>Warrior</h1>
                 <p class="italic">
-                    This is a navigation page. 
+                    This is a navigation page.
                 </p>
                 <p>
                     Links to the relevant spec information are below:
-                    <ul>
-                        <li><a href="/skills/warrior/berserker.html">Berserker</a></li>
-                        <li><a href="/skills/warrior/defender.html">Defender</a></li>
-                        <li><a href="/skills/warrior/revenant.html">Revenant</a></li>              
-                    </ul>
+                <ul>
+                    <li><a href="/skills/warrior/berserker.html">Berserker</a></li>
+                    <li><a href="/skills/warrior/defender.html">Defender</a></li>
+                    <li><a href="/skills/warrior/revenant.html">Revenant</a></li>
+                </ul>
                 </p>
             </div>
-            
+
             <div></div>
         </div>
-        
         </div>
+<new-tablet></new-tablet>
 
 </body>
 

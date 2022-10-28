@@ -17,6 +17,7 @@
 
 div.left {
     justify-content: left;
+    padding-top: 0;
 }
 
 .pn-header-text {

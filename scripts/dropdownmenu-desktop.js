@@ -18,6 +18,7 @@ class dropdown1 extends HTMLElement {
               <a class='test' href="/patch-notes/illusion-vanguard-2.html"><span>Illusion Vanguard Hotfix - 1.0.2</span></a>
               <a class='test' href="/patch-notes/illusion-vanguard-3.html"><span>Illusion Vanguard Hotfix - 1.0.3</span></a>
               <a class='test' href="/patch-notes/illusion-vanguard-4.html"><span>Illusion Vanguard Hotfix - 1.0.4</span></a>
+              <a class='test' href="/patch-notes/illusion-vanguard-5.html"><span>Illusion Vanguard Hotfix - 1.0.5</span></a>
               </div>
           </li>
           <li><a class='direlink' href="/index.html">

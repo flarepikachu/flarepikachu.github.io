@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.0.6" />
+    <meta property="og:description" content="Warlords 2 PvE Documentation" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
+    <link rel="stylesheet" href="/patch-notes/patch-notes.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <div id="main-screen">
+        <header-component></header-component>
+
+    <div class="div1">
+        <span class="wl2pve">
+            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Patch Notes</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Illusion Vanguard</a>
+        </span>
+    </div>
+
+    <burger-i></burger-i>
+
+    <div class="container">
+
+        <div></div>
+
+        <div id="navigationbar-mobile">
+            <mobile-divs></mobile-divs>
+        </div>
+
+        <nav class="main-nav" role="navigation">
+
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">
+                        <div class="selecter-text">Warlords 2 PvE</div>
+                    </option>
+                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                </select>
+            </div>
+
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <dropdown-component></dropdown-component>
+                </div>
+                <div class="pome hide">A pome is...</div>
+            </div>
+
+        </nav>
+
+        <div id="dingleberry" class="patch-notes">
+            <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.0.6</span></div>
+            <div class="pn-header"><span class="pn-header-text">Wave Defense</span></div>
+            <div class="pn-header">General</div>
+            <ul>
+                <li>Fixed coin summary being the same as other players.</li>
+                <li>Added support for Warlords 2 PvE in WarlordsPlus.</li>
+                <li>Changed weapon reskin costs for <span class="common">Common</span>, <span class="rare">Rare</span>, <span class="epic">Epic</span> and <span class="legendary">Legendary</span> Weapons to 50/10/200/500 Fairy Essence.</li>
+                <li>Added the ability to hide enchants on weapons.</li>
+                
+            </ul>
+           
+            <div class="pn-header"><span class="pn-header-text">Guilds</span></div>
+            <ul>
+                <li>Fixed Guild Upgrades only applying to one person.</li>
+                <li>Fixed players not being removed from guild role list when kicked.</li>
+                <li>Fixed guild invites not being removed when players join.</li>
+                <li>Fixed all players being able to send messages in guild officer chat.</li>
+                <li>Fixed guild players without upgrade permissions from seeing "Click to Purchase".</li>
+                <li>Changed the color of the "Click to Upgrade" tooltip to yellow for guild upgrades.</li>
+                <span class="bold">
+                    <li>Players now need to be in guild for more than 2 days for upgrades to apply to them.</li>
+                </span>
+               
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Class Balance</span></div><br>
+            <div class="bold">Pyromancer</div>
+                <ul>
+                    <li>Changed Fiery Fusillade (Fireball Master) BURN effect to drain 0.5% health insatead of 2%.</li>
+                </ul>
+
+            <div class="pn-header">Mob Balance</div>
+
+            <ul>
+                <li>Mobs now take a further 10% less slowness overall.</li>
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Bug Fixes</span></div>
+            <ul>
+                <li>
+                    Fixed Remedic Chains Master Upgrade losing weapon health upon ability expiration.
+                </li>
+                <li>
+                    Clear Rate leaderboard hopefully fixed?!?!
+                </li>
+                <li>Fixed healing rain not procing on last second.</li>
+                <li>Fixed Fireball Spark Tree (Energy Cost Reduction) from being calculated wrongly.</li>
+                <li>Fixed the weird line breaks in Master Upgrade descriptions.</li>
+                <li>Fixed achievement hover resetting color on the next lines.</li>
+            </ul>
+
+            
+
+        </div>
+        <br><br><br>
+    </div>
+        </div>
+<new-tablet></new-tablet>
+
+</body>
+
+</html>

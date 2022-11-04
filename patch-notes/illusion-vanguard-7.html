@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.0.7" />
+    <meta property="og:description" content="Warlords 2 PvE Documentation" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
+    <link rel="stylesheet" href="/patch-notes/patch-notes.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <div id="main-screen">
+        <header-component></header-component>
+
+    <div class="div1">
+        <span class="wl2pve">
+            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Patch Notes</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+            <a class='direlink div1-text' href="#">Illusion Vanguard</a>
+        </span>
+    </div>
+
+    <burger-i></burger-i>
+
+    <div class="container">
+
+        <div></div>
+
+        <div id="navigationbar-mobile">
+            <mobile-divs></mobile-divs>
+        </div>
+
+        <nav class="main-nav" role="navigation">
+
+            <div class="selecter">
+                <select class="div-toggle" data-target=".my-info-1">
+                    <option value="orange" data-show=".pve">
+                        <div class="selecter-text">Warlords 2 PvE</div>
+                    </option>
+                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                </select>
+            </div>
+
+            <div class="my-info-1">
+                <div class="pve hide">
+                    <dropdown-component></dropdown-component>
+                </div>
+                <div class="pome hide">A pome is...</div>
+            </div>
+
+        </nav>
+
+        <div id="dingleberry" class="patch-notes">
+            <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.0.7</span></div>
+            <div class="pn-header"><span class="pn-header-text">Wave Defense</span></div>
+            <div class="pn-header">General</div>
+            <ul>
+                <li>Added showing daily/weekly coins/experience to guild menu.</li>
+                <li>Titles for Legendary Weapons are now permanently unlocked upon purchase. You can now freely switch between the titles that you've purchased.</li>
+                <li>Added +5 Legend Fragment bonus for each level of prestige a player has every 25 waves.</li>
+                <li>Greatly buffed the rewards from the Masterworks Fair.</li>
+                <li>Decreased the (relative) drop rate of Rare and Epic Star Pieces.</li>
+                <ul>
+                    <li><span class="italic">Documentation of Masterworks Fair and Susan will be updated soon.</span></li>
+                </ul>
+                <li>The Suspicious title's sound effect can now be heared by all players..</li>
+                
+            </ul>
+           
+            <div class="pn-header"><span class="pn-header-text">Guilds</span></div>
+            <ul>
+                <li>Increased Max Guild Coin Conversion from 300 to 1000.</li>
+                <li>Bonus coins earned from the Coins Bonus temporary Guild Upgrade are <span class="bold">not</span> factored into Guild Coin Conversion.</li>            
+            </ul>
+
+            <div class="pn-header"><span class="pn-header-text">Daily and Weekly Quests</span></div>
+            <ul>
+                <li>Added Daily and Weekly quests to aid progression.</li>
+                <li>There are 3 Daily Quests and 2 Weekly Quests</li>
+                <ul>
+                    <li>Quests are automatically activated.</li>
+                    <li>You may view quest details by talking to the Quest Lord NPC.</li>
+                    <img src="quest-lord.png">
+                    <li>Quests will reset daily around Server Restart time (6AM EST).</li>
+                    <li>Weekly quests will reset every Monday around Server Restart time (6AM EST).</li>
+                </ul>
+            </ul>
+            
+
+            <div class="pn-header"><span class="pn-header-text">Bug Fixes</span></div>
+            <ul>
+                <li>
+                    Fixed Remedic Chains Master giving permanent health boost when stacked...
+                </li>
+                <li>
+                    Fixed Clear Rate Leaderboard (ACTUALLY? HOPEFULLY?? ????)
+                </li>
+                <li>Fixed titling weapon not costing money and shards.</li>
+                <li>Fixed Legendary weapon skill boosts not being permanently unlocked when a Skill Boost Modifier is used.</li>
+                <li>Fixed offline players being counted as a player when the game starts. </li>
+            </ul>
+
+            
+
+        </div>
+        <br><br><br>
+    </div>
+        </div>
+<new-tablet></new-tablet>
+
+</body>
+
+</html>

@@ -16,6 +16,10 @@ body {
   background-color: #f1f1f1;
 }
 
+h1 {
+  margin: 2rem 0 0.5rem 0;
+}
+
 /* Header divider to display website name */
 
 .headerdiv {

@@ -1,7 +1,8 @@
 .patch-notes {
-    background-color: white;
+    background-color: var(--theme-color-2);
     padding: 4rem;
     font-size: 1.5rem;
+    color: white;
 }
 
 .pn-header {

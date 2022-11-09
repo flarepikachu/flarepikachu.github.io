@@ -54,6 +54,19 @@ class Header extends HTMLElement {
   
   customElements.define('new-tablet', mobileMenu);
 
+  class fontGetter extends HTMLElement {
+    constructor() {
+      super();
+    }
+  
+    connectedCallback() {
+      this.innerHTML = `
+      <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+      `;
+    }
+  }
+  
+  customElements.define('font-getter', fontGetter);
 
 
   

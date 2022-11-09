@@ -1,14 +1,32 @@
+:root {
+  --theme-color-1: #15171C;
+  --theme-color-2: #181A20;
+  --theme-color-3: #1B1D24;
+  --theme-color-4: #21242D;
+  --theme-color-5: #272A35;
+  --theme-color-6: #2D303D;
+  --theme-color-7: #343746;
+  --theme-color-8: #404356;
+  --theme-color-9: #4C5067;
+  --theme-color-10: #616784;
+  --theme-red: rgb(242, 95, 92);
+}
+
+.container {
+  background-color: var(--theme-color-2);
+}
+
 /* Setting the global font size to base 10*/
 html {
   font-size: 62.5%;
-  background-color: rgb(242, 95, 92);
+  background-color: var(--theme-red)
 }
 
 /* Setting configurations for all elements in the body (basically everything)*/
 
 body {
   font-size: 2rem;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Mukta', 'Arial', sans-serif;
   letter-spacing: 0.05rem;
   color: rgb(34, 33, 33);
   line-height: 1.6;
@@ -28,12 +46,12 @@ h1 {
   justify-content: left;
   align-items: center;
   height: 5rem;
-  background-color: rgb(242, 95, 92);
+  background-color: var(--theme-red);
   vertical-align: baseline;
   margin: 0;
   color: #f1f1f1;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .site-title {
@@ -66,9 +84,11 @@ a:link {
   height: 5rem;
   width: 100%;
   margin: auto;
-  border: 2px solid rgb(242, 95, 92);
+  border: 2px solid var(--theme-red);
   border-radius: 5px;
   padding-left: 1rem;
+  color: white;
+  background-color: var(--theme-color-5);
 }
 
 .selecter {
@@ -109,7 +129,7 @@ Side navigation box, occupying the second box in the grid.*/
   }
   
   .div1 {
-    background-color: rgb(204, 203, 203);
+    background-color: var(--theme-color-10);
     height: 3rem;
     display: flex;
     justify-content: left;
@@ -120,7 +140,7 @@ Side navigation box, occupying the second box in the grid.*/
 
   .div1 a, .div1 i {
     padding: 0 1rem;
-    color:rgb(34, 33, 33);
+    color:rgb(253, 252, 252);
   }
 
   .div1 i {
@@ -132,7 +152,7 @@ Side navigation box, occupying the second box in the grid.*/
   }
   
   .div1 span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .div1 a:hover {
@@ -182,19 +202,19 @@ Side navigation box, occupying the second box in the grid.*/
 
   nav.main-nav ul li, 
   .test {
-    border-bottom: 1px solid rgba(238, 9, 9, 0.918);
+    
     list-style: none;
     padding: 0;
   }
 
   nav.main-nav ul li .ul {
-    border-bottom: 1px solid rgba(238, 9, 9, 0.918);
+    border-bottom: 1px solid #f1f1f1;
   }
 
   nav.main-nav ul li a,
   nav.main-nav ul li button {
     font-size: 1.75rem;
-    color: #111;
+    color: rgb(255, 255, 255);
     padding: 0.75rem 0;
     font-weight: 400;
     display: block;
@@ -220,12 +240,12 @@ Side navigation box, occupying the second box in the grid.*/
 
   nav.main-nav ul li a:hover {
     padding: 1rem 1rem;
-    background-color: rgb(207, 205, 203);
+    background-color: var(--theme-color-6);
   }
 
   nav.main-nav ul li button:hover {
     padding: 1rem 2rem;
-    background-color: rgb(207, 205, 203);
+    background-color: var(--theme-color-6);
   }
 
   nav.main-nav ul li i {
@@ -234,7 +254,7 @@ Side navigation box, occupying the second box in the grid.*/
   }
 
   nav.main-nav ul li button:focus {
-    background-color: rgb(231, 231, 230);
+    background-color: var(--theme-color-6);
   }
 
   .selecter {
@@ -259,12 +279,12 @@ Side navigation box, occupying the second box in the grid.*/
 This is where the meat of the documentation is placed. Formatted in headings, paragraphs and bullets.*/
 
 .main-text {
-  background-color: #f1f1f1;
+  background-color: var(--theme-color-2);
   background-size: cover;
   align-content: center;
   font-size: 2rem;
   padding: 0 2rem;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .main-text p,
@@ -295,7 +315,7 @@ tr:nth-child(odd) {background: #FFF}
 .weapon-upgrade-costs tr td.white-bk {background: #FFF}
 
 tr.table-header {
-  background: rgb(242, 95, 92);
+  background: var(--theme-red);
   color: #f1f1f1;
 }
 
@@ -359,7 +379,7 @@ tr {
 
 .commandmono {
   font-family: 'Courier New', Courier, monospace;
-  background-color:rgb(207, 205, 203)
+  background-color:var(--theme-color-7)
 }
 
 .placeholder {
@@ -369,7 +389,7 @@ tr {
 /* logo, navigation menu styling */
 #navigationbar-mobile {
   overflow: hidden;
-  background-color: rgb(242, 95, 92);
+  background-color: var(--theme-red);
   position: relative;
   width: 100%;
   height: 85vh;

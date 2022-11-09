@@ -78,6 +78,9 @@ class dropdown1 extends HTMLElement {
                 </div>
               </div>
           </li>
+          <!--<li><a class='direlink' href="/titles.html">
+              <i class="fa-solid fa-trophy fa-fw"></i>
+              <span>Title Information <span class="bold red">NEW!</span></span></a></li>--!>
           <li>
               <button class="dropdown-btn">
               <i class="fa-solid fa-place-of-worship fa-fw"></i>

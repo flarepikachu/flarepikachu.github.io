@@ -287,6 +287,19 @@ This is where the meat of the documentation is placed. Formatted in headings, pa
   color: rgb(255, 255, 255);
 }
 
+.main-header {
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--theme-color-7);
+  font-size: 2.5rem;
+}
+
+.main-text ul {
+  list-style-position: inside;
+  padding-inline-start: 0;
+  margin: 0.5rem;
+}
+
 .main-text p,
 li {
   font-size: 1.75rem;
@@ -371,6 +384,10 @@ tr {
 
 .command, .bold {
   font-weight: 700;
+}
+
+.red {
+  color: var(--theme-red);
 }
 
 .italic {

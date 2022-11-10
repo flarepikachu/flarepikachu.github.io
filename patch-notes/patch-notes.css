@@ -7,7 +7,7 @@
 
 .pn-header {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3rem;
     border-bottom: 2px lightgray solid;
     padding-top: 3rem;
     padding-bottom: 1rem;
@@ -16,8 +16,33 @@
     
 }
 
+.pn-header-1 {
+    font-weight: 600;
+    font-size: 3rem;
+    border-bottom: 2px lightgray solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
 
+a.a-no-format {
+    color: white;
+}
 
+.main-text ul a.a-no-format {
+    margin: 0;
+    padding: 0;
+}
+.no-dots {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.mini-header {
+    font-size: 1.7rem;
+}
 div.left {
     justify-content: left;
     padding-top: 0;

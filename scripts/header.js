@@ -79,17 +79,17 @@ class Header extends HTMLElement {
                     <div class="collection-header">CLASSIC COLLECTION</div>
                     <div class="classic-collection collection-div">
                         <div class="title-button benevolent"><button onclick="window.location.href='/titles/benevolent.html'"><span class="button-text">Benevolent</span></button></div>
-                        <div class="title-button divine"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Divine</span></button></div>
-                        <div class="title-button enhanced"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Enhanced</span></button></div>
-                        <div class="title-button gale"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Gale</span></button></div>
-                        <div class="title-button gradient"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Gradient</span></button></div>
-                        <div class="title-button requiem"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Requiem</span></button></div>
-                        <div class="title-button suspicious"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Suspicious</span></button></div>
-                        <div class="title-button stalwart"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Stalwart</span></button></div>
-                        <div class="title-button titanic"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Titanic</span></button></div>
-                        <div class="title-button vigorous"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Vigorous</span></button></div>
-                        <div class="title-button vorpal"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Vorpal</span></button></div>
-                        <div class="title-button warmonger"><button onclick="window.location.href='/titles/test.html'"><span class="button-text">Warmonger</span></button></div>
+                        <div class="title-button divine"><button onclick="window.location.href='/titles/divine.html'"><span class="button-text">Divine</span></button></div>
+                        <div class="title-button enhanced"><button onclick="window.location.href='/titles/enhanced.html'"><span class="button-text">Enhanced</span></button></div>
+                        <div class="title-button gale"><button onclick="window.location.href='/titles/gale.html'"><span class="button-text">Gale</span></button></div>
+                        <div class="title-button gradient"><button onclick="window.location.href='/titles/gradient.html'"><span class="button-text">Gradient</span></button></div>
+                        <div class="title-button requiem"><button onclick="window.location.href='/titles/requiem.html'"><span class="button-text">Requiem</span></button></div>
+                        <div class="title-button suspicious"><button onclick="window.location.href='/titles/suspicious.html'"><span class="button-text">Suspicious</span></button></div>
+                        <div class="title-button stalwart"><button onclick="window.location.href='/titles/stalwart.html'"><span class="button-text">Stalwart</span></button></div>
+                        <div class="title-button titanic"><button onclick="window.location.href='/titles/titanic.html'"><span class="button-text">Titanic</span></button></div>
+                        <div class="title-button vigorous"><button onclick="window.location.href='/titles/vigorous.html'"><span class="button-text">Vigorous</span></button></div>
+                        <div class="title-button vorpal"><button onclick="window.location.href='/titles/vorpal.html'"><span class="button-text">Vorpal</span></button></div>
+                        <div class="title-button warmonger"><button onclick="window.location.href='/titles/warmonger.html'"><span class="button-text">Warmonger</span></button></div>
                     </div>
                 </div>
       `;

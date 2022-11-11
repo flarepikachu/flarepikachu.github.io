@@ -200,7 +200,7 @@
                 
                 <div class="skill-description">
                     <p>Spawn two orbs on initial cast. Striking and hitting enemies with abilities causes them to drop an orb of life that lasts 8 seconds, restoring 225 health to the ally that picks it up and nearby allies. Orbs that remain on the ground will increase in healing after 1.5s by 40% over 6.5s. Orbs of Life lasts 14 seconds.</p>
-                    <p>You may SNEAK to make the orbs levitate towards you or the nearest ally in a 20 block radius.</p>
+                    <p>You may SNEAK to make the orbs levitate towards you or the nearest ally in a 20 block radius. Orbs of Life targets least healthy allies first when using SNEAK.</p>
                 </div>   
             </div>
             <div class="class-container skill-5">
@@ -229,6 +229,21 @@
                     <p>You may chain up to 6 allies in a 15 block radius to heal them for 100 + 3.5% of their missing health every second. Lasts 10 seconds.</p>
                     <p>While the ability is active, chained allies that take fatal damage will be revived with 100% of their max health and energy. Revived allies rapidly take 10% of their max health as damage every second.</p>
                 </div>   
+                <div class="main-header">Changelog</div>
+                    <div class="changelog-text">
+                        <p class="bold">Illusion Vanguard 1.1</p>
+                        <ul>
+                            <li>Added 7.5/15/22.5/30% damage upgrade to Ground Slam&#39;s upgrade branches.</li>
+                            <li>Earthen Tremor (Ground Slam Master) now deals 150% of the original damage on landing instead of 200%.</li>
+                            <li>Orbs of Life will now target least healthy allies first.</li>
+                            <li>Relentless Army (Undying Army Master) now deals 458 - 612 (+2% enemy max health) damage instead
+                        of 68-102 (+0.5% enemy max health).</li>
+                        </ul>
+                        <p class="bold">Illusion Vanguard 1.0</p>
+                        <ul>
+                            <li>Added the Revenant page to the documentation.</li>
+                        </ul>
+                    </div> 
             </div>
             <div class="bottom-space"></div>
             
@@ -433,28 +448,28 @@
                 <div class="content-primary">
                     <div class="upgrade-1">
                         <div class="upgrade-1-header">
-                            <span>Zeal</span>
+                            <span>Impair</span>
                         </div>
                         <div class="upgrade-desc">
                             <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
                             <div id="upgrade-desc-3-1" class="upgrade-desc-content">
-                                <span>Cooldown Reduction</span>
+                                <span>Damage Increase</span>
                             </div>
                         </div>
                         <div id="grid-3-1" class="upgrade-grid">
                             <div class="tier-1">
                                 <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">-2.5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-2">
                                 <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">&nbsp;+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
                             </div>
                             <div class="tier-3">
                                 <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-7.5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
+                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>                              
                             </div>
                         </div>
                         <div class="tier-4">
@@ -462,7 +477,7 @@
                                 Tier IV
                             </div>
                             <div class="tier-4-desc">
-                                <div class="upgrade-value">-10% Cooldown</div>
+                                <div class="upgrade-value">+30% Damage</div>
                             </div>
                         </div>
                     </div>
@@ -711,8 +726,9 @@
                             <span>Relentless Assault</span>
                         </div>
                         <div class="upgrade-desc-content-master">
-                            <div>When you die with Undying Army active, gain 40% Speed and deal 68-102 + 0.5% of the enemy’s maximum health to all enemies within a 6 block radius. Each enemy hit this way can also proc Orbs of Life.</div>
+                            <div>When you die with Undying Army active, gain 40% Speed and deal 458-612 + 2% of the enemy’s maximum health to all enemies within a 6 block radius. Each enemy hit this way can also proc Orbs of Life.</div>
                             <!-- Revamped Master Upgrade in 1.0.5 -->
+                            <!-- Updated master upgrade values in 1.1 -->
                         </div>
                     </div>
                 </div>

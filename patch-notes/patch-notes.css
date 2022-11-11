@@ -32,22 +32,19 @@ div.dropdown-container-patch-notes {
     
 }
 
-a.a-no-format {
-    color: white;
-}
 
 .main-text ul a.a-no-format {
     margin: 0;
     padding: 0;
 }
+
 .no-dots {
     list-style-type: none;
     list-style-position: outside;
 }
 
-.mini-header {
-    font-size: 2rem;
-}
+
+
 div.left {
     justify-content: left;
     padding-top: 0;

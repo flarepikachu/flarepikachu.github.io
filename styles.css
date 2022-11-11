@@ -70,7 +70,9 @@ a:link {
   text-decoration: none;
 }
 
-
+.bottom-space {
+  height: 10vh;
+}
  
 /* Actual page is displayed in containers*/
 
@@ -294,15 +296,30 @@ This is where the meat of the documentation is placed. Formatted in headings, pa
   font-size: 2.8rem;
 }
 
+.mini-header {
+  font-size: 2rem;
+}
+
+a.a-no-format {
+  color: white;
+}
+
 .main-text ul {
   list-style-position: inside;
   padding-inline-start: 0;
   margin: 0.5rem;
 }
 
-.main-text p,
-li {
+.main-text p {
   font-size: 1.75rem;
+}
+
+.main-text li {
+  font-size: 1.6rem;
+}
+
+div.changelog-text p {
+  margin: 0;
 }
 
 .main-text ul a /* , .main-text ul li span */{

@@ -13,9 +13,9 @@ div.dropdown-container-patch-notes {
 .pn-header {
     font-weight: 600;
     font-size: 3rem;
-    border-bottom: 2px lightgray solid;
+    border-bottom: 0px lightgray solid;
     padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
     display: flex;
     justify-content: center;
     
@@ -32,6 +32,12 @@ div.dropdown-container-patch-notes {
     
 }
 
+.pn-date {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 2px lightgray solid;
+}
 
 .main-text ul a.a-no-format {
     margin: 0;

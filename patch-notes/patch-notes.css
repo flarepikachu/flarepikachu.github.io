@@ -5,6 +5,11 @@
     color: white;
 }
 
+
+div.dropdown-container-patch-notes {
+    display: block;
+}
+
 .pn-header {
     font-weight: 600;
     font-size: 3rem;
@@ -41,7 +46,7 @@ a.a-no-format {
 }
 
 .mini-header {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 div.left {
     justify-content: left;

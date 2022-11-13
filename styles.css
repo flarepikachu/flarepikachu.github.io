@@ -72,6 +72,7 @@ a:link {
 
 .bottom-space {
   height: 10vh;
+  background-color: var(--theme-color-2);
 }
  
 /* Actual page is displayed in containers*/

@@ -90,3 +90,7 @@ div p {
 .title-collections {
     margin: 3rem 0 6rem;
 }
+
+.ability-description p {
+    margin: 0.5rem 0 1rem;
+}

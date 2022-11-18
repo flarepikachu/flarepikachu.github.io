@@ -5,9 +5,15 @@
     color: white;
 }
 
-
+.main-text div.paragraph-text p{
+    font-size: 1.6rem;
+}
 div.dropdown-container-patch-notes {
     display: block;
+}
+
+ul.example li{
+    margin-left: 2rem;
 }
 
 .pn-header {

@@ -333,6 +333,10 @@ div.changelog-text p {
   padding-inline-start: 30px;
 }
 
+ul ul li{
+  margin-left: 2rem;
+}
+
 table {
   padding-left: 2rem;
   width: 100%;
@@ -341,8 +345,8 @@ table {
   border: none;
 }
 
-tr:nth-child(even) {background: #CCC}
-tr:nth-child(odd) {background: #FFF}
+tr:nth-child(even) {background: var(--theme-color-5)}
+tr:nth-child(odd) {background: var(--theme-color-10)}
 .weapon-upgrade-costs tr td.white-bk {background: #FFF}
 
 tr.table-header {
@@ -405,7 +409,7 @@ tr {
 }
 
 .red {
-  color: var(--theme-red);
+  color: var(--theme-red) !important;
 }
 
 .italic {

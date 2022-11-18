@@ -6,16 +6,15 @@
     <meta property="og:description" content="Warlords 2 PvE Documentation" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
     <script>
-var host = window.location.hostname;
-if(host != "localhost")
-{
-   window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        var host = window.location.hostname;
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'G-YZD55GFB38');
-}
-</script>
+            gtag('config', 'G-YZD55GFB38');
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patch Notes v1.2 - Warlords 2 PvE Documentation</title>
@@ -92,43 +91,169 @@ if(host != "localhost")
                 <div class="pn-header-1"><span class="pn-header-text">Wave Defense</span></div>
 
                 <div class="main-header"><span>General</span></div>
-                    
+
                 <p>
                 <ul>
-                    <li>Increased Legend Fragment Gain based on the amount of prestige a player has. Details can be found <a href="/weapons/fragments.html" class="red">here</a>.</li>
-                    <li class="bold">Star Pieces are now saved on each weapon title instead of being removed forever.</li>
-                    <li>The compensation command should now correctly reward all players who have logged in within the last 30 days.</li>
+                    <li>Increased Legend Fragment Gain based on the amount of prestige a player has. Details can be
+                        found <a href="/weapons/fragments.html" class="red a-no-format">here</a>.</li>
+                    <li class="bold">Star Pieces are now saved on each weapon title instead of being removed forever.
+                    </li>
+                    <li>The compensation command should now correctly reward all players who have logged in within the
+                        last 30 days.</li>
                     <li>Killed Chessking</li>
                 </ul>
                 </p>
 
                 <div class="main-header"><span class="pn-header-text">Weapon Balance</span></div>
                 <p>
-                    <div class="bold mini-header"><a class="a-no-format" href="/titles/suspicious.html">Suspicious</a></div>
-                <ul>
-                    <li>Increased energy per hit from +10 to +20.</li>
-                </ul>
-                </p>
-                <p>
-                <div class="bold mini-header"><a class="a-no-format" href="/titles/gradient.html">Gradient</a></div>
-                    <ul>
-                        <li>Healing per 5 seconds increased from 3% to 5%.</li>
-                    </ul>
+                    <p>
+                        <div class="bold mini-header">Foreword</div>
+                        <div class="paragraph-text">
+                            <p>
+                                Hi. A couple days ago I mentioned to a couple peeps that we weren't planning on adjusting the stats of the Suspicious weapon.
+                            </p>
+                                
+                            <p>
+                                After further consideration involving future content planning, many titles, including Suspicious, have been revamped. I will have a seperate page detailing the reasons of these changes available <a href="/patch-notes/illusion-vanguard-1-2-e.html" class="red">here</a>.
+                            </p>
+                                
+                            <p>
+                                 Barring significant bugs and balance issues, we do not anticipate any more updates regarding the current titles in the near future. I have also (hopefully) updated all relevant pages affected by this update on the website.
+                            </p>
+
+                            <p>
+                                Thank you for your understanding and have a good day!
+                            </p>
+                            <p>~ Flare</p>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Stacking Mechanic</div>
+                        <ul>
+                            <li>Weapon abilities that utilize the stacking mechanic have no cooldown and can stack upon each other additively.</li>
+                            <ul class="example">
+                                <li>For example, two stacks of the Divine weapon (20% Damage per Stack) would result in a 40% Damage boost.</li>
+                            </ul> 
+                            <li>If the weapon ability stack is not maxed out, the weapon ability duration is renewed and the stack is incremented by 1.</li>
+                            <li>If the weapon ability stack is maxed out, only the weapon ability duration is renewed.</li>
+                            <li>(If coded correctly...) The name of the ability on action bar should display the ability name and the amount of stacks on the ability.</li>
+                            <ul class="example">
+                                <li>For example, 5 stacks of Requiem should be labeled as Requiem 5.</li>
+                            </ul>
+
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Activated Abilities</div>
+                        <ul>
+                            <li>Weapon abilities that still run on a 30s cooldown are now referred to as active abilities.</li>
+                            <li>There are currently two titles that have activated abilities, being Gale and Vigorous.</li>
+                            <li>Activated Abilities can be activated by right-clicking your Nether Star in your 9th slot.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/divine.html">Divine</a></div>
+                        <ul>
+                            <li>EPS: 7 -> 3</li>
+                            <li>EPH: -13 -> -7</li>
+                            <li>Rework the concept of Divine to be similar to Requiem/Fervent with a stacking system:</li>
+                            <ul class="example">
+                                <li>The effects of Divine stacks are additive to one another.</li>
+                                <li>Divine can have a maximum of 3 stacks.</li>
+                                <li>Gain a 20% Damage Boost for 30 seconds when you deal damage 40 times.</li>
+                            </ul>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/enhanced.html">Enhanced</a></div>
+                        <ul>
+                            <li>Enhanced now also adds active ability duration to all allies targetted by the title-holder's blue rune abilities (Slot 4).</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/fervent.html">Fervent</a></div>
+                        <ul>
+                            <li>Rework the concept of Fervent to be similar to Requiem with a stacking system:</li>
+                            <ul class="example">
+                                <li>The effects of Fervent stacks are additive to one another.</li>
+                                <li>Fervent can have a maximum of 3 stacks.</li>
+                                <li>Gain a 20% Damage Boost for 30 seconds when you lose 5,000 health (take 5000 damage post damage reduction).</li>
+                            </ul>
+                        </ul>
+                    </p>
+        
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/requiem.html">Requiem</a></div>
+                        <ul>
+                            <li> Reworked the concept of Requiem interacting with Undying Army:</li>
+                            <ul class="example">
+                                <li>The effects of Requiem stacks are additive to one another.</li>
+                                <li>Requiem can now have up to 5 stacks.</li>
+                                <li>Requiem still lasts 60 seconds.</li>
+                            </ul>
+                            <li>A stack of Requiem can be obtained:</li>
+                            <ul class="example">
+                                <li>When a teammate dies,</li>
+                                <li>When a teammate has Undying Army applied to them, and</li>
+                                <li>When a teammate pops under Undying Army.</li>
+                            </ul>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/suspicious.html">Suspicious</a></div>
+                        <ul>
+                            <li>Energy per Hit: 20 -> 3</li>
+                            <li>Passive ability has been modified to:</li>
+                            <ul class="example">
+                                <li>Play an amogus sound and gain 20 energy whenever you land a melee crit</li>
+                            </ul>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/stalwart.html">Stalwart</a></div>
+                        <ul>
+                            <li>Added an additional passive ability to Stalwart: </li>
+                            <ul class="example">
+                                <li>If the player's HP is currently higher than 80% and the player will die from the next source of damage (e.g Narmer BOOM), set the player's health to 5% of their max HP and gain 99% damage reduction for 5 seconds. (Cooldown: 30s)</li>
+                            </ul>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/vigorous.html">Vigorous</a></div>
+                        <ul>
+                            <li>Energy per Second: 4 -> 2</li>
+                            <li>Passive ability is now an activated ability with the following effect:</li>
+                            <ul class="example">
+                                <li>+20 Energy per second for 10 seconds after using 400 energy.</li>
+                            </ul>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/vorpal.html">Vorpal</a></div>
+                        <ul>
+                            <li>Energy per Hit: 7 -> 4</li>
+                            <li>Melee Damage: 180 - 200 -> 200 - 220</li>
+                        </ul>
+                    </p>
+                    
+                    
+
                 </p>
                 <div class="main-header"><span class="pn-header-text">Class Balance</span></div>
                 <p>
                 <p>
                 <div class="bold mini-header">Protector</div>
                 <ul>
-                    <li>Alleviating Strike (Protector's Strike Master) now properly increases healing by 50% on lowest allies (previously 70%), and now also doubles healing range.</li>
+                    <li>Alleviating Strike (Protector's Strike Master) now properly increases healing by 50% on lowest
+                        allies (previously 70%), and now also doubles healing range.</li>
                 </ul>
                 </p>
                 <p>
-                    <div class="bold mini-header">Revenant</div>
-                    <ul>
-                        <li>Orbs of Life now targets the lowest ally upon sneaking/reactivating the ability.</li>
-                    </ul>
-                    </p>
+                <div class="bold mini-header">Revenant</div>
+                <ul>
+                    <li>Orbs of Life now targets the lowest ally upon sneaking/reactivating the ability.</li>
+                </ul>
+                </p>
                 </p>
                 <div class="main-header"><span class="pn-header-text">Mob Balance</span></div>
                 <p></p>
@@ -145,9 +270,11 @@ if(host != "localhost")
                 <p>
                 <ul>
                     <li>Fixed achievements triggering multiple times in a short period of time.</li>
-                    <li>Conscience Crush (Soul Shackle Master Upgrade) now correctly increases silence duration by 4s instead of 3s.</li>
+                    <li>Conscience Crush (Soul Shackle Master Upgrade) now correctly increases silence duration by 4s
+                        instead of 3s.</li>
                     <li>Fixed Time Warp Alleviate (Healing) branch not being accurate to description.</li>
-                    <li>Loamliving Weapon (Earthliving Weapon Master Upgrade) now does not trigger negative values (fixed interaction with Overheal).</li>  
+                    <li>Loamliving Weapon (Earthliving Weapon Master Upgrade) now does not trigger negative values
+                        (fixed interaction with Overheal).</li>
                 </ul>
                 </p>
 

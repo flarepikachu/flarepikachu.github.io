@@ -91,8 +91,10 @@ if(host != "localhost")
                     </div>
                     <div class="ability-title divider-head">Passive Ability</div>
                     <div class="ability-description">
-                        <p>15% Damage Reduction</p>
                         <p>For every 10% of HP under 80%, gain an additional 7.5% damage reduction. Maximum 30% Damage Reduction.</p>
+                        <p>If the player's HP is currently higher than 80% and the player will die from the next source
+                            of damage (e.g Narmer BOOM), set the player's health to 5% of their max HP and gain 99%
+                            damage reduction for 5 seconds. (Cooldown: 30s)</p>
                     </div>   
                     <div class="divider-head">Trivia</div>
                     <div class="trivia-text">
@@ -103,6 +105,15 @@ if(host != "localhost")
                     </div>
                     <div class="divider-head">Changelog</div>
                     <div class="changelog-text">
+                        <p class="bold">Illusion Vanguard 1.2</p>
+                        <ul>
+                            <li>Added an additional passive ability to Stalwart: </li>
+                            <ul class="example">
+                                <li>If the player's HP is currently higher than 80% and the player will die from the next source
+                                    of damage (e.g Narmer BOOM), set the player's health to 5% of their max HP and gain 99%
+                                    damage reduction for 5 seconds. (Cooldown: 30s)</li>
+                            </ul>
+                        </ul>
                         <p class="bold">Illusion Vanguard 1.1</p>
                         <ul>
                             <li>Added the Stalwart title to the Classic Collection.</li>

@@ -4,12 +4,16 @@
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+var host = window.location.hostname;
+if(host != "localhost")
+{
+   window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-YZD55GFB38');
-    </script>
+}
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterworks Fair - Warlords 2 PvE Documentation</title>
@@ -36,94 +40,126 @@
     <div id="main-screen">
         <header-component></header-component>
 
-    <div class="div1">
-        <span class="wl2pve">
-            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
-        </span>
-        <i class="fa-solid fa-angle-right div1-text"></i>
-        <span>
-            <a class='direlink div1-text' href="#">Masterworks Fair</a>
-        </span>
-    </div>
-
-    <burger-i></burger-i>
-
-    <div class="container">
-
-        <div></div>
-
-        <div id="navigationbar-mobile">
-            <mobile-divs></mobile-divs>
+        <div class="div1">
+            <span class="wl2pve">
+                <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Masterworks Fair</a>
+            </span>
         </div>
 
-        <nav class="main-nav" role="navigation">
+        <burger-i></burger-i>
 
-            <div class="selecter">
-                <select class="div-toggle" data-target=".my-info-1">
-                    <option value="orange" data-show=".pve">
-                        <div class="selecter-text">Warlords 2 PvE</div>
-                    </option>
-                    <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
-                </select>
+        <div class="container">
+
+            <div></div>
+
+            <div id="navigationbar-mobile">
+                <mobile-divs></mobile-divs>
             </div>
 
-            <div class="my-info-1">
-                <div class="pve hide">
-                    <dropdown-component></dropdown-component>
+            <nav class="main-nav" role="navigation">
+
+                <div class="selecter">
+                    <select class="div-toggle" data-target=".my-info-1">
+                        <option value="orange" data-show=".pve">
+                            <div class="selecter-text">Warlords 2 PvE</div>
+                        </option>
+                        <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                    </select>
                 </div>
-                <div class="pome hide">A pome is...</div>
+
+                <div class="my-info-1">
+                    <div class="pve hide">
+                        <dropdown-component></dropdown-component>
+                    </div>
+                    <div class="pome hide">A pome is...</div>
+                </div>
+
+            </nav>
+
+            <div class="main-text">
+                <p>
+                <h1>Masterworks Fair</h1>
+                </p>
+
+
+                <p>As <span class="common">Common</span>, <span class="rare">Rare</span> and <span
+                        class="epic">Epic</span>
+                    weapons aren’t all that exciting when you have <span class="legendary">Legendary</span> weapons, the
+                    Masterworks Fair has been added to make obtaining weapons much more exciting. To explain the
+                    Masterworks Fair in a nutshell, players compete
+                    to submit a weapon with the highest weapon score. Players can check the weapon score of a weapon use
+                    <span class="bold commandmono">/weaponscore</span> to check their weapon score.
+                </p>
+
+
+                <p>The Masterworks Fair is typically a weekly event that resets shortly after server restarts every
+                    Monday (10AM UTC). The first Masterworks Fair started right at the initial public release of
+                    Warlords 2 PvE.</p>
+
+                <p>There will be three separate competitions for each RNG-eligible rarity of <span class="common">Common</span>, <span class="rare">Rare</span> and <span class="epic">Epic</span>. These competitions will run concurrently and players can submit weapons in all three categories during the same week. Players can submit multiple weapons per Masterworks Fair, but only the latest submitted one for each rarity will count.</p>
+
+                <p>Submitted weapons will NOT be returned to the player.</p>
+
+                <p>The Masterworks Fair is a closed submission contest. Players will not know the weapon scores of other
+                    people’s weapons unless other players choose to share their submitted weapon scores. </p>
+
+                <p>When the Masterworks Fair is over, players will receive rewards according to the ranking of their
+                    weapons
+                    by weaponscore when submissions are closed:</p>
+
+                <ul>
+                    <li>The top three submissions will receive a guaranteed Star Piece of the weapon rarity they
+                        submitted.
+                    </li>
+                    <li>Each rarity awards a differeent amount of Supply Drop roll opportunities, with <span class="common">Common</span> giving the least rolls while <span class="epic">Epic</span> giving the most rolls.</li>
+                    <div class="mini-header common">Common</div>
+                    <ul>
+                        <li>1st Place: 100 Susan Rolls</li>
+                        <li>2nd Place: 50 Susan Rolls</li>
+                        <li>3rd Place: 30 Susan Rolls</li>
+                        <li>4th to 10th Place: 20 Susan Rolls</li>
+                        <li>11th to 20th Place: 10 Susan Rolls</li>
+                        <li>21th Place and below: 5 Susan Rolls</li>
+                    </ul>
+                    <div class="mini-header rare">Rare</div>
+                    <ul>
+                        <li>1st Place: 150 Susan Rolls</li>
+                        <li>2nd Place: 75 Susan Rolls</li>
+                        <li>3rd Place: 50 Susan Rolls</li>
+                        <li>4th to 10th Place: 35 Susan Rolls</li>
+                        <li>11th to 20th Place: 20 Susan Rolls</li>
+                        <li>21th Place and below: 10 Susan Rolls</li>
+                    </ul>
+                    <div class="mini-header epic">Epic</div>
+                    <ul>
+                        <li>1st Place: 200 Susan Rolls</li>
+                        <li>2nd Place: 100 Susan Rolls</li>
+                        <li>3rd Place: 70 Susan Rolls</li>
+                        <li>4th to 10th Place: 50 Susan Rolls</li>
+                        <li>11th to 20th Place: 30 Susan Rolls</li>
+                        <li>21th Place and below: 20 Susan Rolls</li>
+                    </ul>
+                    
+                    <li>There is a pity system for all fair rarities. You will be guaranteed the rewards for 4th to 10 Place if you submit weapons that pass the following thresholds:</li>
+                    <ul>
+                        <li>Common: 90 Weapon Score</li>
+                        <li>Rare: 85 Weapon Score</li>
+                        <li>Epic: 75 Weapon Score</li>
+                    </ul>
+                    <li>For more information about the Supply Drop, check out Supply Drop Susan.</li>
+                </ul>
+                <br>
+
             </div>
 
-        </nav>
-
-        <div class="main-text">
-            <p>
-            <h1>Masterworks Fair</h1>
-            </p>
-
-
-            <p>As <span class="common">Common</span>, <span class="rare">Rare</span> and <span class="epic">Epic</span>
-                weapons aren’t all that exciting when you have <span class="legendary">Legendary</span> weapons, the
-                Masterworks Fair has been added to make these weapons much more exciting. In a nutshell, players compete
-                to submit the weapon with the highest weapon score. Players can use <span
-                    class="bold commandmono">/weaponscore</span> to check their weapon score.</p>
-
-
-            <p>The Masterworks Fair is typically a weekly event, but fairs may be rehosted in a shorter time-frame. The
-                first Masterworks Fair is scheduled to start right at the first public release of Warlords 2 PvE.</p>
-
-            <p>There will be three separate competitions for each RNG-eligible rarity of <span
-                    class="common">Common</span>, <span class="rare">Rare</span> and <span class="epic">Epic</span>.
-                These competitions will run concurrently and players can submit weapons in all three categories during
-                the same week. Players can submit multiple weapons per Masterworks Fair, but only the latest submitted
-                one for each rarity will count.</p>
-
-            <p>Submitted weapons will NOT be returned to the player.</p>
-
-            <p>The Masterworks Fair is a closed submission contest. Players will not know the weapon scores of other
-                people’s weapons unless other players choose to share their submitted weapon scores. </p>
-
-            <p>When the Masterworks Fair is over, players will receive rewards according to the ranking of their weapons
-                by weaponscore when submissions are closed:</p>
-
-            <ul>
-                <li>The top three submissions will receive a guaranteed Star Piece of the weapon rarity they submitted.
-                </li>
-                <li>The top submission will get 10 Supply Drop roll opportunities, 2nd and 3rd place will get 7 Supply
-                    Drop roll opportunities, 4-10 will get 5 Supply Drop roll opportunities.</li>
-                <li>Players who submit a 85%+ weapon will be guaranteed at least 3 Supply Drop opportunities as a
-                    reward.</li>
-                <li>Players who submit any weapon will get a guaranteed Supply Drop roll as pity.</li>
-                <li>For more information about the Supply Drop, check out Supply Drop Susan.</li>
-            </ul>
-            <br>
-
+            <div></div>
         </div>
-
-        <div></div>
     </div>
-        </div>
-<new-tablet></new-tablet>
+    <new-tablet></new-tablet>
 
 </body>
 

@@ -4,15 +4,19 @@
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+var host = window.location.hostname;
+if(host != "localhost")
+{
+   window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-YZD55GFB38');
-    </script>
+}
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warlords 2 PvE Documentation</title>
+    <title>Legend Fragments - Weapons - Warlords 2 PvE Documentation</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/tablet-background-menu.css">
@@ -83,9 +87,46 @@
         <div class="main-text">
             <h1>Legend Fragments</h1>
 
-            <p>Legend Fragments are obtained by completing PvE games with a <span class="legendary">Legendary</span> weapon equipped. The concept of Legend Fragments is that you are building your legend as you progress into the game. </p>  
+            <p>Legend Fragments are obtained by completing PvE games with a <span class="legendary">Legendary</span> weapon equipped. The concept of Legend Fragments is that you are building your legend as you progress into the game. </p>
 
             <p>Legend Fragments are currently used for purchasing Weapon Upgrades and may be featured in other costs in the future.</p>
+            <p>Current Legend Fragment rates are as follows:</p>
+        
+            <div class="bold mini-header">Base Rate</div>
+            <ul>
+                <li>+1 Legend Fragment per Wave.</li>
+                <li>+5 Legend Fragments per Prestige Level of Current Class, awarded every 25 waves.</li>
+                <li>+2 Legend Fragments per Prestige Level of all other classes, awarded every 25 waves.</li>
+                <li>Normal and Endless mode follow the Base Rate for Legend Fragments.</li>
+                <li>Easy mode receives 0.75x the base rate for Legend Fragments.</li>
+                <li>Hard mode receives 2x the base rate for Legend Fragments.</li>
+            </ul>
+            <div class="bold mini-header">Guild Upgrade</div>
+            <ul>
+                <li>+2 Legend Fragments per Tier, with the 9th Tier offering +4 Legend Fragments instead.</li>
+                <li>The Guild Upgrade bonus is NOT discounted in Easy mode.</li>
+                <li>The Guild Upgrade bonus is doubled in Hard mode.</li>
+        
+    
+            <div class="main-header">Changelog</div>
+                    <div class="changelog-text">
+                        <p class="bold">Illusion Vanguard 1.1.2</p>
+                        <ul>
+                            <li>Added Legend Fragment Gain logic to the documentation page.</li>
+                            <li>Added a 2 Legend Fragment bonus for each level of prestige of the player's non-current class.</li>
+                            <li>Added a Guild Upgrade that boosts Legend Fragment gain.</li>
+                            <li>Clarified Legend Fragment bonus scaling.</li>
+                        </ul>
+                        <p class="bold">Illusion Vanguard 1.0.7</p>
+                        <ul>
+                            <li>Added a 5 Legend Fragment bonus for each level of prestige of the player's current class.</li>
+                        </ul>
+                        <p class="bold">Illusion Vanguard 1.0</p>
+                        <ul>
+                            <li>Introduced Legend Fragments as a material used for Weapons.</li>
+                        </ul>
+                    </div>
+            <div class="bottom-space"></div>
         </div>
 
         <div></div>

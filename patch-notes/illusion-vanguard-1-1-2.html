@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.1.2" />
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.2" />
     <meta property="og:description" content="Warlords 2 PvE Documentation" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
     <script>
@@ -18,7 +18,7 @@ if(host != "localhost")
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patch Notes v1.1.2 - Warlords 2 PvE Documentation</title>
+    <title>Patch Notes v1.2 - Warlords 2 PvE Documentation</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/tablet-background-menu.css">
@@ -87,15 +87,17 @@ if(host != "localhost")
             </nav>
 
             <div id="dingleberry" class="patch-notes main-text">
-                <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.1.1</span></div>
-                <div class="pn-date"><span class="pn-date">Released November 13th 2022</span></div>
+                <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Update - v1.2</span></div>
+                <div class="pn-date"><span class="pn-date">To Be Released November 18th 2022</span></div>
                 <div class="pn-header-1"><span class="pn-header-text">Wave Defense</span></div>
 
                 <div class="main-header"><span>General</span></div>
-
+                    
                 <p>
                 <ul>
-                    <li>Removed hoverable minute stats for PvE.</li>
+                    <li>Increased Legend Fragment Gain based on the amount of prestige a player has. Details can be found <a href="/weapons/fragments.html" class="red">here</a>.</li>
+                    <li class="bold">Star Pieces are now saved on each weapon title instead of being removed forever.</li>
+                    <li>The compensation command should now correctly reward all players who have logged in within the last 30 days.</li>
                     <li>Killed Chessking</li>
                 </ul>
                 </p>
@@ -113,26 +115,27 @@ if(host != "localhost")
                         <li>Healing per 5 seconds increased from 3% to 5%.</li>
                     </ul>
                 </p>
-
-                <div class="main-header"><span class="pn-header-text">Mob Balance</span></div>
-                <p></p>
-                <div class=" bold mini-header">Narmer</div>
+                <div class="main-header"><span class="pn-header-text">Class Balance</span></div>
+                <p>
+                <p>
+                <div class="bold mini-header">Protector</div>
                 <ul>
-                    <li>Death Wish's damage now scales with difficulty.</li>
-                    <li>Narmer's Acolytes have had their base health reduced by 6%~ and no longer have 10% damage
-                        reduction.</li>
+                    <li>Alleviating Strike (Protector's Strike Master) now properly increases healing by 50% on lowest allies (previously 70%), and now also doubles healing range.</li>
                 </ul>
                 </p>
-
                 <p>
-                <div class=" bold mini-header">Mithra</div>
-                <li>Changed Immolation's damage in normal mode from 150 to 100 per tick.</li>
-                <li>Mithra will no longer use Flame Burst Barrage while casting Immolation.</li>
+                    <div class="bold mini-header">Revenant</div>
+                    <ul>
+                        <li>Orbs of Life now targets the lowest ally upon sneaking/reactivating the ability.</li>
+                    </ul>
+                    </p>
                 </p>
+                <div class="main-header"><span class="pn-header-text">Mob Balance</span></div>
+                <p></p>
 
                 <p>
                 <div class=" bold mini-header">Zenith</div>
-                <li>Zenith's Envoy Legionaires' base health has been reduced by an additional 15% and will heal zenith every 10 seconds instead of every 5 seconds</li>
+                <li>Increased Zenith damage on Easy.</li>
 
                 </p>
                 <p> </p>
@@ -141,24 +144,10 @@ if(host != "localhost")
 
                 <p>
                 <ul>
-                    <li>Potential fix for server caching causing freezes after 4-6 hours of uptime.</li>
-                    <li>Fixed Zenith's abilities not scaling with difficulty.</li>
-                    <li>Fixed Requiem not boosting healing and activating on self death.</li>
-                    <li>Fixed Benevolent not increasing healing provided to other players.</li>
-                    <li>Fixed Execute not ignoring damage resistance.</li>
-                    <li>Fixed Tormented Souls not changing aggro every few seconds like Narmer's Acolytes.</li>
-                    <li>Fixed Mithra and Zenith's abilties not canceling when dying.</li>
-                    <li>Fixed Berserk's master upgrade not correctly increasing crit chance/multiplier.</li>
-                    <li>Fixed Prism Guard sometimes causing projectiles to deal negative damage.</li>
-                    <li>Fixed powerups not spawning in Easy Mode.</li>
-                    <li>Fixed Vitality Liquor not increasing in size when buying the master upgrade.</li>
-                    <li>Fixed some bosses not canceling their movement when casting certain abilities.</li>
-                    <li>Fixed Easy Mode getting stuck on 1 mob.</li>
-                    <li>Fixed Fallen Souls only shooting one projectile.</li>
-                    <li>Fixed Chain Heal master not adding an extra heal target as indicated by description.</li>
-                    <li>Fixed Protector's Strike master reverting the +1 healing target upgrade if unlocked.</li>
-                    <li>Fixed Death's Debt causing your energy and abilities to not work when activated.</li>
-                    <li>Fixed spectators increasing mob spawns.</li>
+                    <li>Fixed achievements triggering multiple times in a short period of time.</li>
+                    <li>Conscience Crush (Soul Shackle Master Upgrade) now correctly increases silence duration by 4s instead of 3s.</li>
+                    <li>Fixed Time Warp Alleviate (Healing) branch not being accurate to description.</li>
+                    <li>Loamliving Weapon (Earthliving Weapon Master Upgrade) now does not trigger negative values (fixed interaction with Overheal).</li>  
                 </ul>
                 </p>
 

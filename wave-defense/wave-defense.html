@@ -5,7 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
     <script>
 var host = window.location.hostname;
-if(host != "localhost")
+if(host != "127.0.0.1")
 {
    window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -94,7 +94,7 @@ if(host != "localhost")
                 <div class="bold mini-header">Normal</div>
                 <p>The normal mode provides players with the classical Warlords PvE experience. Survive 25 waves of onslaught from blighted mobs to secure your victory.</p>
                 <div class="bold mini-header">Hard</div>
-                <p>The bosses have recovered and are back with a vengeance. Your objective is still to survive 25 waves, but mobs will now have 50% more HP, deal 50% mode damage, and have additional abilities. As this mode is still unpolished, we will be disabling it for now.</p>
+                <p>The bosses have recovered and are back with a vengeance. Your objective is still to survive 25 waves, but mobs will now have 50% more HP, deal 50% mode damage, and have additional abilities.</p>
                 <div class="bold mini-header">Endless</div>
                 <p>With this gamemode, there is no end in sight. Kill as many enemies as you can to reach waves of mobs that your fellow players have never seen before!</p>
             </p>
@@ -105,7 +105,7 @@ if(host != "localhost")
             <p>Insignia is used for upgrading skills. The upgrades last for the duration of the game. Insignia is obtained by killing mobs and also after each round.</p>
 
             <ul>
-                <li>In Easy Mode, you earn a base of 750 insignia per kill.</li>
+                <li>In Easy Mode, you earn a base of 1000 insignia per kill.</li>
                 <li>In Normal and Hard Mode, you earn a base of 500 insignia per kill.</li>
                 <li>In Endless Mode, you earn a base of 250 insignia per kill.</li>
             </ul>
@@ -123,6 +123,11 @@ if(host != "localhost")
             </p>
             <div class="main-header">Changelog</div>
                     <div class="changelog-text">
+                        <p class="bold">Illusion Vanguard 1.2</p>
+                        <ul>
+                            <li>Fixed the value for Easy's base insignia gain.</li>
+                            <li>Fixed Hard being supposedly not released.</li>
+                        </ul>
                         <p class="bold">Illusion Vanguard 1.1</p>
                         <ul>
                             <li>Added information for Easy, adjusted some previous information.</li>

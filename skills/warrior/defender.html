@@ -235,6 +235,13 @@ if(host != "127.0.0.1")
                 </div>   
                 <div class="main-header">Changelog</div>
                     <div class="changelog-text">
+                        <p class="bold">Illusion Vanguard 1.3</p>
+                        <ul>
+                            <li>Lacerating Strike (Wounding Strike Master) now grants the same effect to allies within 6 blocks of the struck enemy.</li>
+                            <li>Changed several mob attacks to not apply knockback to the Defender when Intervening someone.</li>
+                            <li>Final Stand (Last Stand Master) will no longer periodically knock enemies back but is now triggered by re-activating the ability or using shift. The Defender is granted 50% knockback resistance for the duration of Last Stand.</li>
+                            <li>Fixed Ground Slam Master being affected by knockback resistance.</li>
+                        </ul>
                         <p class="bold">Illusion Vanguard 1.1</p>
                         <ul>
                             <li>Wounding Strike&#39;s damage upgrade branch has been changed from 3.75/7.5/11.25/15% to 7.5/15/22.5/30%.</li>
@@ -346,7 +353,7 @@ if(host != "127.0.0.1")
                         <div class="upgrade-desc-content-master">
                             <div>100% Crit Chance</div>
                             <!-- Set Crit Chance to 100% in 1.0.5 -->
-                            <div>Crit Strikes increase damage reduction by 30% for 5 seconds.</div>
+                            <div>Crit Strikes increase damage reduction by 30% for 5 seconds for all allies (including yourself) within a 6 block radius.</div>
                         </div>
                     </div>
                 </div>
@@ -742,7 +749,7 @@ if(host != "127.0.0.1")
                         </div>
                         <div class="upgrade-desc-content-master">
                             <div>-25% Cooldown</div>
-                            <div>Take aggro of enemies within radius of Last Stand upon casting. Enemies within the Last Stand radius get pushed outwards with heavy force continuously. Reduce cooldown by 25%.</div>
+                            <div>Take aggro of enemies within radius of Last Stand upon casting. SNEAK or reactivate ability to push enemies outwards. While Last Stand is active, gain 50% knockback resistance.</div>
                         </div>
                     </div>
                 </div>

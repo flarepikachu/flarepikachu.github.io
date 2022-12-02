@@ -93,3 +93,7 @@ li {
 .weapon-image {
     max-width: 55%;
 }
+
+.main-text p.notes-text {
+    font-size: 1.6rem;
+}

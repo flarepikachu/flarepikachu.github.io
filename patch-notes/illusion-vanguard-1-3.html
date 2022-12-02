@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.3" />
+    <meta property="og:description" content="Warlords 2 PvE Documentation" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        var host = window.location.hostname;
+        if (host != "127.0.0.1") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-YZD55GFB38');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch Notes v1.3 - Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
+    <link rel="stylesheet" href="/patch-notes/patch-notes.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <font-getter></font-getter>
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <div id="main-screen">
+        <header-component></header-component>
+
+        <div class="div1">
+            <span class="wl2pve">
+                <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Patch Notes</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Illusion Vanguard</a>
+            </span>
+        </div>
+
+        <burger-i></burger-i>
+
+        <div class="container">
+
+            <div></div>
+
+            <div id="navigationbar-mobile">
+                <mobile-divs></mobile-divs>
+            </div>
+
+            <nav class="main-nav" role="navigation">
+
+                <div class="selecter">
+                    <select class="div-toggle" data-target=".my-info-1">
+                        <option value="orange" data-show=".pve">
+                            <div class="selecter-text">Warlords 2 PvE</div>
+                        </option>
+                        <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                    </select>
+                </div>
+
+                <div class="my-info-1">
+                    <div class="pve hide">
+                        <dropdown-component></dropdown-component>
+                    </div>
+                    <div class="pome hide">A pome is...</div>
+                </div>
+
+            </nav>
+
+            <div id="dingleberry" class="patch-notes main-text">
+                <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Update - v1.3</span></div>
+                <div class="pn-date"><span class="pn-date">Scheduled Release December 2nd 2022</span></div>
+                <div class="pn-header-1"><span class="pn-header-text">Wave Defense</span></div>
+
+                <div class="main-header"><span>Endless</span></div>
+
+                <p>
+                <ul>
+                    <li>Increased overall reward gain by roughly 20%.</li>
+                    <li>Illusion Crossfire has been completely revamped.</li>
+                    <li>Waves after wave 50 now spawn every 5 seconds instead of 10.</li>
+                    <li>You now get an additional ability tier upgrade at wave 25 and 75 respectively.</li>
+                    <li>Reduced mob health scaling by 50%.</li>
+                    <li>Mob damage now scales with waves completed.</li>
+                    <ul>
+                        <li class="italic">Mobs will roughly deal 2x damage at wave 50 and 3x at wave 100 for reference. (Based on player count.)</li>
+                    </ul>
+                    <li>New bosses have been added for wave 60, 70 and 100. (80 and 90 will follow in a later patch.)</li>
+                    <li>Completely reworked mob distribution from wave 1 to 100 and beyond. The waves have now been divided into sub "themes", which means the following:
+                    </li>
+                    <ul>
+                        <li>Wave 1-25 - Normal</li>
+                        <li>Wave 26-50 - Difficult</li>
+                        <li>Wave 51-75 - Extreme</li>
+                        <li>Wave 76-100 - Death</li>
+                        <li>Wave 100+ - Wasteland</li>
+                    </ul>
+                </ul>
+                    <p class="italic notes-text">Each sub theme will hold different mobs and challenges, many new mobs have been added, but some have also received major changes to match their tier level.</p>
+                    <p class="italic notes-text">It should be noted that Wasteland is considered "unreachable" by most players and will not have any more bosses or special events after wave 100. Feel free to push your limits though, as mob scaling will be exponential from here on out.</p>
+                
+                </p>
+
+                <div class="main-header"><span class="pn-header-text">Weapon Balance</span></div>
+                <p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/gradient.html">Gradient</a></div>
+                        <ul>
+                            <li>Added 8% speed bonus</li>
+                        </ul>
+                    </p>
+
+                </p>
+                <div class="main-header"><span class="pn-header-text">Class Balance</span></div>
+                <p>
+                    <p>
+                        <div class="bold mini-header">General</div>
+                        <ul>
+                            <li>All classes with abilities that deal max health damage now have a global cap of minimum 100 damage and max 500 damage. (Can be increased by damage modifiers.)</li>
+                        </ul>
+                        <p class="italic notes-text">For reference: if the % health value is below 100 it will automatically be set to 100, vice versa if the % health value is above 500. Damage modifiers can increase this cap. For example, a damage modifier of 20% will increase the maximum cap to 600. This will affect the following abilities:</p>
+                        <ul>
+                            <li>Fireball</li>
+                            <li>Wounding Strike</li>
+                            <li>Avenger's Strike</li>
+                            <li>Windfury</li>
+                            <li>Healing Rain</li>
+                            <li>Undying Army</li>
+                            <li>Draining Miasma</li>
+                        </ul>
+                        <p class="italic notes-text">Assassin's Death strike execute threshold will remain uncapped.</p>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Pyromancer</div>
+                        <ul>
+                            <li>Flame Awakening (Flame Burst Master) no longer increases energy cost.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Cryomancer</div>
+                        <ul>
+                            <li>Ice Barrier will now take aggro every second instead of just once.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Aquamancer</div>
+                        <ul>
+                            <li>Typhoon (Water Breath Master) now reduces allies' cooldowns by 3s and are healed for 2% of their max health for 5 seconds instead of 1%.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Thunderlord</div>
+                        <ul>
+                            <li>Chain Lightning's energy cost upgrade branch has been changed from +2 bounces to +1 bounce at tier 4.</li>
+                            <li>Shredding Fury (Windfury Master) now deals 0.5% of their max health as bonus damage instead of 100% additional weapon damage.</li>
+                            <li>Thunderbolt's (Lightning Rod Master) damage boost no longer stacks with itself.</li>
+                            <li>Capacitor Totem's impair upgrade branch has been changed from 10/20/30/40% to 7.5/15/22.5/30% and no longer grants cooldown reduction.</li>
+                            <li>Capacitor Totem's spark upgrade branch has been changed from 0.5/1/1.5/2 blocks radius to 5/10/15/20% cooldown reduction.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Spiritguard</div>
+                        <ul>
+                            <li>Fallen Souls' damage upgrade branch has been changed from 7.5/15/22.5/30% to 15/30/45/60%.</li>
+                            <li>Increased max active Soulbinding Weapon instances from 2 to 3.</li>
+                            <li>Revengeance (Repentance Master) now also increases energy conversion based on damage taken by 50%.</li>
+                            <li>Death's Debt base damage taken after the totem ends has been reduced from 100% to 50%, the master upgrade will further reduce this by 25%.</li>
+                            <li>Ghoul's Gamble (Death's Debt Master) now grants you 80% knockback resistance during Spirits' Respite.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Berserker</div>
+                        <ul>
+                            <li>Wounding Strike's damage upgrade branch has been changed from 7.5/15/22.5/30% to 10/20/30/40%.</li>
+                            <li>Seismic Smash's (Seismic Wave Master) damage multiplier has been reduced from 2x to 1.5x at max distance.</li>
+                            <li>Seismic Wave's damage upgrade branch has been changed from 7.5/15/22.5/30% to 5/10/15/20%.</li>
+                            <li>Ground Slam's damage upgrade branch has been changed from 7.5/15/22.5/30% to 5/10/15/20%.</li>
+                            <li>Berserk's damage boost no longer stacks with itself.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Defender</div>
+                        <ul>
+                            <li>Lacerating Strike (Wounding Strike Master) now grants the same effect to allies within 6 blocks of the struck enemy.</li>
+                            <li>Changed several mob attacks to not apply knockback to the Defender when Intervening someone.</li>
+                            <li>Final Stand (Last Stand Master) will no longer periodically knock enemies back but is now triggered by re-activating the ability or using shift. The Defender is granted 50% knockback resistance for the duration of Last Stand.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Avenger</div>
+                        <ul>
+                            <li>Avenger's Slash (Avenger's Strike Master) now deals 0.5% of the enemies' max health as bonus damage against ELITE enemies.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Crusader</div>
+                        <ul>
+                            <li>Transcendent Presence (Inspiring Presence Master) now only reduces cooldowns by 30s instead of fully resetting them.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Protector</div>
+                        <ul>
+                            <li>Hammer of Illusion (Hammer of Light Master) can no longer hit critical hits.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Assassin</div>
+                        <ul>
+                            <li>Death Strike (Judgement Strike Master) now executes enemies below 30% health instead of 25%.</li>
+                            <li>Soul Switch's base cooldown has been lowered by 25%.</li>
+                            <li>Soul Switch now spawns a decoy that aggros enemies and deals damage by default. The master upgrade will now double the damage and apply a crippling debuff to all enemies hit. You will also be healed for 10% of your missing health upon swapping if unlocked.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Vindicator</div>
+                        <ul>
+                            <li>Righteous Slash (Righteous Strike Master) no longer knocks enemies back but now silences your initial strike target for 10 seconds. Additional targets still get silenced for 4 seconds.</li>
+                            <li>Soul Shackle can no longer target no enemies if the master upgrade is unlocked.</li>
+                            <li>Deflective Tesseract (Prism Guard Master) no longer doubles duration, as it wasn't meant to in the first place.</li>
+                            <li>Reflective Barrier (Vindicate Master) now ignores passive damage resistance when reflecting damage.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="bold mini-header">Apothecary</div>
+                        <ul>
+                            <li>Impaling Slash (Impaling Strike Master) now deals triple damage against targets affected by LEECH instead of double.</li>
+                        </ul>
+                    </p>
+                </p>
+                <div class="main-header"><span class="pn-header-text">Mob Balance</span></div>
+                <p></p>
+
+                <p>
+                <div class=" bold mini-header">Illusion Lament</div>
+                <li>Energy drain lowered from 10 to 5.</li>
+                </p>
+                <p>
+                <div class=" bold mini-header">Void Singularity</div>
+                <li>Now loses 1% health every 2 seconds. Making them less bloated in endless.</li>
+                </p>
+                <p>
+                <div class=" bold mini-header">Mithra</div>
+                <li>Lowered the cooldown of Flameburst Barrage from 20 seconds to 10 seconds.</li>
+                <li>Mithra will now cast Immolation again at 35% health and will be healed for 50% of all damage dealt during Immolation.
+                </li>
+                </p>
+
+                <div class="main-header"><span class="pn-header-text">Bug Fixes</span></div>
+
+                <p>
+                <ul>
+                    <li>Added potential safeguard for when mobs fall into the void.</li>
+                    <li>Fixed Zenith still being able to use abilities after death.</li>
+                    <li>Fixed getting kills with Order of Eviscerate not properly resetting inventory cooldowns.</li>
+                    <li>Fixed Ground Slam Master being affected by knockback resistance.</li>
+                </ul>
+                </p>
+
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+    <new-tablet></new-tablet>
+
+</body>
+
+</html>

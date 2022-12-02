@@ -1,800 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"
+    ></script>
     <script>
-var host = window.location.hostname;
-if(host != "127.0.0.1")
-{
-   window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      var host = window.location.hostname;
+      if (host != "127.0.0.1") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        gtag('config', 'G-YZD55GFB38');
-}
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        gtag("config", "G-YZD55GFB38");
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assassin - Specializations - Warlords 2 PvE Documentation</title>
-    <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/tablet-background-menu.css">
-    <link rel="stylesheet" href="/skills/skills.css">
-    <link rel="stylesheet" href="/skills/rogue/rogue.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/tablet-background-menu.css" />
+    <link rel="stylesheet" href="/skills/skills.css" />
+    <link rel="stylesheet" href="/skills/rogue/rogue.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7b156d9fc8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/scripts/script.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script
+      src="/scripts/dropdownmenu-desktop.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/scripts/dropdownmenu-tablet.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/scripts/dropdownmenu-tablet-divs.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/scripts/dropdownmenu-tablet-function.js"
+      type="text/javascript"
+    ></script>
     <script src="/scripts/burger-i.js" type="text/javascript"></script>
     <script src="/scripts/header.js" type="text/javascript"></script>
     <script src="/scripts/skills.js" type="text/javascript"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <font-getter></font-getter>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body onload="dropdownsdesktop()">
-
+  <body onload="dropdownsdesktop()">
     <div id="main-screen">
+      <div id="dim" class="dimmer"></div>
 
-        <div id="dim" class="dimmer"></div>
+      <div id="closer" onclick="closepopups();"></div>
 
-        <div id="closer" onclick="closepopups();">
+      <header-component></header-component>
 
+      <div class="div1">
+        <span class="wl2pve">
+          <a class="direlink div1-text" href="/index.html">Warlords 2 PvE</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+          <a class="direlink div1-text" href="/skills/skills.html"
+            >Skills & Upgrades</a
+          >
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+          <a class="direlink div1-text" href="/skills/rogue.html">Rogue</a>
+        </span>
+        <i class="fa-solid fa-angle-right div1-text"></i>
+        <span>
+          <a class="direlink div1-text" href="#">Assassin</a>
+        </span>
+      </div>
+
+      <div class="container">
+        <div></div>
+        <div id="navigationbar-mobile">
+          <mobile-divs></mobile-divs>
         </div>
 
-        <header-component></header-component>
-
-        <div class="div1">
-            <span class="wl2pve">
-                <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
-            </span>
-            <i class="fa-solid fa-angle-right div1-text"></i>
-            <span>
-                <a class='direlink div1-text' href="/skills/skills.html">Skills & Upgrades</a>
-            </span>
-            <i class="fa-solid fa-angle-right div1-text"></i>
-            <span>
-                <a class='direlink div1-text' href="/skills/rogue.html">Rogue</a>
-            </span>
-            <i class="fa-solid fa-angle-right div1-text"></i>
-            <span>
-                <a class='direlink div1-text' href="#">Assassin</a>
-            </span>
+        <div>
+          <nav class="main-nav" role="navigation">
+            <div class="selecter">
+              <select class="div-toggle" data-target=".my-info-1">
+                <option value="orange" data-show=".pve">
+                  <div class="selecter-text">Warlords 2 PvE</div>
+                </option>
+                <option value="pear" data-show=".pome">
+                  <span class="selecter-text">Pear</span>
+                </option>
+              </select>
+            </div>
+            <div class="my-info-1">
+              <div class="pve hide">
+                <dropdown-component></dropdown-component>
+              </div>
+              <div class="pome hide">A pome is...</div>
+            </div>
+          </nav>
         </div>
 
-        <div class="container">
-
-            <div></div>
-            <div id="navigationbar-mobile">
-                <mobile-divs></mobile-divs>
+        <div id="dingleberry" class="main-text">
+          <div>
+            <h1>Assassin</h1>
+            <p>
+              A damage-oriented Rogue specialization that is a master of
+              stealth, rapidly taking out any enemies who cross them.
+            </p>
+          </div>
+          <div class="class-container skill-1">
+            <div class="skill-title">
+              <h3>Judgement Strike</h3>
             </div>
 
-            <div>
-                <nav class="main-nav" role="navigation">
-                    <div class="selecter">
-                        <select class="div-toggle" data-target=".my-info-1">
-                            <option value="orange" data-show=".pve">
-                                <div class="selecter-text">Warlords 2 PvE</div>
-                            </option>
-                            <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
-                        </select>
-                    </div>
-                    <div class="my-info-1">
-                        <div class="pve hide">
-                            <dropdown-component></dropdown-component>
-                        </div>
-                        <div class="pome hide">A pome is...</div>
-                    </div>
-                </nav>
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup1(); align1();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
             </div>
 
-            <div id="dingleberry" class="main-text">
-                <div>
-                    <h1>Assassin</h1>
-                    <p>A damage-oriented Rogue specialization that is a master of stealth, rapidly taking out any
-                        enemies who cross them.</p>
-                </div>
-                <div class="class-container skill-1">
-                    <div class="skill-title">
-                        <h3>Judgement Strike</h3>
-                    </div>
-
-                    <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1(); align1();">
-                            <span class="button-desktop">Upgrade</span>
-                            <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="master-button-div"><button class="master-button" onclick="popup1m()">
-                            <span class="button-desktop">Master</span>
-                            <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="crit-stats">
-                        <p>Energy Cost: 70</p>
-                        <p>Crit Chance: 20%</p>
-                        <p>Crit Multiplier: 185%</p>
-                    </div>
-
-                    <div class="skill-description">
-                        <p>Strike the targeted enemy, dealing 326 - 441 damage. Every fourth attack is a guaranteed
-                            critical strike. Critical strikes temporarily increase your movement speed by 25% for 2
-                            seconds.</p>
-                    </div>
-                </div>
-                <div class="class-container skill-2">
-                    <div class="skill-title">
-                        <h3>Incendiary Curse</h3>
-                    </div>
-
-                    <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2(); align2();">
-                            <span class="button-desktop">Upgrade</span>
-                            <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="master-button-div"><button class="master-button" onclick="popup2m()">
-                            <span class="button-desktop">Master</span>
-                            <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="crit-stats">
-                        <p>Cooldown: 8s</p>
-                        <p>Energy Cost: 60</p>
-                        <p>Crit Chance: 25%</p>
-                        <p>Crit Multiplier: 175%</p>
-                    </div>
-
-                    <div class="skill-description">
-                        <p>Ignite the targeted area with a cross flame, dealing 408 - 552 damage. Enemies hit are
-                            blinded for 2 seconds.</p>
-                    </div>
-                </div>
-                <div class="class-container skill-3">
-                    <div class="skill-title">
-                        <h3>Shadow Step</h3>
-                    </div>
-
-                    <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup3(); align3();">
-                            <span class="button-desktop">Upgrade</span>
-                            <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="master-button-div"><button class="master-button" onclick="popup3m()">
-                            <span class="button-desktop">Master</span>
-                            <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                        </button>
-                    </div>
-                    <div class="crit-stats">
-                        <p>Cooldown: 12s</p>
-                        <p>Energy Cost: 20</p>
-                        <p>Crit Chance: 15%</p>
-                        <p>Crit Multiplier: 175%</p>
-                    </div>
-                    <div class="skill-description">
-                        <p>Leap forward, dealing 466 - 598 damage to all enemies close on cast or when landing on the
-                            ground. You take reduced fall damage while leaping.</p>
-                        <p>Shadow Step has reduced range when holding a Flag.</p>
-                    </div>
-                </div>
-                <div class="class-container skill-4">
-                    <div class="skill-title">
-                        <h3>Soul Switch</h3>
-                    </div>
-
-                    <div class="upgrade-button-div" onresize="align4();"><button class="upgrade-button"
-                            onclick="popup4(); align4();">
-                            <span class="button-desktop">Upgrade</span>
-                            <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="master-button-div"><button class="master-button" onclick="popup4m()">
-                            <span class="button-desktop">Master</span>
-                            <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="crit-stats">
-                        <p>Cooldown: 30s</p>
-                        <p>Energy Cost: 40</p>
-                    </div>
-
-                    <div class="skill-description">
-                        <p>Switch locations with an enemy, blinding them for 1.5 seconds. Has an optimal range of 13
-                            blocks. Soul Switch has low vertical range.</p>
-                    </div>
-                </div>
-                <div class="class-container skill-5">
-                    <div class="skill-title">
-                        <h3>Order of Eviscerate*</h3>
-                    </div>
-
-                    <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup5(); align5();">
-                            <span class="button-desktop">Upgrade</span>
-                            <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="master-button-div"><button class="master-button" onclick="popup5m()">
-                            <span class="button-desktop">Master</span>
-                            <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                        </button>
-                    </div>
-
-                    <div class="crit-stats">
-                        <p>Cooldown: 50s</p>
-                        <p>Energy Cost: 60</p>
-                    </div>
-
-                    <div class="skill-description">
-                        <p>Cloak yourself for 7 seconds, granting
-                            you movement speed and making you invisible
-                            to the enemy for the duration. However, taking up to
-                            600 fall damage or any type of ability damage will
-                            end your invisibility.</p>
-
-                        <p>
-                            All your attacks against an enemy will mark them vulnerable.
-                            Vulnerable enemies take 130% more damage. Additionally,
-                            enemies hit from behind take an additional 140% more damage.
-                        </p>
-
-                        <p> Killing your mark will decrease the cooldown of your Shadow Step by 2s and Order of
-                            Eviscerate by 8 seconds.</p>
-                    </div>
-                    <div class="main-header">Changelog</div>
-                    <div class="changelog-text">
-                        <p class="bold">Illusion Vanguard 1.1</p>
-                        <ul>
-                            <li>Judgement Strike&#39;s healing on kill upgrade has been changed from 75/150/225/300 to
-                                100/200/300/400.</li>
-                            <li>Incendiary Curse will now blind mobs for double the duration, making them take longer to
-                                aggro onto a new player.</li>
-                            <li>Shadow Stagger (Shadow Step Master) will now increase speed and knockback resistance by
-                                80% for 5 seconds instead of 20% for 3 seconds. (Description was incorrect in general.)
-                            </li>
-                        </ul>
-                        <p class="bold">Illusion Vanguard 1.0</p>
-                        <ul>
-                            <li>Added the Assassin page to the documentation.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bottom-space"></div>
-
-                <div id="popup-1" class="popup-container">
-                    <div class="topbar">
-                        <span>Judgement Strike Upgrades</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary">
-                        <div class="upgrade-1">
-                            <div class="upgrade-1-header">
-                                <span>Impair</span>
-                            </div>
-                            <div class="upgrade-desc">
-                                <div id="upgrade-desc-1-1" class="upgrade-desc-content">
-                                    <span>Damage Increase</span>
-                                </div>
-                            </div>
-                            <div id="grid-1-1" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">&nbsp;+15%&nbsp;<i
-                                            class="fa-solid fa-hand-fist fa-fw"></i></div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">+45%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">+60% Damage</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upgrade-2">
-                            <div class="upgrade-2-header">
-                                <span>Alleviate</span>
-                            </div>
-                            <div id="upgrade-desc-1-2" class="upgrade-desc">
-                                <div class="upgrade-desc-content">
-                                    <span>Healing on Strike Kill</span>
-                                </div>
-                            </div>
-                            <div id="grid-1-2" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">+100&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">+200&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">+300&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">+400 Healing on Strike Kill</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-1-m" class="popup-container">
-                    <div class="topbar">
-                        <span>Judgement Strike Master Upgrade</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary-master">
-                        <div class="master">
-                            <div class="master-header">
-                                <span>Executing Strike</span>
-                            </div>
-                            <div class="upgrade-desc-content-master">
-                                <div>If the enemy hit by Judgement Strike drops below 25% max health, they get executed. (Excluding boss mobs.)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-2" class="popup-container">
-                    <div class="topbar">
-                        <span>Incendiary Curse Upgrades</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary">
-                        <div class="upgrade-1">
-                            <div class="upgrade-1-header">
-                                <span>Impair</span>
-                            </div>
-                            <div id="upgrade-desc-2-1" class="upgrade-desc">
-                                <div class="upgrade-desc-content">
-                                    <span>Damage Increase</span>
-                                </div>
-                            </div>
-                            <div id="grid-2-1" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">&nbsp;+15%&nbsp;<i
-                                            class="fa-solid fa-hand-fist fa-fw"></i></div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">+30% Damage</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="upgrade-2">
-                            <div class="upgrade-2-header">
-                                <span>Spark</span>
-                            </div>
-                            <div id="upgrade-desc-2-2" class="upgrade-desc">
-                                <div class="upgrade-desc-content">
-                                    <span>Cooldown Reduction and Ability Radius Increase</span>
-                                </div>
-                            </div>
-                            <div id="grid-2-2" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">&nbsp;-5%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                    <div class="upgrade-value">+0.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">-10%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                    <div class="upgrade-value">&nbsp;&nbsp;+1&nbsp;<i
-                                            class="fa-solid fa-cube fa-fw"></i></div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">-15%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                    <div class="upgrade-value">+1.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">-20% Cooldown</div>
-                                    <div class="upgrade-value">+2 Blocks Ability Radius</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-2-m" class="popup-container">
-                    <div class="topbar">
-                        <span>Incendiary Curse Master Upgrade</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary-master">
-                        <div class="master">
-                            <div class="master-header">
-                                <span>Blazing Curse</span>
-                            </div>
-                            <div class="upgrade-desc-content-master">
-                                <div>All enemies hit become disoriented. Increase the damage they take by 50% for 5
-                                    seconds.</div>
-                                <!-- 2 -> 5 seconds increased dmg 1.0.5 !-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-3" class="popup-container">
-                    <div class="topbar">
-                        <span>Shadow Step Upgrades</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary">
-                        <div class="upgrade-1">
-                            <div class="upgrade-1-header">
-                                <span>Impair</span>
-                            </div>
-                            <div class="upgrade-desc">
-                                <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
-                                <div id="upgrade-desc-3-1" class="upgrade-desc-content">
-                                    <span>Damage Increase</span>
-                                </div>
-                            </div>
-                            <div id="grid-3-1" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">+30% Damage</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upgrade-2">
-                            <div class="upgrade-2-header">
-                                <span>Zeal</span>
-                            </div>
-                            <div class="upgrade-desc">
-                                <div id="upgrade-desc-3-2" class="upgrade-desc-content">
-                                    <span>Cooldown Reduction</span>
-                                </div>
-                            </div>
-                            <div id="grid-3-2" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">&nbsp;-5%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">&nbsp;-10%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">&nbsp;-15%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">-20% Cooldown</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-3-m" class="popup-container">
-                    <div class="topbar">
-                        <span>Shadow Step Master Upgrade</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary-master">
-                        <div class="master">
-                            <div class="master-header">
-                                <span>Shadow Stagger</span>
-                            </div>
-                            <div class="upgrade-desc-content-master">
-                                <div>Gain 80% speed and knockback resistance upon landing for 5 seconds.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-4" class="popup-container">
-                    <div class="topbar">
-                        <span>Soul Switch Upgrades</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary">
-                        <div class="upgrade-1">
-                            <div class="upgrade-1-header">
-                                <span>Zeal</span>
-                            </div>
-                            <div class="upgrade-desc">
-                                <div id="upgrade-desc-4-1" class="upgrade-desc-content">
-                                    <span>Cooldown Reduction</span>
-                                </div>
-                            </div>
-                            <div id="grid-4-1" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">-10%<i class="fa-regular fa-hourglass-half fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">-20%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">-30%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">-40% Cooldown</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upgrade-2">
-                            <div class="upgrade-2-header">
-                                <span>Scope</span>
-                            </div>
-                            <div class="upgrade-desc">
-                                <div id="upgrade-desc-4-2" class="upgrade-desc-content">
-                                    <span>Cast Range</span>
-                                </div>
-                            </div>
-                            <div id="grid-4-2" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">+3&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">+6&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">+9&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">+12 Blocks Cast Range</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-4-m" class="popup-container">
-                    <div class="topbar">
-                        <span>Soul Switch Master Upgrade</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary-master">
-                        <div class="master">
-                            <div class="master-header">
-                                <span>Soul Burst</span>
-                            </div>
-                            <div class="upgrade-desc-content-master">
-                                <div>Leave a decoy where you swapped with an enemy that explodes after 3 seconds for
-                                    1004-1248 damage, enemies are drawn to the decoy.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-5" class="popup-container">
-                    <div class="topbar">
-                        <span>Order of Eviscerate Upgrades</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary">
-                        <div class="upgrade-1">
-                            <div class="upgrade-1-header">
-                                <span>Chronos</span>
-                            </div>
-                            <div class="upgrade-desc">
-                                <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
-                                <div id="upgrade-desc-5-1" class="upgrade-desc-content">
-                                    <span>Duration Increase</span>
-                                </div>
-                            </div>
-                            <div id="grid-5-1" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">&nbsp;+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">&nbsp;+4s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
-                                    </div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">&nbsp;+6s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">+8s Duration</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upgrade-2">
-                            <div class="upgrade-2-header">
-                                <span>Zeal</span>
-                            </div>
-                            <div class="upgrade-desc">
-                                <!-- <div class="upgrade-desc-header">
-                                <span>Upgrade Type</span>
-                            </div> -->
-                                <div id="upgrade-desc-5-2" class="upgrade-desc-content">
-                                    <span>Cooldown Reduction</span>
-                                </div>
-                            </div>
-                            <div id="grid-5-2" class="upgrade-grid">
-                                <div class="tier-1">
-                                    <div class="upgrade-tier">Tier I</div>
-                                    <div class="upgrade-value">&nbsp;-5%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                                <div class="tier-2">
-                                    <div class="upgrade-tier">Tier II</div>
-                                    <div class="upgrade-value">-10%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                                <div class="tier-3">
-                                    <div class="upgrade-tier">Tier III</div>
-                                    <div class="upgrade-value">-15%&nbsp;<i
-                                            class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                                </div>
-                            </div>
-                            <div class="tier-4">
-                                <div class="upgrade-tier">
-                                    Tier IV
-                                </div>
-                                <div class="tier-4-desc">
-                                    <div class="upgrade-value">-20% Cooldown</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup-5-m" class="popup-container">
-                    <div class="topbar">
-                        <span>Order of Eviscerate Master Upgrade</span>
-                        <button class="x-button" onclick="closepopups();">
-                            <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                        </button>
-                    </div>
-                    <div class="content-primary-master">
-                        <div class="master">
-                            <div class="master-header">
-                                <span>Killing Order</span>
-                            </div>
-                            <div class="upgrade-desc-content-master">
-                                <div>Backstab damage is increased by 70%. Additionally, kills while Order of Eviscerate is active reduces this ability's cooldown by 4 seconds.</div>
-                            </div>
-                            <!-- Cooldown Reduction changed from 1s to 3s in 1.0.2 -->
-                        </div>
-                    </div>
-                </div>
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup1m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
             </div>
-            <br><br><br>
 
-            <div></div>
+            <div class="crit-stats">
+              <p>Energy Cost: 70</p>
+              <p>Crit Chance: 20%</p>
+              <p>Crit Multiplier: 185%</p>
+            </div>
+
+            <div class="skill-description">
+              <p>
+                Strike the targeted enemy, dealing 326 - 441 damage. Every
+                fourth attack is a guaranteed critical strike. Critical strikes
+                temporarily increase your movement speed by 25% for 2 seconds.
+              </p>
+            </div>
+          </div>
+          <div class="class-container skill-2">
+            <div class="skill-title">
+              <h3>Incendiary Curse</h3>
+            </div>
+
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup2(); align2();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup2m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="crit-stats">
+              <p>Cooldown: 8s</p>
+              <p>Energy Cost: 60</p>
+              <p>Crit Chance: 25%</p>
+              <p>Crit Multiplier: 175%</p>
+            </div>
+
+            <div class="skill-description">
+              <p>
+                Ignite the targeted area with a cross flame, dealing 408 - 552
+                damage. Enemies hit are blinded for 2 seconds.
+              </p>
+            </div>
+          </div>
+          <div class="class-container skill-3">
+            <div class="skill-title">
+              <h3>Shadow Step</h3>
+            </div>
+
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup3(); align3();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup3m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+            <div class="crit-stats">
+              <p>Cooldown: 12s</p>
+              <p>Energy Cost: 20</p>
+              <p>Crit Chance: 15%</p>
+              <p>Crit Multiplier: 175%</p>
+            </div>
+            <div class="skill-description">
+              <p>
+                Leap forward, dealing 466 - 598 damage to all enemies close on
+                cast or when landing on the ground. You take reduced fall damage
+                while leaping.
+              </p>
+              <p>Shadow Step has reduced range when holding a Flag.</p>
+            </div>
+          </div>
+          <div class="class-container skill-4">
+            <div class="skill-title">
+              <h3>Soul Switch</h3>
+            </div>
+
+            <div class="upgrade-button-div" onresize="align4();">
+              <button class="upgrade-button" onclick="popup4(); align4();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup4m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="crit-stats">
+              <p>Cooldown: 22.5s</p>
+              <p>Energy Cost: 40</p>
+            </div>
+
+            <div class="skill-description">
+              <p>
+                Switch locations with an enemy, blinding them for 1.5 seconds.
+                Has an optimal range of 13 blocks. Leave a decoy where you
+                swapped with an enemy that explodes after 3 seconds for
+                1004-1248 damage, enemies are drawn to the decoy.
+              </p>
+            </div>
+          </div>
+          <div class="class-container skill-5">
+            <div class="skill-title">
+              <h3>Order of Eviscerate*</h3>
+            </div>
+
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup5(); align5();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup5m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="crit-stats">
+              <p>Cooldown: 50s</p>
+              <p>Energy Cost: 60</p>
+            </div>
+
+            <div class="skill-description">
+              <p>
+                Cloak yourself for 7 seconds, granting you movement speed and
+                making you invisible to the enemy for the duration. However,
+                taking up to 600 fall damage or any type of ability damage will
+                end your invisibility.
+              </p>
+
+              <p>
+                All your attacks against an enemy will mark them vulnerable.
+                Vulnerable enemies take 130% more damage. Additionally, enemies
+                hit from behind take an additional 140% more damage.
+              </p>
+
+              <p>
+                Killing your mark will decrease the cooldown of your Shadow Step
+                by 2s and Order of Eviscerate by 8 seconds.
+              </p>
+            </div>
+            <div class="main-header">Changelog</div>
+            <div class="changelog-text">
+              <p class="bold">Illusion Vanguard 1.3</p>
+              <ul>
+                <li>
+                  Fixed getting kills with Order of Eviscerate not properly
+                  resetting inventory cooldowns.
+                </li>
+                <li>
+                  Death Strike (Judgement Strike Master) now executes enemies
+                  below 30% health instead of 25%.
+                </li>
+                <li>Soul Switch's base cooldown has been lowered by 25%.</li>
+                <li>
+                  Soul Switch now spawns a decoy that aggros enemies and deals
+                  damage by default. The master upgrade will now double the
+                  damage and apply a crippling debuff to all enemies hit. You
+                  will also be healed for 10% of your missing health upon
+                  swapping if unlocked.
+                </li>
+              </ul>
+              <p class="bold">Illusion Vanguard 1.1</p>
+              <ul>
+                <li>
+                  Judgement Strike&#39;s healing on kill upgrade has been
+                  changed from 75/150/225/300 to 100/200/300/400.
+                </li>
+                <li>
+                  Incendiary Curse will now blind mobs for double the duration,
+                  making them take longer to aggro onto a new player.
+                </li>
+                <li>
+                  Shadow Stagger (Shadow Step Master) will now increase speed
+                  and knockback resistance by 80% for 5 seconds instead of 20%
+                  for 3 seconds. (Description was incorrect in general.)
+                </li>
+              </ul>
+              <p class="bold">Illusion Vanguard 1.0</p>
+              <ul>
+                <li>Added the Assassin page to the documentation.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom-space"></div>
+
+          <div id="popup-1" class="popup-container">
+            <div class="topbar">
+              <span>Judgement Strike Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Impair</span>
+                </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-1-1" class="upgrade-desc-content">
+                    <span>Damage Increase</span>
+                  </div>
+                </div>
+                <div id="grid-1-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;+15%&nbsp;<i
+                        class="fa-solid fa-hand-fist fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +30%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +45%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+60% Damage</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Alleviate</span>
+                </div>
+                <div id="upgrade-desc-1-2" class="upgrade-desc">
+                  <div class="upgrade-desc-content">
+                    <span>Healing on Strike Kill</span>
+                  </div>
+                </div>
+                <div id="grid-1-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +100&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +200&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +300&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+400 Healing on Strike Kill</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-1-m" class="popup-container">
+            <div class="topbar">
+              <span>Judgement Strike Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Executing Strike</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    If the enemy hit by Judgement Strike drops below 30% max
+                    health, they get executed. (Excluding boss mobs.)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-2" class="popup-container">
+            <div class="topbar">
+              <span>Incendiary Curse Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Impair</span>
+                </div>
+                <div id="upgrade-desc-2-1" class="upgrade-desc">
+                  <div class="upgrade-desc-content">
+                    <span>Damage Increase</span>
+                  </div>
+                </div>
+                <div id="grid-2-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      &nbsp;+15%&nbsp;<i
+                        class="fa-solid fa-hand-fist fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+30% Damage</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Spark</span>
+                </div>
+                <div id="upgrade-desc-2-2" class="upgrade-desc">
+                  <div class="upgrade-desc-content">
+                    <span>Cooldown Reduction and Ability Radius Increase</span>
+                  </div>
+                </div>
+                <div id="grid-2-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;-5%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                    <div class="upgrade-value">
+                      +0.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      -10%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                    <div class="upgrade-value">
+                      &nbsp;&nbsp;+1&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      -15%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                    <div class="upgrade-value">
+                      +1.5&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">-20% Cooldown</div>
+                    <div class="upgrade-value">+2 Blocks Ability Radius</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-2-m" class="popup-container">
+            <div class="topbar">
+              <span>Incendiary Curse Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Blazing Curse</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    All enemies hit become disoriented. Increase the damage they
+                    take by 50% for 5 seconds.
+                  </div>
+                  <!-- 2 -> 5 seconds increased dmg 1.0.5 !-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-3" class="popup-container">
+            <div class="topbar">
+              <span>Shadow Step Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Impair</span>
+                </div>
+                <div class="upgrade-desc">
+                  <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                  <div id="upgrade-desc-3-1" class="upgrade-desc-content">
+                    <span>Damage Increase</span>
+                  </div>
+                </div>
+                <div id="grid-3-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+30% Damage</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Zeal</span>
+                </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-3-2" class="upgrade-desc-content">
+                    <span>Cooldown Reduction</span>
+                  </div>
+                </div>
+                <div id="grid-3-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;-5%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      &nbsp;-10%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      &nbsp;-15%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">-20% Cooldown</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-3-m" class="popup-container">
+            <div class="topbar">
+              <span>Shadow Step Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Shadow Stagger</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Gain 80% speed and knockback resistance upon landing for 5
+                    seconds.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-4" class="popup-container">
+            <div class="topbar">
+              <span>Soul Switch Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Zeal</span>
+                </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-4-1" class="upgrade-desc-content">
+                    <span>Cooldown Reduction</span>
+                  </div>
+                </div>
+                <div id="grid-4-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      -10%<i class="fa-regular fa-hourglass-half fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      -20%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      -30%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">-40% Cooldown</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Scope</span>
+                </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-4-2" class="upgrade-desc-content">
+                    <span>Cast Range</span>
+                  </div>
+                </div>
+                <div id="grid-4-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +3&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +6&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +9&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+12 Blocks Cast Range</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-4-m" class="popup-container">
+            <div class="topbar">
+              <span>Soul Switch Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Soul Burst</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Double the damage you deal with the decoy and cripple all
+                    enemies hit by the decoy's explosion for 5 seconds, reducing
+                    their damage dealt by 50%. Additionally, heal for 10% of
+                    your missing health when swapping.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-5" class="popup-container">
+            <div class="topbar">
+              <span>Order of Eviscerate Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Chronos</span>
+                </div>
+                <div class="upgrade-desc">
+                  <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                  <div id="upgrade-desc-5-1" class="upgrade-desc-content">
+                    <span>Duration Increase</span>
+                  </div>
+                </div>
+                <div id="grid-5-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      &nbsp;+4s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      &nbsp;+6s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+8s Duration</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Zeal</span>
+                </div>
+                <div class="upgrade-desc">
+                  <!-- <div class="upgrade-desc-header">
+                                <span>Upgrade Type</span>
+                            </div> -->
+                  <div id="upgrade-desc-5-2" class="upgrade-desc-content">
+                    <span>Cooldown Reduction</span>
+                  </div>
+                </div>
+                <div id="grid-5-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;-5%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      -10%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      -15%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">-20% Cooldown</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-5-m" class="popup-container">
+            <div class="topbar">
+              <span>Order of Eviscerate Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Killing Order</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Backstab damage is increased by 70%. Additionally, kills
+                    while Order of Eviscerate is active reduces this ability's
+                    cooldown by 4 seconds.
+                  </div>
+                </div>
+                <!-- Cooldown Reduction changed from 1s to 3s in 1.0.2 -->
+              </div>
+            </div>
+          </div>
         </div>
+        <br /><br /><br />
+
+        <div></div>
+      </div>
     </div>
     <new-tablet></new-tablet>
-</body>
-
+  </body>
 </html>

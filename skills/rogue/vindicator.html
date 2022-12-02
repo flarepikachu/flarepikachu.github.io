@@ -1,751 +1,979 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"
+    ></script>
     <script>
-var host = window.location.hostname;
-if(host != "127.0.0.1")
-{
-   window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      var host = window.location.hostname;
+      if (host != "127.0.0.1") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        gtag('config', 'G-YZD55GFB38');
-}
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        gtag("config", "G-YZD55GFB38");
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vindicator - Specializations - Warlords 2 PvE Documentation</title>
-    <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/tablet-background-menu.css">
-    <link rel="stylesheet" href="/skills/skills.css">
-    <link rel="stylesheet" href="/skills/rogue/rogue.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/tablet-background-menu.css" />
+    <link rel="stylesheet" href="/skills/skills.css" />
+    <link rel="stylesheet" href="/skills/rogue/rogue.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7b156d9fc8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/scripts/script.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
-    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script
+      src="/scripts/dropdownmenu-desktop.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/scripts/dropdownmenu-tablet.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/scripts/dropdownmenu-tablet-divs.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/scripts/dropdownmenu-tablet-function.js"
+      type="text/javascript"
+    ></script>
     <script src="/scripts/burger-i.js" type="text/javascript"></script>
     <script src="/scripts/header.js" type="text/javascript"></script>
     <script src="/scripts/skills.js" type="text/javascript"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <font-getter></font-getter>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body onload="dropdownsdesktop()">
+  <body onload="dropdownsdesktop()">
+    <div id="main-screen">
+      <div id="dim" class="dimmer"></div>
 
-  <div id="main-screen">
+      <div id="closer" onclick="closepopups();"></div>
 
-    <div id="dim" class="dimmer"></div>
+      <header-component></header-component>
 
-    <div id="closer" onclick="closepopups();">
-
-    </div>
-
-    <header-component></header-component>
-
-    <div class="div1">
+      <div class="div1">
         <span class="wl2pve">
-            <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+          <a class="direlink div1-text" href="/index.html">Warlords 2 PvE</a>
         </span>
         <i class="fa-solid fa-angle-right div1-text"></i>
         <span>
-            <a class='direlink div1-text' href="/skills/skills.html">Skills & Upgrades</a>
+          <a class="direlink div1-text" href="/skills/skills.html"
+            >Skills & Upgrades</a
+          >
         </span>
         <i class="fa-solid fa-angle-right div1-text"></i>
         <span>
-            <a class='direlink div1-text' href="/skills/rogue.html">Rogue</a>
+          <a class="direlink div1-text" href="/skills/rogue.html">Rogue</a>
         </span>
         <i class="fa-solid fa-angle-right div1-text"></i>
         <span>
-            <a class='direlink div1-text' href="#">Vindicator</a>
+          <a class="direlink div1-text" href="#">Vindicator</a>
         </span>
-    </div>
-    
-    <div class="container">
+      </div>
 
+      <div class="container">
         <div></div>
         <div id="navigationbar-mobile">
-            <mobile-divs></mobile-divs>
+          <mobile-divs></mobile-divs>
         </div>
 
         <div>
-            <nav class="main-nav" role="navigation">
-                <div class="selecter">
-                    <select class="div-toggle" data-target=".my-info-1">
-                        <option value="orange" data-show=".pve">
-                            <div class="selecter-text">Warlords 2 PvE</div>
-                        </option>
-                        <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
-                    </select>
-                </div>
-                <div class="my-info-1">
-                    <div class="pve hide">
-                        <dropdown-component></dropdown-component>
-                    </div>
-                    <div class="pome hide">A pome is...</div>
-                </div>
-            </nav>
+          <nav class="main-nav" role="navigation">
+            <div class="selecter">
+              <select class="div-toggle" data-target=".my-info-1">
+                <option value="orange" data-show=".pve">
+                  <div class="selecter-text">Warlords 2 PvE</div>
+                </option>
+                <option value="pear" data-show=".pome">
+                  <span class="selecter-text">Pear</span>
+                </option>
+              </select>
+            </div>
+            <div class="my-info-1">
+              <div class="pve hide">
+                <dropdown-component></dropdown-component>
+              </div>
+              <div class="pome hide">A pome is...</div>
+            </div>
+          </nav>
         </div>
 
         <div id="dingleberry" class="main-text">
-            <div>
-                <h1>Vindicator</h1>
-                <p>A defense-oriented Rogue specialization that deceives enemies by disabling their powers and uses bulk power to protect allies.</p>
+          <div>
+            <h1>Vindicator</h1>
+            <p>
+              A defense-oriented Rogue specialization that deceives enemies by
+              disabling their powers and uses bulk power to protect allies.
+            </p>
+          </div>
+          <div class="class-container skill-1">
+            <div class="skill-title">
+              <h3>Righteous Strike</h3>
             </div>
-            <div class="class-container skill-1">
-                <div class="skill-title">
-                    <h3>Righteous Strike</h3>
-                </div> 
 
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup1(); align1();">
-                    <span class="button-desktop">Upgrade</span>
-                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="master-button-div"><button class="master-button" onclick="popup1m()">
-                    <span class="button-desktop">Master</span>
-                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="crit-stats">
-                    <p>Energy Cost: 90</p>
-                    <p>Crit Chance: 20%</p>
-                    <p>Crit Multiplier: 175%</p>
-                </div>
-                
-                <div class="skill-description">
-                    <p>Strike the targeted enemy for 535.6 - 679.9 damage. Each strike reduces the duration of your struck target's active ability timers by 0.5 seconds.</p>
-                    <p>Additionally, if your struck target is silenced, reduce the cooldown of your Prism Guard by 0.8 seconds and reduce their active ability timers by 0.8 seconds instead.</p>
-                </div>   
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup1(); align1();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
             </div>
-            <div class="class-container skill-2">
-                <div class="skill-title">
-                    <h3>Soul Shackle</h3>
-                </div> 
 
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup2(); align2();">
-                    <span class="button-desktop">Upgrade</span>
-                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="master-button-div"><button class="master-button" onclick="popup2m()">
-                    <span class="button-desktop">Master</span>
-                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="crit-stats">
-                    <p>Cooldown: 9s</p>
-                    <p>Energy Cost: 40</p>
-                    <p>Crit Chance: 20%</p>
-                    <p>Crit Multiplier: 175%</p>
-                </div>
-                
-                <div class="skill-description">          
-                    <p>Shackle up to 1 enemy and deal 446 - 589 damage. Shackled enemies are silenced for 2 - 3.5 seconds, making them unable to use their main attack for the duration. The silence duration increases by 0.5 seconds for every 500 damage you took in the last 6 seconds. Gain a short burst of 40% movement speed for 1.5 seconds after shackling an enemy.</p>
-                    <p>Has an optimal range of 15 blocks.</p>
-                    <p>Shackled enemies cannot melee for the duration of silence in PvE.</p>
-                    <!-- Added cannot melee during silence in 1.0.5 -->
-                </div>   
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup1m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
             </div>
-            <div class="class-container skill-3">
-                <div class="skill-title">
-                    <h3>Heart to Heart</h3>
-                </div> 
 
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup3(); align3();">
-                    <span class="button-desktop">Upgrade</span>
-                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="master-button-div"><button class="master-button" onclick="popup3m()">
-                    <span class="button-desktop">Master</span>
-                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                </button>
-                </div>
-                <div class="crit-stats">
-                    <p>Cooldown: 12s</p>
-                    <p>Energy Cost: 20</p>
-                </div>
-                <div class="skill-description">
-                    <p>Throw a chain towards an ally in a 15 block radius, grappling yourself towards the targeted ally. You and the targeted ally gain VIND for 6 seconds, granting immunity to debuffs. You are healed for 600 health after reaching your ally.</p>
-                    <p>Heart to Heart's range is greatly reduced when holding a flag.</p>
-                </div>   
+            <div class="crit-stats">
+              <p>Energy Cost: 90</p>
+              <p>Crit Chance: 20%</p>
+              <p>Crit Multiplier: 175%</p>
             </div>
-            <div class="class-container skill-4">
-                <div class="skill-title">
-                    <h3>Prism Guard</h3>
-                </div> 
 
-                <div class="upgrade-button-div" onresize="align4();"><button class="upgrade-button" onclick="popup4(); align4();">
-                    <span class="button-desktop">Upgrade</span>
-                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="master-button-div"><button class="master-button" onclick="popup4m()">
-                    <span class="button-desktop">Master</span>
-                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="crit-stats">
-                    <p>Cooldown: 26s</p>
-                    <p>Energy Cost: 40</p>
-                </div>
-                
-                <div class="skill-description">
-                    <p>Create a bubble shield around you that lasts 6s. All projectiles that pass through the barrier have their damage reduced by 75%.</p>
-                    <p>After 6s, the bubble will burst, healing you and all allies for 200 + 1.5% missing health and grant 3% damage reduction per hit taken (max 30%) while Prism Guard was active.</p>
-                </div>   
+            <div class="skill-description">
+              <p>
+                Strike the targeted enemy for 535.6 - 679.9 damage. Each strike
+                reduces the duration of your struck target's active ability
+                timers by 0.5 seconds.
+              </p>
+              <p>
+                Additionally, if your struck target is silenced, reduce the
+                cooldown of your Prism Guard by 0.8 seconds and reduce their
+                active ability timers by 0.8 seconds instead.
+              </p>
             </div>
-            <div class="class-container skill-5">
-                <div class="skill-title">
-                    <h3>Vindicate</h3>
-                </div> 
-
-                <div class="upgrade-button-div"><button class="upgrade-button" onclick="popup5(); align5();">
-                    <span class="button-desktop">Upgrade</span>
-                    <span class="button-tablet"><i class="fa-solid fa-circle-up fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="master-button-div"><button class="master-button" onclick="popup5m()">
-                    <span class="button-desktop">Master</span>
-                    <span class="button-tablet"><i class="fa-solid fa-crown fa-fw"></i></span>
-                </button>
-                </div>
-
-                <div class="crit-stats">
-                    <p>Cooldown: 50s</p>
-                    <p>Energy Cost: 60</p>
-                </div>
-                
-                <div class="skill-description">
-                    <p>All allies within an 8 block radius gain the status VIND, which clears all de-buffs. In addition, the status VIND prevents allies from being affected by de-buffs and grants 50% knockback resistance for 12s. You gain 30% damage reduction for 8s.</p>
-                </div>  
-
-                <div class="main-header">Changelog</div>
-                    <div class="changelog-text">
-                        <p class="bold">Illusion Vanguard 1.1</p>
-                        <ul>
-                            <li>Righteous Strike&#39;s base damage has been increased by 30%.</li>
-                            <li>Righteous Slash (Righteous Strike Master) now hits 4 targets instead of 2 and silences all targets hit for 4 seconds.</li>
-                            <li>Conscience Crush (Soul Shackle Master) now hits up to 8 targets instead of 5 and increases silence duration by 3s as well.</li>
-                            <li>Deflective Tesseract (Prism Guard Master) now increases passive damage reduction by 25% instead of increasing max health by 20%.</li>
-                            <li>Reflective Barrier (Vindicate Master) no longer requires line of sight of enemies to reflect damage.</li>
-                        </ul>
-                        <p class="bold">Illusion Vanguard 1.0</p>
-                        <ul>
-                            <li>Added the Vindicator page to the documentation.</li>
-                        </ul>
-                    </div>  
+          </div>
+          <div class="class-container skill-2">
+            <div class="skill-title">
+              <h3>Soul Shackle</h3>
             </div>
-            <div class="bottom-space"></div>
-            
-            <div id = "popup-1" class="popup-container">
-                <div class="topbar">
-                    <span>Righteous Strike Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
+
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup2(); align2();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup2m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="crit-stats">
+              <p>Cooldown: 9s</p>
+              <p>Energy Cost: 40</p>
+              <p>Crit Chance: 20%</p>
+              <p>Crit Multiplier: 175%</p>
+            </div>
+
+            <div class="skill-description">
+              <p>
+                Shackle up to 1 enemy and deal 446 - 589 damage. Shackled
+                enemies are silenced for 2 - 3.5 seconds, making them unable to
+                use their main attack for the duration. The silence duration
+                increases by 0.5 seconds for every 500 damage you took in the
+                last 6 seconds. Gain a short burst of 40% movement speed for 1.5
+                seconds after shackling an enemy.
+              </p>
+              <p>Has an optimal range of 15 blocks.</p>
+              <p>
+                Shackled enemies cannot melee for the duration of silence in
+                PvE.
+              </p>
+              <!-- Added cannot melee during silence in 1.0.5 -->
+            </div>
+          </div>
+          <div class="class-container skill-3">
+            <div class="skill-title">
+              <h3>Heart to Heart</h3>
+            </div>
+
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup3(); align3();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup3m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+            <div class="crit-stats">
+              <p>Cooldown: 12s</p>
+              <p>Energy Cost: 20</p>
+            </div>
+            <div class="skill-description">
+              <p>
+                Throw a chain towards an ally in a 15 block radius, grappling
+                yourself towards the targeted ally. You and the targeted ally
+                gain VIND for 6 seconds, granting immunity to debuffs. You are
+                healed for 600 health after reaching your ally.
+              </p>
+              <p>
+                Heart to Heart's range is greatly reduced when holding a flag.
+              </p>
+            </div>
+          </div>
+          <div class="class-container skill-4">
+            <div class="skill-title">
+              <h3>Prism Guard</h3>
+            </div>
+
+            <div class="upgrade-button-div" onresize="align4();">
+              <button class="upgrade-button" onclick="popup4(); align4();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup4m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="crit-stats">
+              <p>Cooldown: 26s</p>
+              <p>Energy Cost: 40</p>
+            </div>
+
+            <div class="skill-description">
+              <p>
+                Create a bubble shield around you that lasts 6s. All projectiles
+                that pass through the barrier have their damage reduced by 75%.
+              </p>
+              <p>
+                After 6s, the bubble will burst, healing you and all allies for
+                200 + 1.5% missing health and grant 3% damage reduction per hit
+                taken (max 30%) while Prism Guard was active.
+              </p>
+            </div>
+          </div>
+          <div class="class-container skill-5">
+            <div class="skill-title">
+              <h3>Vindicate</h3>
+            </div>
+
+            <div class="upgrade-button-div">
+              <button class="upgrade-button" onclick="popup5(); align5();">
+                <span class="button-desktop">Upgrade</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-circle-up fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="master-button-div">
+              <button class="master-button" onclick="popup5m()">
+                <span class="button-desktop">Master</span>
+                <span class="button-tablet"
+                  ><i class="fa-solid fa-crown fa-fw"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="crit-stats">
+              <p>Cooldown: 50s</p>
+              <p>Energy Cost: 60</p>
+            </div>
+
+            <div class="skill-description">
+              <p>
+                All allies within an 8 block radius gain the status VIND, which
+                clears all de-buffs. In addition, the status VIND prevents
+                allies from being affected by de-buffs and grants 50% knockback
+                resistance for 12s. You gain 30% damage reduction for 8s.
+              </p>
+            </div>
+
+            <div class="main-header">Changelog</div>
+            <div class="changelog-text">
+              <p class="bold">Illusion Vanguard 1.3</p>
+              <ul>
+                <li>
+                  Righteous Slash (Righteous Strike Master) no longer knocks
+                  enemies back but now silences your initial strike target for
+                  10 seconds. Additional targets still get silenced for 4
+                  seconds.
+                </li>
+                <li>
+                  Soul Shackle can no longer target no enemies if the master
+                  upgrade is unlocked.
+                </li>
+                <li>
+                  Deflective Tesseract (Prism Guard Master) no longer doubles
+                  duration, as it wasn't meant to in the first place.
+                </li>
+                <li>
+                  Reflective Barrier (Vindicate Master) now ignores passive
+                  damage resistance when reflecting damage.
+                </li>
+              </ul>
+              <p class="bold">Illusion Vanguard 1.1</p>
+              <ul>
+                <li>
+                  Righteous Strike&#39;s base damage has been increased by 30%.
+                </li>
+                <li>
+                  Righteous Slash (Righteous Strike Master) now hits 4 targets
+                  instead of 2 and silences all targets hit for 4 seconds.
+                </li>
+                <li>
+                  Conscience Crush (Soul Shackle Master) now hits up to 8
+                  targets instead of 5 and increases silence duration by 3s as
+                  well.
+                </li>
+                <li>
+                  Deflective Tesseract (Prism Guard Master) now increases
+                  passive damage reduction by 25% instead of increasing max
+                  health by 20%.
+                </li>
+                <li>
+                  Reflective Barrier (Vindicate Master) no longer requires line
+                  of sight of enemies to reflect damage.
+                </li>
+              </ul>
+              <p class="bold">Illusion Vanguard 1.0</p>
+              <ul>
+                <li>Added the Vindicator page to the documentation.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom-space"></div>
+
+          <div id="popup-1" class="popup-container">
+            <div class="topbar">
+              <span>Righteous Strike Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Impair</span>
                 </div>
-                <div class="content-primary">
-                    <div class="upgrade-1">
-                        <div class="upgrade-1-header">
-                            <span>Impair</span>
-                        </div>
-                        <div class="upgrade-desc">
-                            <div id="upgrade-desc-1-1" class="upgrade-desc-content">
-                                <span>Damage Increase</span>
-                            </div>
-                        </div>
-                        <div id="grid-1-1" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>                             
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+30% Damage</div>
-                            </div>
-                        </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-1-1" class="upgrade-desc-content">
+                    <span>Damage Increase</span>
+                  </div>
+                </div>
+                <div id="grid-1-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +7.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
                     </div>
-                    <div class="upgrade-2">
-                        <div class="upgrade-2-header">
-                            <span>Spark</span>
-                        </div>
-                        <div id="upgrade-desc-1-2" class="upgrade-desc">
-                            <div class="upgrade-desc-content">
-                                <span>Energy Cost Reduction</span>
-                            </div>
-                        </div>
-                        <div id="grid-1-2" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">&nbsp;-5<i class="fa-solid fa-bolt fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">&nbsp;-10<i class="fa-solid fa-bolt fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">&nbsp;-15<i class="fa-solid fa-bolt fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">-20 Energy Cost</div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +15%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
                     </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +22.5%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
                 </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+30% Damage</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Spark</span>
+                </div>
+                <div id="upgrade-desc-1-2" class="upgrade-desc">
+                  <div class="upgrade-desc-content">
+                    <span>Energy Cost Reduction</span>
+                  </div>
+                </div>
+                <div id="grid-1-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;-5<i class="fa-solid fa-bolt fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      &nbsp;-10<i class="fa-solid fa-bolt fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      &nbsp;-15<i class="fa-solid fa-bolt fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">-20 Energy Cost</div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div id="popup-1-m" class="popup-container">
-                <div class="topbar">
-                    <span>Righteous Strike Master Upgrade</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
-                </div>
-                <div class="content-primary-master">
-                    <div class="master">
-                        <div class="master-header">
-                            <span>Righteous Slash</span>
-                        </div>
-                        <div class="upgrade-desc-content-master">
-                            <div>Righteous Strike hits 4 additional enemies and knocks all hit targets back slightly. Enemies struck by Righteous Strike are silenced for 4 seconds.</div>
-                        </div>
-                    </div>
-                </div>
+          <div id="popup-1-m" class="popup-container">
+            <div class="topbar">
+              <span>Righteous Strike Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
             </div>
-
-            <div id = "popup-2" class="popup-container">
-                <div class="topbar">
-                    <span>Soul Shackle Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Righteous Slash</span>
                 </div>
-                <div class="content-primary">
-                    <div class="upgrade-1">
-                        <div class="upgrade-1-header">
-                            <span>Impair</span>
-                        </div>
-                        <div id="upgrade-desc-2-1" class="upgrade-desc">
-                            <div class="upgrade-desc-content">
-                                <span>Damage Increase</span>
-                            </div>
-                        </div>
-                        <div id="grid-2-1" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+20%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i></div>                          
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+40% Damage</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="upgrade-2">
-                        <div class="upgrade-2-header">
-                            <span>Spark</span>
-                        </div> 
-                        <div id="upgrade-desc-2-2" class="upgrade-desc">
-                            <div class="upgrade-desc-content">
-                                <span>Cooldown Reduction</span>
-                            </div>
-                        </div>
-                        <div id="grid-2-2" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">&nbsp;-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">-20% Cooldown</div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Righteous Strike hits 4 additional enemies. The initial
+                    target struck is silenced for 10 seconds. Additional targets
+                    struck by Righteous Strike are silenced for 4 seconds.
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div id="popup-2-m" class="popup-container">
-                <div class="topbar">
-                    <span>Soul Shackle Master Upgrade</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
-                </div>
-                <div class="content-primary-master">
-                    <div class="master">
-                        <div class="master-header">
-                            <span>Conscience Crush</span>
-                        </div>
-                        <div class="upgrade-desc-content-master">
-                            <div>Soul Shackle now hits up to 8 enemies in a cone. The duration of silence caused by Soul Shackle is increased by 3s.</div>
-                        </div>
-                    </div>
-                </div>
+          <div id="popup-2" class="popup-container">
+            <div class="topbar">
+              <span>Soul Shackle Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
             </div>
-
-            <div id = "popup-3" class="popup-container">
-                <div class="topbar">
-                    <span>Heart to Heart Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Impair</span>
                 </div>
-                <div class="content-primary">
-                    <div class="upgrade-1">
-                        <div class="upgrade-1-header">
-                            <span>Increase</span>
-                        </div>
-                        <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
+                <div id="upgrade-desc-2-1" class="upgrade-desc">
+                  <div class="upgrade-desc-content">
+                    <span>Damage Increase</span>
+                  </div>
+                </div>
+                <div id="grid-2-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +10%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +20%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +30%&nbsp;<i class="fa-solid fa-hand-fist fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+40% Damage</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Spark</span>
+                </div>
+                <div id="upgrade-desc-2-2" class="upgrade-desc">
+                  <div class="upgrade-desc-content">
+                    <span>Cooldown Reduction</span>
+                  </div>
+                </div>
+                <div id="grid-2-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;-5%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      -10%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      -15%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">-20% Cooldown</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-2-m" class="popup-container">
+            <div class="topbar">
+              <span>Soul Shackle Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Conscience Crush</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Soul Shackle now hits up to 8 enemies in a cone. The
+                    duration of silence caused by Soul Shackle is increased by
+                    3s.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-3" class="popup-container">
+            <div class="topbar">
+              <span>Heart to Heart Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Increase</span>
+                </div>
+                <div class="upgrade-desc">
+                  <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
-                            <div id="upgrade-desc-3-1" class="upgrade-desc-content">
-                                <span>Ally Target Radius Increase</span>
-                            </div>
-                        </div>
-                        <div id="grid-3-1" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+2&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+4&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+6&nbsp;<i class="fa-solid fa-cube fa-fw"></i></div>                        
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+8 Blocks Ally Target Radius</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="upgrade-2">
-                        <div class="upgrade-2-header">
-                            <span>Zeal</span>
-                        </div> 
-                        <div class="upgrade-desc">
-                            <div id="upgrade-desc-3-2" class="upgrade-desc-content">
-                                <span>Cooldown Reduction</span>
-                            </div>
-                        </div>
-                        <div id="grid-3-2" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">&nbsp;-5%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">&nbsp;-10%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">&nbsp;-15%&nbsp;<i class="fa-regular fa-hourglass-half fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">-20% Cooldown</div>
-                            </div>
-                        </div>
-                    </div>
+                  <div id="upgrade-desc-3-1" class="upgrade-desc-content">
+                    <span>Ally Target Radius Increase</span>
+                  </div>
                 </div>
+                <div id="grid-3-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +2&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +4&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +6&nbsp;<i class="fa-solid fa-cube fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">
+                      +8 Blocks Ally Target Radius
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Zeal</span>
+                </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-3-2" class="upgrade-desc-content">
+                    <span>Cooldown Reduction</span>
+                  </div>
+                </div>
+                <div id="grid-3-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;-5%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      &nbsp;-10%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      &nbsp;-15%&nbsp;<i
+                        class="fa-regular fa-hourglass-half fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">-20% Cooldown</div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div id="popup-3-m" class="popup-container">
-                <div class="topbar">
-                    <span>Heart to Heart Master Upgrade</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
-                </div>
-                <div class="content-primary-master">
-                    <div class="master">
-                        <div class="master-header">
-                            <span>Heart of Hearts</span>
-                        </div>
-                        <div class="upgrade-desc-content-master">
-                            <div>Heart To Heart now deals 1635 - 2096 damage to all enemies you pass through. Enemies hit are stunned for 1 second.</div>
-                            <!-- Heart to Heart master upgrade now deals more damage (increased from 904 - 1377 to 1635 - 2096) -->
-                        </div>
-                    </div>
-                </div>
+          <div id="popup-3-m" class="popup-container">
+            <div class="topbar">
+              <span>Heart to Heart Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
             </div>
-
-            <div id = "popup-4" class="popup-container">
-                <div class="topbar">
-                    <span>Prism Guard Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Heart of Hearts</span>
                 </div>
-                <div class="content-primary">
-                    <div class="upgrade-1">
-                        <div class="upgrade-1-header">
-                            <span>Alleviate</span>
-                        </div>
-                        <div class="upgrade-desc">
-                            <div id="upgrade-desc-4-1" class="upgrade-desc-content">
-                                <span>Base Healing and Missing Health Healing (%) Increase</span>
-                            </div>
-                        </div>
-                        <div id="grid-4-1" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">+100&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                                <div class="upgrade-value">+1%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+200&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                                <div class="upgrade-value">+2%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+300&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                                <div class="upgrade-value">+3%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+400 Base Healing</div>
-                                <div class="upgrade-value">+4% Missing Health Healing</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="upgrade-2">
-                        <div class="upgrade-2-header">
-                            <span>Bulwark</span>
-                        </div> 
-                        <div class="upgrade-desc">
-                            <div id="upgrade-desc-4-2" class="upgrade-desc-content">
-                                <span>Damage Reduction and Projectile Damage Reduction Increase</span>
-                            </div>
-                        </div>
-                        <div id="grid-4-2" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">&nbsp;+5%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
-                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-shield-virus fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">+10%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
-                                <div class="upgrade-value">+20%&nbsp;<i class="fa-solid fa-shield-virus fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">+15%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
-                                <div class="upgrade-value">+30%&nbsp;<i class="fa-solid fa-shield-virus fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+20% Damage Reduction</div>
-                                <div class="upgrade-value">+40% Projectile Damage Reduction</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Heart To Heart now deals 1635 - 2096 damage to all enemies
+                    you pass through. Enemies hit are stunned for 1 second.
+                  </div>
+                  <!-- Heart to Heart master upgrade now deals more damage (increased from 904 - 1377 to 1635 - 2096) -->
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div id="popup-4-m" class="popup-container">
-                <div class="topbar">
-                    <span>Prism Guard Master Upgrade</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
-                </div>
-                <div class="content-primary-master">
-                    <div class="master">
-                        <div class="master-header">
-                            <span>Deflective Tesseract</span>
-                        </div>
-                        <div class="upgrade-desc-content-master">
-                            <div>Enemies in a 15 block radius will target you while Prism Guard is active. Increase Damage Resistance by 25%.</div>
-                        </div>
-                    </div>
-                </div>
+          <div id="popup-4" class="popup-container">
+            <div class="topbar">
+              <span>Prism Guard Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
             </div>
-
-            <div id = "popup-5" class="popup-container">
-                <div class="topbar">
-                    <span>Vindicate Upgrades</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Alleviate</span>
                 </div>
-                <div class="content-primary">
-                    <div class="upgrade-1">
-                        <div class="upgrade-1-header">
-                            <span>Bulwark</span>
-                        </div>
-                        <div class="upgrade-desc">
-                            <div id="upgrade-desc-5-1" class="upgrade-desc-content">
-                                <span>Damage Reduction</span>
-                            </div>
-                        </div>
-                        <div id="grid-5-1" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="tier-1">Tier I</div>
-                                <div class="upgrade-value">&nbsp;+5%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">&nbsp;+10%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">&nbsp;+15%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+20% Damage Reduction</div>
-                            </div>
-                        </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-4-1" class="upgrade-desc-content">
+                    <span
+                      >Base Healing and Missing Health Healing (%)
+                      Increase</span
+                    >
+                  </div>
+                </div>
+                <div id="grid-4-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      +100&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
                     </div>
-                    <div class="upgrade-2">
-                        <div class="upgrade-2-header">
-                            <span>Chronos</span>
-                        </div> 
-                        <div class="upgrade-desc">
-                            <!-- <div class="upgrade-desc-header">
+                    <div class="upgrade-value">
+                      +1%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +200&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                    <div class="upgrade-value">
+                      +2%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +300&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                    <div class="upgrade-value">
+                      +3%&nbsp;<i class="fa-solid fa-kit-medical fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+400 Base Healing</div>
+                    <div class="upgrade-value">+4% Missing Health Healing</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Bulwark</span>
+                </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-4-2" class="upgrade-desc-content">
+                    <span
+                      >Damage Reduction and Projectile Damage Reduction
+                      Increase</span
+                    >
+                  </div>
+                </div>
+                <div id="grid-4-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;+5%&nbsp;<i
+                        class="fa-solid fa-shield-halved fa-fw"
+                      ></i>
+                    </div>
+                    <div class="upgrade-value">
+                      +10%&nbsp;<i class="fa-solid fa-shield-virus fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      +10%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i>
+                    </div>
+                    <div class="upgrade-value">
+                      +20%&nbsp;<i class="fa-solid fa-shield-virus fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      +15%&nbsp;<i class="fa-solid fa-shield-halved fa-fw"></i>
+                    </div>
+                    <div class="upgrade-value">
+                      +30%&nbsp;<i class="fa-solid fa-shield-virus fa-fw"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+20% Damage Reduction</div>
+                    <div class="upgrade-value">
+                      +40% Projectile Damage Reduction
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-4-m" class="popup-container">
+            <div class="topbar">
+              <span>Prism Guard Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Deflective Tesseract</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Enemies in a 15 block radius will target you while Prism
+                    Guard is active. Increase Damage Resistance by 25%.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-5" class="popup-container">
+            <div class="topbar">
+              <span>Vindicate Upgrades</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary">
+              <div class="upgrade-1">
+                <div class="upgrade-1-header">
+                  <span>Bulwark</span>
+                </div>
+                <div class="upgrade-desc">
+                  <div id="upgrade-desc-5-1" class="upgrade-desc-content">
+                    <span>Damage Reduction</span>
+                  </div>
+                </div>
+                <div id="grid-5-1" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="tier-1">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;+5%&nbsp;<i
+                        class="fa-solid fa-shield-halved fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      &nbsp;+10%&nbsp;<i
+                        class="fa-solid fa-shield-halved fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      &nbsp;+15%&nbsp;<i
+                        class="fa-solid fa-shield-halved fa-fw"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+20% Damage Reduction</div>
+                  </div>
+                </div>
+              </div>
+              <div class="upgrade-2">
+                <div class="upgrade-2-header">
+                  <span>Chronos</span>
+                </div>
+                <div class="upgrade-desc">
+                  <!-- <div class="upgrade-desc-header">
                                 <span>Upgrade Type</span>
                             </div> -->
-                            <div id="upgrade-desc-5-2" class="upgrade-desc-content">
-                                <span>Duration Increase</span>
-                            </div>
-                        </div>
-                        <div id="grid-5-2" class="upgrade-grid">
-                            <div class="tier-1">
-                                <div class="upgrade-tier">Tier I</div>
-                                <div class="upgrade-value">&nbsp;+1s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
-                            </div>
-                            <div class="tier-2">
-                                <div class="upgrade-tier">Tier II</div>
-                                <div class="upgrade-value">&nbsp;+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
-                            </div>
-                            <div class="tier-3">
-                                <div class="upgrade-tier">Tier III</div>
-                                <div class="upgrade-value">&nbsp;+3s&nbsp;<i class="fa-regular fa-clock fa-fw"></i></div>
-                            </div>
-                        </div>
-                        <div class="tier-4">
-                            <div class="upgrade-tier">
-                                Tier IV
-                            </div>
-                            <div class="tier-4-desc">
-                                <div class="upgrade-value">+4s Duration</div>
-                            </div>
-                        </div>
+                  <div id="upgrade-desc-5-2" class="upgrade-desc-content">
+                    <span>Duration Increase</span>
+                  </div>
+                </div>
+                <div id="grid-5-2" class="upgrade-grid">
+                  <div class="tier-1">
+                    <div class="upgrade-tier">Tier I</div>
+                    <div class="upgrade-value">
+                      &nbsp;+1s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
                     </div>
-                </div>
-            </div>
-
-            <div id="popup-5-m" class="popup-container">
-                <div class="topbar">
-                    <span>Vindicate Master Upgrade</span>
-                    <button class="x-button" onclick="closepopups();">
-                        <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
-                    </button>
-                </div>
-                <div class="content-primary-master">
-                    <div class="master">
-                        <div class="master-header">
-                            <span>Reflective Barrier</span>
-                        </div>
-                        <div class="upgrade-desc-content-master">
-                            <div>Enemies who try to attack you are pushed back. Vindicate reflects the damage you would have taken back to its source.</div>
-                        </div>
+                  </div>
+                  <div class="tier-2">
+                    <div class="upgrade-tier">Tier II</div>
+                    <div class="upgrade-value">
+                      &nbsp;+2s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
                     </div>
+                  </div>
+                  <div class="tier-3">
+                    <div class="upgrade-tier">Tier III</div>
+                    <div class="upgrade-value">
+                      &nbsp;+3s&nbsp;<i class="fa-regular fa-clock fa-fw"></i>
+                    </div>
+                  </div>
                 </div>
+                <div class="tier-4">
+                  <div class="upgrade-tier">Tier IV</div>
+                  <div class="tier-4-desc">
+                    <div class="upgrade-value">+4s Duration</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-            <br><br><br>
+          </div>
 
-            <div></div>
+          <div id="popup-5-m" class="popup-container">
+            <div class="topbar">
+              <span>Vindicate Master Upgrade</span>
+              <button class="x-button" onclick="closepopups();">
+                <i class="fa-solid fa-xmark fa-2x fa-fw"></i>
+              </button>
+            </div>
+            <div class="content-primary-master">
+              <div class="master">
+                <div class="master-header">
+                  <span>Reflective Barrier</span>
+                </div>
+                <div class="upgrade-desc-content-master">
+                  <div>
+                    Enemies who try to attack you are pushed back. Vindicate
+                    reflects the damage you would have taken back to its source.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        <new-tablet></new-tablet>
-</body>
+        <br /><br /><br />
 
+        <div></div>
+      </div>
+    </div>
+    <new-tablet></new-tablet>
+  </body>
 </html>

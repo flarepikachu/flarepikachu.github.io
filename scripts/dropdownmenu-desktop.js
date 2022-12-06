@@ -13,6 +13,7 @@ class dropdown1 extends HTMLElement {
               Patch Notes
               </button>
               <div class="dropdown-container dropdown-container-patch-notes">
+              <a class='test' href="/patch-notes/illusion-vanguard-1-3-2.html"><span>Illusion Vanguard Hotfix - 1.3.2</span></a>
               <a class='test' href="/patch-notes/illusion-vanguard-1-3-1.html"><span>Illusion Vanguard Hotfix - 1.3.1</span></a>
               <a class='test' href="/patch-notes/illusion-vanguard-1-3.html"><span>Illusion Vanguard Update - 1.3</span></a>
               <a class='test' href="/patch-notes/illusion-vanguard-1-2-1.html"><span>Illusion Vanguard Hotfix - 1.2.1</span></a>

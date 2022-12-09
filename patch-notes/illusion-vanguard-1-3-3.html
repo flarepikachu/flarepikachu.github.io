@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.3.2" />
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.3.3" />
     <meta property="og:description" content="Warlords 2 PvE Documentation" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
     <script>
@@ -19,7 +19,7 @@ if(host != "127.0.0.1")
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patch Notes v1.3.2 - Warlords 2 PvE Documentation</title>
+    <title>Patch Notes v1.3.3 - Warlords 2 PvE Documentation</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/tablet-background-menu.css">
@@ -88,29 +88,56 @@ if(host != "127.0.0.1")
             </nav>
 
             <div id="dingleberry" class="patch-notes main-text">
-                <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.3.2</span></div>
-                <div class="pn-date"><span class="pn-date">Released December 5th 2022</span></div>
+                <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.3.3</span></div>
+                <div class="pn-date"><span class="pn-date">Released December 8th 2022</span></div>
                 <div class="pn-header-1"><span class="pn-header-text">Wave Defense</span></div>
+                
                 <div class="main-header"><span>General</span></div>
-                <p>              
+                <p>             
                     <ul>
-                        <li>Raised global speed cap from +100% to +150% max.</li>
+                        <li>Fixed guild tag not updating for new guild players</li>
+                        <li>Added 'coins converted' stat to players in guild menu</li>
                     </ul>     
                 </p>
+                <div class="main-header"><span>Class Balance</span></div>
+                
+                <p>
+                    <div class=" bold mini-header">Berserker</div>
+                    <ul>
+                        <li>
+                            Changed BloodLust to cap total healing based on the player's max HP.
+                        </li>
+                    </ul>
+                    </p>
+                </p>
+                <p>
+                    <div class=" bold mini-header">Aquamancer</div>
+                    <ul>
+                        <li>
+                            Players with an active ability effect from Water Breath will not get their cooldowns reduced by another Water Breath.
+                        </li>
+                    </ul>
+                    </p>
+                </p>
 
+                <div class="main-header"><span class="pn-header-text">Weapon Balance</span></div>
+                <p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/fervent.html">Fervent</a></div>
+                        <ul>
+                            <li>The Fervent weapon ability now lasts 45s instead of 30s.</li>
+                        </ul>
+                    </p>
+
+                </p>
                 <div class="main-header"><span>Mob Balance</span></div>
             
 
                 <p>
                     <div class=" bold mini-header">Void Lancer</div>
                     <ul>
-                        <li>Void Cleanse has been adjusted as follows:</li>
-                        <ul>
-                            <li>Inreased cooldown from 3 to 5 seconds.</li>
-                            <li>Reduced the range from 6 to 5 blocks.</li>
-                            <li>Reduced the taken duration from 2s to 1s.</li>
-                            <li>Changed Void Cleanse to take duration from BUFF timers instead of ability timers. (This was the original intended behaviour.)</li>
-                        </ul>
+                        <li>Changed Void Cleanse to take duration from BUFF timers instead of ability timers. (This was the original intended behaviour.)
+                        </li>
                     </ul>
                 </p>
 
@@ -118,8 +145,8 @@ if(host != "127.0.0.1")
 
                 <p>
                 <ul>
-                    <li>Fixed Water Breath cone range upgrades not properly increasing range if the master was unlocked.</li>
-                    <li>Fixed Shredding Fury (Windfury Master) not reducing damage resistance on hit.</li>
+                    <li>Fixed leaderboards removing some players.</li>
+                    <li>Fixed being unable to reinvite a player to a guild if 5 minutes pass.</li>
                 </ul>
                 </p>
 

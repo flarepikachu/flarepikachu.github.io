@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.4" />
+    <meta property="og:description" content="Warlords 2 PvE Documentation" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+        var host = window.location.hostname;
+        if (host != "127.0.0.1") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-YZD55GFB38');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch Notes v1.4 - Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
+    <link rel="stylesheet" href="/patch-notes/patch-notes.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <font-getter></font-getter>
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <div id="main-screen">
+        <header-component></header-component>
+
+        <div class="div1">
+            <span class="wl2pve">
+                <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Patch Notes</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Illusion Vanguard</a>
+            </span>
+        </div>
+
+        <burger-i></burger-i>
+
+        <div class="container">
+
+            <div></div>
+
+            <div id="navigationbar-mobile">
+                <mobile-divs></mobile-divs>
+            </div>
+
+            <nav class="main-nav" role="navigation">
+
+                <div class="selecter">
+                    <select class="div-toggle" data-target=".my-info-1">
+                        <option value="orange" data-show=".pve">
+                            <div class="selecter-text">Warlords 2 PvE</div>
+                        </option>
+                        <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                    </select>
+                </div>
+
+                <div class="my-info-1">
+                    <div class="pve hide">
+                        <dropdown-component></dropdown-component>
+                    </div>
+                    <div class="pome hide">A pome is...</div>
+                </div>
+
+            </nav>
+
+            <div id="dingleberry" class="patch-notes main-text">
+                <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Update - v1.4</span></div>
+                <div class="pn-date"><span class="pn-date">Scheduled Release December 27nd 2022</span></div>
+                <div class="pn-header-1"><span class="pn-header-text">Wave Defense</span></div>
+
+                <div class="main-header"><span>NEW EVENT: Fighter's Glory</span></div>
+                <div class="main-header"><span>General</span></div>
+
+                <p>
+                <ul>
+                    <li class="bold">Added an Auto Upgrader for skill upgrades.</li>
+                    <ul>
+                        <li>You can add upgrades to your auto upgrade queue by right clicking the upgrade.</li>
+                        <li>Save your auto upgrade preferences by clicking the book!</li>
+                        <li>You can view your queued upgrades by hovering on this item: <img class="weapon-image" src="newmenu.png" /></li>
+                    </ul>
+                    <li>Added a Guild Party command (/g party) to invite all online guild members to your party.</li>
+                </ul>
+                
+                <ul>
+                    <li>Added a minimum convertible amount when converting Coins to Guild Coins.</li>
+                    <li>Killed Chessking and Fu_cloud</li>
+                </ul>
+                </p>
+
+                <div class="main-header"><span class="pn-header-text">Weapon Balance</span></div>
+                <p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/juggernaut.html">Juggernaut (<span class="red">NEW!!</span>)</a></div>
+                        <ul>
+                            <li>Passive Ability: Gain 10% Damage and Health per 100 kills. Capped at 500 kills.</li>
+                        </ul>
+                    </p>
+
+                </p>
+                <div class="main-header"><span class="pn-header-text">Class Balance</span></div>
+                    <p>
+                        <div class="bold mini-header">Vindicator</div>
+                        <ul>
+                            <li>Replaced Prism Guard Spark Upgrade Tree with Chronos, increasing the duration of Prism Guard instead.</li>
+                        </ul>
+                    </p>
+                </p>
+                <div class="main-header"><span class="pn-header-text">Mob Balance</span></div>
+                <p></p>
+
+                <p>
+                <div class=" bold mini-header">Chessking</div>
+                <li>Chessking now no longer does Melee Damage.</li>
+                <ul>
+                    <li>Instead, Chessking activates his Belch ability every 5 seconds, dealing 2800 - 3600 damage to nearby players.</li>
+                </ul>
+                </p>
+                <p>
+
+                <div class="main-header"><span class="pn-header-text">Bug Fixes</span></div>
+
+                <p>
+                <ul>
+                    <li>Fixed Avenger's Wrath applying the Consecrate damage boost twice.</li>
+                    <li>Fixed Undying Army showing decimals on the damage message when popped.</li>
+                    <li>Fixed Vorpal from applying the damage boost when taking damage from Undying Army.</li>
+                    <li>Fixed Orbs of Life healing upgrades not working.</li>
+                    <li>Fixed Inspiring Presence Master descriptions being inaccurate on website and in-game.</li>
+                </ul>
+                </p>
+
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+    <new-tablet></new-tablet>
+
+</body>
+
+</html>

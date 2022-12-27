@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
       <header>
         <div class="headerdiv">
           <span>
@@ -19,18 +19,18 @@ class Header extends HTMLElement {
         </div>
     </header>
       `;
-    }
   }
-  
-  customElements.define('header-component', Header);
+}
 
-  class mobileMenu extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `
+customElements.define('header-component', Header);
+
+class mobileMenu extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
       <div id="cover-up" onclick="closemobilemenu();"></div>
       <div class="tablet-background-menu">
         <div class="site-name">Flairy Domain</div>
@@ -49,32 +49,32 @@ class Header extends HTMLElement {
             <dropdown-component></dropdown-component>
     </div>
       `;
-    }
   }
-  
-  customElements.define('new-tablet', mobileMenu);
+}
 
-  class fontGetter extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `
+customElements.define('new-tablet', mobileMenu);
+
+class fontGetter extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
       <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
       `;
-    }
   }
-  
-  customElements.define('font-getter', fontGetter);
+}
 
-  class titleMenu extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `
+customElements.define('font-getter', fontGetter);
+
+class titleMenu extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
       <div class="title-collections">
                     <div class="collection-header">CLASSIC COLLECTION</div>
                     <div class="classic-collection collection-div">
@@ -91,12 +91,17 @@ class Header extends HTMLElement {
                         <div class="title-button vigorous"><button onclick="window.location.href='/titles/vigorous.html'"><span class="button-text">Vigorous</span></button></div>
                         <div class="title-button vorpal"><button onclick="window.location.href='/titles/vorpal.html'"><span class="button-text">Vorpal</span></button></div>
                     </div>
-                </div>
+                    <div class="collection-header">EVENT COLLECTION</div>
+                    <div class="classic-collection collection-div">
+                    <div class="title-button juggernaut"><button onclick="window.location.href='/titles/juggernaut.html'"><span class="button-text">Juggernaut</span></button></div>
+                    </div>
+
+      
+      </div>
       `;
-    }
   }
-  
-  customElements.define('title-menu', titleMenu);
+}
+
+customElements.define('title-menu', titleMenu);
 
 
-  

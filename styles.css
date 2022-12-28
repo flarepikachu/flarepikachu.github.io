@@ -454,3 +454,15 @@ img {
   border-bottom: white 1px solid;
   margin: 1.5rem 0 1rem;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: lightslategrey;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--theme-color-7);
+}

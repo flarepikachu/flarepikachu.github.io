@@ -97,3 +97,7 @@ li {
 .main-text p.notes-text {
     font-size: 1.6rem;
 }
+
+.hover-underline:hover {
+    border-bottom: 1px solid var(--theme-red);
+}

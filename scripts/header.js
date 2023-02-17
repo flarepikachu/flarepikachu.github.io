@@ -95,8 +95,8 @@ class titleMenu extends HTMLElement {
                     <div class="classic-collection collection-div">
                     <div class="title-button juggernaut"><button onclick="window.location.href='/titles/juggernaut.html'"><span class="button-text">Juggernaut</span></button></div>
                     <div class="title-button valiant"><button onclick="window.location.href='/titles/valiant.html'"><span class="button-text">Valiant</span></button></div>
-                    <div class="title-button arbalest"><button onclick="window.location.href='/titles/arbalest.html'"><span class="button-text">Valiant</span></button></div>
-                    <div class="title-button revered"><button onclick="window.location.href='/titles/revered.html'"><span class="button-text">Valiant</span></button></div>
+                    <div class="title-button arbalest"><button onclick="window.location.href='/titles/arbalest.html'"><span class="button-text">Arbalest</span></button></div>
+                    <div class="title-button revered"><button onclick="window.location.href='/titles/revered.html'"><span class="button-text">Revered</span></button></div>
                     </div>
 
       

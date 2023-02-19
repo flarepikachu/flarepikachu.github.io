@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Patch Notes - Illusion Vanguard v1.5.1" />
+    <meta property="og:description" content="Warlords 2 PvE Documentation" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZD55GFB38"></script>
+    <script>
+var host = window.location.hostname;
+if(host != "127.0.0.1")
+{
+   window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZD55GFB38');
+}
+
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch Notes v1.5.1 - Warlords 2 PvE Documentation</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/tablet-background-menu.css">
+    <link rel="stylesheet" href="/patch-notes/patch-notes.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b156d9fc8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-desktop.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-divs.js" type="text/javascript"></script>
+    <script src="/scripts/dropdownmenu-tablet-function.js" type="text/javascript"></script>
+    <script src="/scripts/burger-i.js" type="text/javascript"></script>
+    <script src="/scripts/header.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <font-getter></font-getter>
+</head>
+
+<body onload="dropdownsdesktop()">
+
+    <div id="main-screen">
+        <header-component></header-component>
+
+        <div class="div1">
+            <span class="wl2pve">
+                <a class='direlink div1-text' href="/index.html">Warlords 2 PvE</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Patch Notes</a>
+            </span>
+            <i class="fa-solid fa-angle-right div1-text"></i>
+            <span>
+                <a class='direlink div1-text' href="#">Illusion Vanguard</a>
+            </span>
+        </div>
+
+        <burger-i></burger-i>
+
+        <div class="container">
+
+            <div></div>
+
+            <div id="navigationbar-mobile">
+                <mobile-divs></mobile-divs>
+            </div>
+
+            <nav class="main-nav" role="navigation">
+
+                <div class="selecter">
+                    <select class="div-toggle" data-target=".my-info-1">
+                        <option value="orange" data-show=".pve">
+                            <div class="selecter-text">Warlords 2 PvE</div>
+                        </option>
+                        <option value="pear" data-show=".pome"><span class="selecter-text">Pear</span></option>
+                    </select>
+                </div>
+
+                <div class="my-info-1">
+                    <div class="pve hide">
+                        <dropdown-component></dropdown-component>
+                    </div>
+                    <div class="pome hide">A pome is...</div>
+                </div>
+
+            </nav>
+
+            <div id="dingleberry" class="patch-notes main-text">
+                <div class="pn-header left"><span class="pn-header-text">Illusion Vanguard Hotfix - v1.5.1</span></div>
+                <div class="pn-date"><span class="pn-date">Released February 19th 2023</span></div>
+                <div class="pn-header-1"><span class="pn-header-text">Wave Defense</span></div>
+                
+                <div class="main-header"><span>General</span></div>
+                <p>             
+                    <ul>
+                        <li>Mobs will spawn faster overall.</li>
+                    </ul>     
+                </p>
+                <div class="main-header"><span>Endless</span></div>
+                <p>       
+                    <p class="italic">These changes were already live with v1.5 but we forgot to put them in the notes.</p>      
+                    <ul>
+                        <li>Player limit will remain at 6 players.</li>
+                        <li>Insignia gain has been reverted back to 250 per kill, but insiginia gain per wave and boss wave completion has been halved.</li>
+                    </ul>     
+                </p>
+                <div class="main-header"><span>Class Balance</span></div>
+                
+                <p>
+                    <div class=" bold mini-header">Thunderlord</div>
+                    <ul>
+                        <li>
+                            Thunderbolt (Lightning Rod Master) now increases damage dealt and speed by 40% for 12s instead of 8s.
+                        </li>
+                    </ul>
+                    </p>
+                </p>
+
+                <div class="main-header"><span class="pn-header-text">Weapon Balance</span></div>
+                <p>
+                    <p>
+                        <div class="bold mini-header"><a class="a-no-format" href="/titles/juggernaut.html">Juggernaut</a></div>
+                        <ul>
+                            <li>Juggernaut is now upgrade with a scale of 10/11.25/12.5/13.75/15% bonus damage/health.</li>
+                            <li>The kills for each stack of Juggernaut has been changed from 100/200/300/400/500 to 100/200/400/800/1600.</li>
+                        </ul>
+                    </p>
+
+                </p>
+                <div class="main-header"><span class="pn-header-text">Bug Fixes</span></div>
+
+                <p>
+                <ul>
+                    <li>Fixed Divine/Fervent only requiring 1 stack to activate their special effect.</li>
+                    <li>Fixed Energy chat setting.</li>
+                    <li>Fixed Narmer's Ancestors not having their proper skins equipped.</li>
+                    <li>Fixed kiling Zenith sometimes causing the game to crash, resulting in no drops.</li>
+                </ul>
+                </p>
+
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+    <new-tablet></new-tablet>
+
+</body>
+
+</html>
